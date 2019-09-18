@@ -61,6 +61,9 @@ $smallText: 17px;
   outline: none;
   overflow: hidden;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   &:active {
     transform: translateY(4px);
     border-bottom: 4px solid transparent;
@@ -94,5 +97,19 @@ $smallText: 17px;
     &:active {
       border-bottom: 4px solid transparent;
     }
+  }
+  &.secondary {
+    background-color: $palette-secondary;
+    border-bottom: 4px solid $palette-mauve700;
+    &:active {
+      border-bottom: 4px solid transparent;
+    }
+  }
+  &.left {
+    float: left;
+    margin-right: $spacing-md-px;
+  }
+  .icon {
+    margin-right: $spacing-md-px;
   }
 }

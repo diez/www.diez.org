@@ -2,25 +2,21 @@
   <div>
     <div class="page shared">
       <NavBar></NavBar>
-      <section class="hero section-narrow">
-        <h1>The cross-platform design system framework</h1>
-        <h3>Diez makes it easy to adopt a unified design language across codebases, platforms, and teams.</h3>
-        <div style="text-align:center;"><router-link class="button" to="/getting-started">Get Started</router-link></div>
-      </section>
-
-      <section class="section-narrow early-access" style="margin-top:0;">
-        <div class="aside" style="margin-top:0;">
-          <h2>Welcome to Diez Early Access! 😎</h2>
-          <p>We're still sanding and varnishing and sweeping the broom around here, but Diez is already fine-tuned in many ways and we're excited to get it into your hands.</p>
-          <p>First things first, we want to say <strong>thank you so much</strong> for taking part in this before we release open-source. We're fairly certain you'll be excited when you experience its power, but we want to dillgently carve out this short period to learn from you and your experience with Diez and design systems in general.</p>
-          <p>What should a cross-platform design system be? We're hoping you can help us with this answer. Please don't hesitate to reach out — we're all ears. If you'd like to schedule some time for a one-on-one we're on standby for that too.</p>
-          <div style="text-align:center;padding:12px 0 24px;"><router-link class="button" to="/getting-started">Get Started</router-link></div>
-        </div>
-      </section>
-
-      <section id="demo" class="section">
-        <div class="video-holster card">
-          <iframe class="video" src="https://www.youtube.com/embed/5u9tW0x-5FA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <section class="hero">
+        <div class="background"></div>
+        <div class="section-split hero-container">
+          <div class="half">
+            <img src="@theme/assets/imgs/hero-temp.svg" class="temp-img">
+          </div>
+          <div class="half align-top" style="padding-left: 30px">
+            <h1>Adopt a unified design language across codebases, platforms, and teams</h1>
+            <h3>Diez is an open-source developer toolkit for managing design systems at scale</h3>
+              <router-link class="button left" to="/getting-started">Get Started</router-link>
+              <a class="button secondary left" href="https://github.com/diez/diez/">
+                <img height="22px" width="22px" src="../assets/imgs/github-light.svg" class="icon" alt="github" title="github">
+                GitHub
+              </a>
+          </div>
         </div>
       </section>
 
@@ -104,9 +100,9 @@
           <h2>Documentation Generator (coming soon)</h2>
           <p>From code comments and static analysis, Diez can automatically build customizable, ready-to-deploy documentation for your design system. This is not yet available as part of Early Access, but it will be shipping soon!</p>
         </div>
-        <div class="half mobile-reorder">
-          <div class="cards-holster">
-            <img width="100%" height="100%" class="card img-outline" src="@theme/assets/imgs/docz.jpg" alt="docs">
+        <div class="half">
+          <div class="video-holster card">
+            <iframe class="video" src="https://www.youtube.com/embed/41xMXV52Uwo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </section>
@@ -131,19 +127,41 @@ export default {
   @import '@theme/styles/_utils.scss';
 
   .hero {
-    height: 40vh;
+    position: relative;
+    width: 100vw;
+    height: 86vh;
     min-height: 400px;
     max-height: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: $spacing-xxxl-px auto 0;
+    overflow: hidden;
+    perspective: 1200px;
+    border-bottom: 1px solid $palette-gray400;
     @include phone {
       height: auto;
       max-height: auto;
       margin-bottom: $spacing-xxxl-px;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-top: 0;
+    }
+    .hero-container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: $spacing-xxxl-px auto 0;
+    }
+    .background {
+      background-image: url("../assets/imgs/tileable@2x.png");
+      width: 230%;
+      height: 230%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      opacity: .09;
+      transform: rotateY(9deg) rotateX(20deg) rotateZ(-33deg) scale(.9) translateY(-59%)
     }
   }
 
@@ -233,5 +251,9 @@ export default {
 
   .bottom-spacer {
     margin-bottom: $sizing-xs-px;
+  }
+
+  .temp-img {
+    transform: translate(-240px, 20px);
   }
 </style>
