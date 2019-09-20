@@ -93,7 +93,7 @@
             <ul>
               <li>Design Language Framework</li>
               <li>Diez Compiler</li>
-              <li>Design-file Extractors</li>
+              <li>Design-File Extractors</li>
             </ul>
             <router-link class="button secondary" to="/getting-started">Get Started</router-link>
           </div>
@@ -102,7 +102,7 @@
             <ul>
               <li>Design Language Framework</li>
               <li>Diez Compiler</li>
-              <li>Design-file Extractors</li>
+              <li>Design-File Extractors</li>
               <li class="primary">Diez Docs (documentation generation)</li>
               <li class="primary">Commercial License</li>
               <li class="primary">Support, Integration, & Training</li>
@@ -119,7 +119,7 @@
         <div class="half align-top">
           <h2>DiezDocs</h2>
           <h3>(Available as part of Enterprise Edition)</h3>
-          <p>From code comments and static analysis, Diez can automatically build customizable, ready-to-deploy documentation for your design system. This is not yet available as part of Early Access, but it will be shipping soon!</p>
+          <p>From code comments and static analysis, Diez can automatically build customizable, ready-to-deploy documentation for your design system.</p>
         </div>
         <div class="half">
           <div class="video-holster card">
