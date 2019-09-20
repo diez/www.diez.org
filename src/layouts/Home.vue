@@ -23,7 +23,7 @@
 
       <section id="cross-platform" class="section-split">
         <div class="half align-top">
-          <h2>Design Token Components</h2>
+          <h2>Design Language Framework</h2>
           <p>Use TypeScript to compose <a target="_blank" href="https://www.lightningdesignsystem.com/design-tokens/">design tokens</a> into deeply customizable, reusable, and developer-friendly Design Token Components.</p>
           <p>Design Token Components enable a "write once, use anywhere" paradigm for your design language, across codebases.</p>
         </div>
@@ -67,6 +67,8 @@
           <h2>Cross-Platform Native Compiler</h2>
           <p>More precisely a <i>transpiler</i>: Diez builds your TypeScript component definitions into pure native SDKs for iOS, Android, and the Web — complete with type definitions and autocomplete.</p>
           <p><strong>Diez works with your codebase(s):</strong>  Diez carries zero opinions about rendering, requires no runtime or VMs, and is designed for progressive adoption.</p>
+          <h3>Hot Updates</h3>
+          <p>The Diez compiler ships with a <code class="inline">hot</code> mode, which allows for hot updates at development time — even inside native iOS and Android apps.</p>
         </div>
       </section>
 
@@ -82,23 +84,41 @@
         </div>
       </section>
 
-      <section id="hot-mode" class="section-split">
-        <div class="half mobile-reorder">
-          <div class="video-holster card">
-            <video autoplay loop muted class="video" >
-              <source src="@theme/assets/imgs/hot.mp4" type="video/mp4">
-            </video>
+      <section id="enterprise" class="section">
+        <h2>Community & Enterprise Editions</h2>
+        <p>Diez is open source, but has an Enterprise Edition with exclusive access to commercial add-ons, including DocsGen, Enterprise Training & Custom Integration options.</p>
+        <div class="side-by-side">
+          <div class="card">
+            <h3>Community Edition</h3>
+            <ul>
+              <li>Design Language Framework</li>
+              <li>Diez Compiler</li>
+              <li>Design-file Extractors</li>
+            </ul>
+            <router-link class="button secondary" to="/getting-started">Get Started</router-link>
           </div>
-        </div>
-        <div class="half align-top">
-          <h2>Hot Updates</h2>
-          <p>The Diez compiler ships with a <code class="inline">hot</code> mode, which allows for hot updates at development time — even inside native iOS and Android apps.</p>
+          <div class="card card-w-background">
+            <h3>Enterprise Edition</h3>
+            <ul>
+              <li>Design Language Framework</li>
+              <li>Diez Compiler</li>
+              <li>Design-file Extractors</li>
+              <li class="primary">Diez Docs (documentation generation)</li>
+              <li class="primary">Commercial License</li>
+              <li class="primary">Support, Integration, & Training</li>
+            </ul>
+            <a class="button" href="mailto:sales@diez.org?subject=Enterprise Edition">
+              Contact Sales
+            </a>
+            <div class="background"></div>
+          </div>
         </div>
       </section>
 
-      <section id="doc-gen" class="section-split">
+      <section id="diez-docs" class="section-split">
         <div class="half align-top">
-          <h2>Documentation Generator (coming soon)</h2>
+          <h2>DiezDocs</h2>
+          <h3>(Available as part of Enterprise Edition)</h3>
           <p>From code comments and static analysis, Diez can automatically build customizable, ready-to-deploy documentation for your design system. This is not yet available as part of Early Access, but it will be shipping soon!</p>
         </div>
         <div class="half">
@@ -170,6 +190,10 @@ export default {
 
   h1 {
     margin-bottom: 0;
+  }
+
+  li {
+    font-weight: 700;
   }
 
   .early-access h2 {
@@ -270,4 +294,56 @@ export default {
     opacity: 0;
     pointer-events: none;
   }
+
+  #enterprise {
+    h2 { text-align: center;}
+    p {
+      text-align: center;
+      max-width: $sizing-xxl-px;
+      margin: 0 auto;
+      margin-bottom: $spacing-xxl-px;
+    }
+  }
+
+  .side-by-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card {
+      margin: 0 $spacing-lg-px;
+      padding: $spacing-lg-px $spacing-xxxl-px $spacing-xl-px;
+      text-align: center;
+      h3 {
+        text-align: center;
+        margin: $spacing-lg-px;
+      }
+      ul {
+        text-align: left;
+        margin-bottom: $spacing-xxl-px;
+      }
+    }
+  }
+
+  .card-w-background {
+    perspective: 1200px;
+    position: relative;
+    overflow: hidden;
+    background-color: $palette-white;
+    border: 1px solid $palette-gray400;
+    .background {
+      background-image: url("../assets/imgs/tileable@2x.png");
+      width: 230%;
+      height: 230%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      opacity: .09;
+      pointer-events: none;
+      transform: rotateY(9deg) rotateX(20deg) rotateZ(-33deg) scale(.9) translate(12%, -80%);
+    }
+    .primary {
+      color: $palette-primary;
+    }
+  }
+
 </style>
