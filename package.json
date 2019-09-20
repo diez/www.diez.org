@@ -25,6 +25,7 @@
     "health": "yarn lint -f checkstyle -o checkstyle-result.xml"
   },
   "dependencies": {
+    "@haiku/tina-diezhero2": "^0.0.4",
     "@haiku/tina-whatyouscaffoldedoutlooping": "^0.0.4"
   }
 }

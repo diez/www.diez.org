@@ -5,8 +5,9 @@
       <section class="hero">
         <div class="background"></div>
         <div class="section-split hero-container">
-          <div class="half">
-            <img src="@theme/assets/imgs/hero-temp.svg" class="temp-img">
+          <div class="half animation-holster">
+            <div class="render-solve">Animation showing Diez in action</div>
+            <HeroAnimation sizing="cover"></HeroAnimation>
           </div>
           <div class="half align-top" style="padding-left: 30px">
             <h1>Adopt a unified design language across codebases, platforms, and teams</h1>
@@ -118,7 +119,8 @@ import NavBar from '@theme/components/NavBar.vue';
 export default {
   components: {
     Footer,
-    NavBar
+    NavBar,
+    HeroAnimation: () => import('@haiku/tina-diezhero2/vue')
   }
 };
 </script>
@@ -161,6 +163,7 @@ export default {
       left: 0;
       right: 0;
       opacity: .09;
+      pointer-events: none;
       transform: rotateY(9deg) rotateX(20deg) rotateZ(-33deg) scale(.9) translateY(-59%)
     }
   }
@@ -255,5 +258,16 @@ export default {
 
   .temp-img {
     transform: translate(-240px, 20px);
+  }
+
+  .animation-holster {
+    min-width: 50%;
+    min-height:100%;
+    padding-left: 0;
+  }
+
+  .render-solve {
+    opacity: 0;
+    pointer-events: none;
   }
 </style>
