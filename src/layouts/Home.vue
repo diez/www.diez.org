@@ -9,7 +9,7 @@
             <div class="render-solve">Animation showing Diez in action</div>
             <HeroAnimation sizing="cover"></HeroAnimation>
           </div>
-          <div class="half align-top" style="padding-left: 30px">
+          <div class="half align-top punch" style="padding-left: 30px">
             <h1>Adopt a unified design language across codebases, platforms, and teams</h1>
             <h3>Diez is an open-source developer toolkit for managing design systems at scale</h3>
               <router-link class="button left" to="/getting-started">Get Started</router-link>
@@ -288,6 +288,15 @@ export default {
     min-width: 50%;
     min-height:100%;
     padding-left: 0;
+    @include tablet-large {
+      display: none;
+    }
+  }
+
+  .punch {
+    @include tablet-large {
+      width: 100%;
+    }
   }
 
   .render-solve {
@@ -309,6 +318,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     .card {
       margin: 0 $spacing-lg-px;
       padding: $spacing-lg-px $spacing-xxxl-px $spacing-xl-px;
@@ -320,6 +330,9 @@ export default {
       ul {
         text-align: left;
         margin-bottom: $spacing-xxl-px;
+      }
+      @include tablet {
+        width: 100%;
       }
     }
   }
@@ -343,6 +356,9 @@ export default {
     }
     .primary {
       color: $palette-primary;
+    }
+    @include tablet {
+      margin-top: $spacing-lg-px !important;
     }
   }
 

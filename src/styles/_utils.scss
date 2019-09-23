@@ -108,6 +108,9 @@ $smallText: 17px;
   &.left {
     float: left;
     margin-right: $spacing-md-px;
+    @include phone {
+      margin-top: $spacing-md-px;
+    }
   }
   .icon {
     margin-right: $spacing-md-px;
