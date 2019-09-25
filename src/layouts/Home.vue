@@ -123,7 +123,9 @@
         </div>
         <div class="half">
           <div class="video-holster card">
-            <iframe class="video" src="https://www.youtube.com/embed/41xMXV52Uwo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <video width="80%" autoplay loop muted playsinline preload="auto">
+                <source src="@theme/assets/vids/docs.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
       </section>
