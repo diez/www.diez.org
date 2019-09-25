@@ -97,7 +97,7 @@
             </ul>
             <router-link class="button secondary" to="/getting-started">Get Started</router-link>
           </div>
-          <div class="card card-w-background">
+          <div class="card card-w-background card-bordered">
             <h3>Enterprise Edition</h3>
             <ul>
               <li>Design Language Framework</li>
@@ -116,14 +116,14 @@
       </section>
 
       <section id="diez-docs" class="section-split">
-        <div class="half align-top">
+        <div class="one-third align-top">
           <h2>DiezDocs</h2>
           <h3>(Available as part of Enterprise Edition)</h3>
           <p>From code comments and static analysis, Diez can automatically build customizable, ready-to-deploy documentation for your design system.</p>
         </div>
-        <div class="half">
-          <div class="video-holster card">
-            <video width="80%" autoplay loop muted playsinline preload="auto">
+        <div class="two-thirds">
+          <div class="video-holster card card-bordered">
+            <video width="103%" style="margin-top:-6px;" autoplay loop muted playsinline preload="auto">
                 <source src="@theme/assets/vids/docs.mp4" type="video/mp4">
             </video>
           </div>
@@ -339,12 +339,15 @@ export default {
     }
   }
 
+  .card-bordered {
+    border: 1px solid $palette-card-color;
+  }
+
   .card-w-background {
     perspective: 1200px;
     position: relative;
     overflow: hidden;
     background-color: $palette-white;
-    border: 1px solid $palette-gray400;
     .background {
       background-image: url("../assets/imgs/tileable@2x.png");
       width: 230%;
