@@ -103,7 +103,7 @@
               <li>Design Language Framework</li>
               <li>Diez Compiler</li>
               <li>Design-File Extractors</li>
-              <li class="primary">Diez Docs (documentation generation)</li>
+              <li class="primary">Diez DocsGen</li>
               <li class="primary">Commercial License</li>
               <li class="primary">Support, Integration, & Training</li>
             </ul>
@@ -115,9 +115,9 @@
         </div>
       </section>
 
-      <section id="diez-docs" class="section-split">
+      <section id="docsgen" class="section-split">
         <div class="one-third align-top">
-          <h2>DiezDocs</h2>
+          <h2>DocsGen</h2>
           <h3>(Available as part of Enterprise Edition)</h3>
           <p>From code comments and static analysis, Diez can automatically build customizable, ready-to-deploy documentation for your design system.</p>
         </div>
