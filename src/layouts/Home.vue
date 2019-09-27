@@ -21,7 +21,8 @@
         </div>
       </section>
 
-      <section id="cross-platform" class="section-split">
+      <h1 class="center heading1">Diez's Developer toolkit</h1>
+      <section id="What's in the box" class="section-split">
         <div class="half align-top">
           <h2>Design Language Framework</h2>
           <p>Use TypeScript to compose <a target="_blank" href="https://www.lightningdesignsystem.com/design-tokens/">design tokens</a> into deeply customizable, reusable, and developer-friendly Design Token Components.</p>
@@ -83,9 +84,10 @@
           </div>
         </div>
       </section>
-
-      <section id="enterprise" class="section">
-        <h2>Community & Enterprise Editions</h2>
+    </div>
+    <div id="enterprise" class="shared">
+      <section class="section">
+        <h1>Community & Enterprise Editions</h1>
         <p>Diez is open source, but has an Enterprise Edition with exclusive access to commercial add-ons, including DocsGen, Enterprise Training & Custom Integration options.</p>
         <div class="side-by-side">
           <div class="card">
@@ -118,8 +120,8 @@
       <section id="docsgen" class="section-split">
         <div class="one-third align-top">
           <h2>DocsGen</h2>
-          <h3>(Available as part of Enterprise Edition)</h3>
-          <p>From code comments and static analysis, Diez can automatically build customizable, ready-to-deploy documentation for your design system.</p>
+          <h3>(Enterprise Edition)</h3>
+          <p style="text-align: left;">From code comments and static analysis, Diez can automatically build customizable, ready-to-deploy documentation for your design system.</p>
         </div>
         <div class="two-thirds">
           <div class="video-holster card card-bordered">
@@ -196,6 +198,10 @@ export default {
 
   li {
     font-weight: 700;
+  }
+
+  .heading1 {
+    margin-top: $sizing-xs-px;
   }
 
   .early-access h2 {
@@ -307,13 +313,33 @@ export default {
   }
 
   #enterprise {
-    h2 { text-align: center;}
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 20px;
+    background-color: $palette-mauve;
+    h1 {
+      text-align: center;
+      color: $palette-white;
+      margin-bottom: $spacing-lg-px;
+    }
+    h2 {
+      color: $palette-white;
+      margin-bottom: $spacing-xs-px;
+    }
+    h3 {
+      margin-top: $spacing-xs-px;
+    }
     p {
       text-align: center;
       max-width: $sizing-xxl-px;
       margin: 0 auto;
       margin-bottom: $spacing-xxl-px;
     }
+  }
+
+  #docsgen {
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: $sizing-xs-px;
   }
 
   .side-by-side {
