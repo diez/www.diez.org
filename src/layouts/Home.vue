@@ -7,7 +7,7 @@
         <div class="section-split hero-container">
           <div class="half animation-holster">
             <div class="render-solve">Animation showing Diez in action</div>
-            <HeroAnimation sizing="cover"></HeroAnimation>
+            <HeroAnimation sizing="cover" loop="true"></HeroAnimation>
           </div>
           <div class="half align-top punch" style="padding-left: 30px">
             <h1>Adopt a unified design language across codebases, platforms, and teams</h1>
@@ -154,13 +154,18 @@ export default {
 
   .hero {
     position: relative;
-    width: 100vw;
+    width: calc(100vw + 2px);
+    margin: 0 auto;
+    max-width: 1480px;
     height: 86vh;
+    height: 800px;
     min-height: 400px;
-    max-height: 1200px;
+    max-height: 800px;
     overflow: hidden;
     perspective: 1200px;
     border-bottom: 1px solid $palette-gray400;
+    border-right: 1px solid $palette-gray400;
+    border-left: 1px solid $palette-gray400;
     @include phone {
       height: auto;
       max-height: auto;
