@@ -158,7 +158,6 @@ export default {
     margin: 0 auto;
     max-width: 1480px;
     height: 86vh;
-    height: 800px;
     min-height: 400px;
     max-height: 800px;
     overflow: hidden;
