@@ -144,7 +144,7 @@ export default {
   components: {
     Footer,
     NavBar,
-    HeroAnimation: () => import('@haiku/tina-diezhero2/vue')
+    HeroAnimation: () => import('@haiku/tina-diezheroinstancesyntax/vue')
   }
 };
 </script>
