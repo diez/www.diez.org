@@ -9,4 +9,10 @@ export default ({router}) => {
       component: Docs,
     },
   ]);
+  router.afterEach(() => {
+    if (process.env.NODE_ENV === 'production' && typeof window !== 'undefined') {
+      // window.currentBranch is set by Netlify via the 'snippet injection' functionality
+      ga('set', 'branch', window.currentBranch);
+    }
+  });
 };
