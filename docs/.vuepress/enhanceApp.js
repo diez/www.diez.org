@@ -12,7 +12,9 @@ export default ({router}) => {
   router.afterEach(() => {
     if (process.env.NODE_ENV === 'production' && typeof window !== 'undefined') {
       // window.currentBranch is set by Netlify via the 'snippet injection' functionality
-      ga('set', 'experiment-id', window.currentBranch);
+      // dimension1 maps to 'experiment-id' in GA, you can edit or add more dimensions via the
+      // GA interface.
+      ga('set', 'dimension1', window.currentBranch);
     }
   });
 };
