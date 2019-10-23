@@ -17,7 +17,7 @@
     "vuepress": "^1.0.1"
   },
   "scripts": {
-    "preinstall": "npm install design-system/build/diez-diez-site-web",
+    "preinstall": "npm install design-system",
     "start": "vuepress dev docs",
     "build": "vuepress build docs",
     "fix": "yarn lint --fix",
