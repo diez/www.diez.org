@@ -42,11 +42,11 @@ For example, you can change the background color of the web app by modifying you
 First, open `design-system/src/DesignSystem.ts` in an editor of your choice. Look for the following block of code:
 
 ```typescript
-class Colors {
-  lightBackground = palette.white;
-  darkBackground = palette.black;
-  text = palette.black;
-  caption = palette.purple;
+const colors = {
+  lightBackground: palette.white,
+  darkBackground: palette.black,
+  text: palette.black,
+  caption: palette.purple
 }
 ```
 
@@ -55,8 +55,8 @@ In this example, the `Colors`component maps semantic names to the `Palette` comp
 Change `lightBackground` to `palette.lightPurple` like so:
 
 ```Diff
-- lightBackground = palette.white;
-+ lightBackground = palette.lightPurple;
+- lightBackground: palette.white,
++ lightBackground: palette.lightPurple
 ```
 
 Go back to your browser and see the web app hot update! You can update and hot reload **any** value defined in your design system: strings, colors, images, fonts, etc.

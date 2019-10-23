@@ -55,8 +55,8 @@ import { yourDSMProjNameTokens } from './designs/YourDSMProjName.invision';
 Then use it as you see fit. As shown here, we've used the Color Style from DSM named `fuss` and set it as the 'lightBackground' color of our design system.
 
 ```typescript
-class Palette {
-  lightBackground = yourDSMProjNameTokens.colors.fuss
+const palette = {
+  lightBackground: yourDSMProjNameTokens.colors.fuss
 }
 ```
 

@@ -67,8 +67,8 @@ import { yourSketchFileNameTokens } from './designs/YourSketchFileName.sketch';
 Then use it as you see fit. As shown here, we've used the Document Color from Sketch named `fuss` and set it as the 'lightBackground' color of our design system.
 
 ```typescript
-class Palette {
-  lightBackground = yourSketchFileNameTokens.palette.fuss;
+const palette = {
+  lightBackground: yourSketchFileNameTokens.palette.fuss
 }
 ```
 

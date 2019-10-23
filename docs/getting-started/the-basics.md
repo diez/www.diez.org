@@ -2,13 +2,15 @@
 
 ### A walk-through
 Want to get a feel for how Diez fits into your team's workflow? Check out the end-to-end video we've put together for those purposes.
-<iframe style="margin-top:30px" width="100%" height="500" src="https://www.youtube.com/embed/41xMXV52Uwo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="margin-top:30px" width="100%" height="500" src="https://www.youtube.com/embed/41xMXV52Uwo" frameborder="0" allow="accelerometer, autoplay, encrypted-media, gyroscope, picture-in-picture" allowfullscreen></iframe>
+
+<div class="aside">Note that this video demonstrates design token component (DTC) composition using classes. An alternative syntax is shown throughout the examples on this page.</div>
 
 ### The moving pieces
 
 #### Your Diez Project
 
-Your Diez project is a collection of design token component (DTC) definitions in TypeScript. This is your team's _living_ source of truth for its design system.
+Your Diez project is a collection of DTCs definitions in TypeScript. This is your team's _living_ source of truth for its design system.
 
 #### Diez Complier
 
@@ -29,17 +31,17 @@ To compose your Diez project you will componentize your team's design tokens in 
 In general, you define components and compose them together to create your full "Design System."
 
 ```typescript
-class LayoutValues {
-  spacingSmall = 5;
+const layoutValues = {
+  spacingSmall: 5
 }
 
-class Strings {
-  title = 'Living source of truth';
+const strings = {
+  title: 'Living source of truth'
 }
 
-export class DesignSystem {
-  layoutValues = new LayoutValues();
-  strings = new Strings();
+export const DesignSystem = {
+  layoutValues,
+  strings
 }
 ```
 
@@ -56,8 +58,8 @@ Use the `Color` prefab to create color palettes.
 ```typescript
 import {Color} from '@diez/prefabs';
 
-class MyColors {
-  purple = Color.rgb(86, 35, 238);
+const myColors = {
+  purple: Color.rgb(86, 35, 238)
 }
 ```
 
@@ -68,8 +70,8 @@ View the full `Color` API [here](/docs/latest/classes/prefabs.color.html).
 ```typescript
 import {Image} from '@diez/prefabs';
 
-class Images {
-  logo = Image.responsive('assets/logo.png');
+const images = {
+  logo: Image.responsive('assets/logo.png')
 }
 ```
 
@@ -82,12 +84,12 @@ Typography is a bit more complicated. You'll need to _compose_ two prefabs (`Fon
 ```typescript
 import {Font, Typograph} from '@diez/prefabs';
 
-class TextStyles {
-  heading1 = new Typograph({
+const textStyles = {
+  heading1: new Typograph({
     font: Font.fromFile('assets/SourceSansPro-Regular.ttf'),
     fontSize: 24,
-    color: colors.text,
-  });
+    color: colors.text
+  })
 }
 ```
 
