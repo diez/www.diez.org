@@ -17,7 +17,7 @@
     "vuepress": "^1.0.1"
   },
   "scripts": {
-    "preinstall": "npm install design-system",
+    "preinstall": "./scripts/setup.sh",
     "start": "vuepress dev docs",
     "build": "vuepress build docs",
     "fix": "yarn lint --fix",
@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@haiku/tina-diezheroinstancesyntax": "^0.0.6",
-    "@haiku/tina-whatyouscaffoldedoutlooping": "^0.0.4"
+    "@haiku/tina-whatyouscaffoldedoutlooping": "^0.0.4",
+    "diez-diez-site": "file:./design-system/build/diez-diez-site-web"
   }
 }

@@ -6,7 +6,7 @@
   "author": "The Haiku Team <contact@haiku.ai>",
   "license": "SEE LICENSE.md",
   "scripts": {
-    "start": "diez start web ../beta.diez.org"
+    "build": "diez compile -t web"
   },
   "dependencies": {
     "@diez/engine": "^10.0.0-beta.5",
