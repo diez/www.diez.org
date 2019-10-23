@@ -103,7 +103,7 @@
               <li class="primary">Commercial License</li>
               <li class="primary">Support, Integration, & Training</li>
             </ul>
-            <a class="button" href="mailto:sales@diez.org?subject=Enterprise Edition">
+            <a class="button" href="https://design-code.typeform.com/to/JnOi9o">
               Contact Sales
             </a>
             <div class="background"></div>
