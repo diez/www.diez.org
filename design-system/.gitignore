@@ -3,3 +3,4 @@ build/
 lib/
 .diez/
 tsconfig.tsbuildinfo
+.DS_Store
