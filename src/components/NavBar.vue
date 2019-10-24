@@ -17,7 +17,7 @@
           <router-link to="http://twitter.com/dieznative" class="show-on-mobile">Twitter</router-link>
           <a href="https://medium.com/dieznative" target="_blank">Blog</a>
           <a href="https://spectrum.chat/diez" class="show-on-mobile">Spectrum</a>
-          <a href="https://github.com/diez/diez">Github</a>
+          <a href="https://github.com/diez/diez" @click="sendGitHubClickEvent">Github</a>
           <div @click="toggleMenu" class="menu-icon show-on-mobile">
             <img v-show="!isOpen" width="25px" src="../assets/icons/close.svg" alt="close">
           </div>
@@ -28,6 +28,8 @@
 </template>
 
 <script>
+import {sendGitHubClickEvent} from '../utils/analytics';
+
 export default {
   data () {
     return {
@@ -36,6 +38,8 @@ export default {
   },
 
   methods: {
+    sendGitHubClickEvent,
+
     scrollToSelector (selector) {
       const el = typeof window !== 'undefined' && window.document.querySelector(selector);
       if (el) {
