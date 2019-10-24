@@ -57,7 +57,7 @@ Change the contents of `title` to something of your choice, for example:
 
 Go back to your browser and see the web app hot update! You can update and hot reload **any** value defined in your design system: strings, colors, images, fonts, etc.
 
-Please see [The Basics Guide](/getting-started/the-basics) for more information on how to compose and edit your design token components (DTCs).
+Please see [The Basics Guide](/getting-started/the-basics) for more information on how to compose and edit your design tokens.
 
 
 Now you are ready to start! if you want to integrate Diez with an existing project, check out [Integrating Diez with an existing web project (JavaScript)](/existing-project-integration/javascript/)

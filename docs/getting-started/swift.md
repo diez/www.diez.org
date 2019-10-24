@@ -42,7 +42,7 @@ const colors = {
 }
 ```
 
-In this example, the `Colors` component maps semantic names to the `Palette` component's color definitions.
+In this example, the `Colors` object maps semantic names to `Palette`'s color definitions.
 
 Let's change `lightBackground` to `palette.lightPurple` like so:
 
@@ -53,6 +53,6 @@ Let's change `lightBackground` to `palette.lightPurple` like so:
 
 Save your changes to see the background color update in real time! Feel free to experiment with changing other values to see Diez in action.
 
-Note that if you make any changes to the structure of your design token components (e.g. you add/remove a property to any component) you will need to regenerate the SDK (`yarn start ios`), clean your Xcode project (`⌘ + shift + K`), and then build/run (`⌘ + r`).
+Note that if you make any changes to the structure of your design tokens (e.g. you add/remove a property to any collection) you will need to regenerate the SDK (`yarn start ios`), clean your Xcode project (`⌘ + shift + K`), and then build/run (`⌘ + r`).
 
-Please see [The Basics guide](/getting-started/the-basics) for more information on how to compose and edit your design token components.
+Please see [The Basics guide](/getting-started/the-basics) for more information on how to compose and edit your design tokens.
