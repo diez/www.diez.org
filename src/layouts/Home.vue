@@ -30,6 +30,7 @@
           <p>Design Token Components enable a "write once, use anywhere" paradigm for your design language, across codebases.</p>
         </div>
         <div class="half">
+          <Content slot-key="developer-toolkit-example"/>
         </div>
       </section>
 
