@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <div class="page shared">
       <NavBar></NavBar>
       <section class="hero">
@@ -29,14 +30,7 @@
           <p>Design Token Components enable a "write once, use anywhere" paradigm for your design language, across codebases.</p>
         </div>
         <div class="half">
-          <div class="cards-holster">
-            <div class="card third mono"><img src="@theme/assets/icons/color.svg" alt="Color">Color</div>
-            <div class="card third mono"><img src="@theme/assets/icons/number.svg" alt="Number">Number</div>
-            <div class="card third mono"><img src="@theme/assets/icons/font.svg" alt="Font">Font</div>
-            <div class="card third mono"><img src="@theme/assets/icons/typograph.svg" alt="Text Style">Text Style</div>
-            <div class="card third mono"><img src="@theme/assets/icons/image.svg" alt="Image">Image</div>
-            <div class="card third mono"><img src="@theme/assets/icons/animation.svg" alt="Animation">Animation</div>
-          </div>
+          <Content slot-key="developer-toolkit-example"/>
         </div>
       </section>
 
@@ -395,6 +389,10 @@ export default {
     @include tablet {
       margin-top: $spacing-lg-px !important;
     }
+  }
+
+  .code-block {
+    width: 100%;
   }
 
 </style>

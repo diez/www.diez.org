@@ -13,19 +13,33 @@
     }
   }
 
-  pre {
-    margin: 0;
-  }
-
   code, .mono {
-    @include typography-code-large();
+    font-size: 17px;
     &.inline {
+      @include typography-code-large();
       background-color: $palette-card-color;
       border-radius: $border-radius-button-px;
       padding: 0 $spacing-sm-px;
       font-weight: 700;
       color: $palette-mauve700;
     }
+  }
+
+  pre {
+    border-radius: $border-radius-card-px;
+    background-color: $palette-card-color !important;
+    box-shadow: 0 5px 0 $palette-card-shadow, inset 0 2px 0 $palette-card-inset-shadow;
+    margin: $spacing-xxl-px 0 0 !important;
+    font-size: 12px !important;
+  }
+
+  p > code {
+    @include typography-code-large();
+    background-color: $palette-card-color;
+    border-radius: $border-radius-button-px;
+    padding: 0 $spacing-sm-px;
+    color: $palette-mauve700;
+    font-weight: 600;
   }
 
   a {

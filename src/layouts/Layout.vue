@@ -60,18 +60,5 @@ export default {
         display: none;
       }
     }
-
-    pre {
-      border-radius: $border-radius-card-px;
-      background-color: $palette-card-color!important;
-      box-shadow: 0 5px 0 $palette-card-shadow, inset 0 2px 0 $palette-card-inset-shadow;
-      margin-top: $spacing-xxl-px!important;
-    }
-
-    p > code {
-      border-radius: $border-radius-card-px;
-      background-color: $palette-card-color;
-      padding: 2px 7px;
-    }
   }
 </style>

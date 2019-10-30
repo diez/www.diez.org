@@ -4,12 +4,7 @@ const siteDesc = 'Diez makes it easy to adopt a unified design language across c
 
 module.exports = {
   additionalPages: [
-    {
-      path: '/',
-      frontmatter: {
-        layout: 'Home',
-      },
-    },
+
     {
       path: '/glossary/',
       frontmatter: {
