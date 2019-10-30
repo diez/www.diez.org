@@ -51,7 +51,7 @@ In this example, the `strings` object maps semantic names to strings that are di
 Change the contents of `title` to something of your choice, for example:
 
 ```Diff
-- title: 'Diez';
+- title: 'Diez',
 + title: 'I <3 Diez!',
 ```
 
