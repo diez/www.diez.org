@@ -50,7 +50,7 @@ With this, you are ready to `import` a file containing all your [Design Token Co
   background: var(--colors-purple);
 }
 ```
-```Sass
+```scss
 @import 'diez-my-project';
 
 .selector {
@@ -101,7 +101,7 @@ Diez comes packaged with many prefabs that you can use to define your [Design To
   color: var(--palette-purple);
 }
 ```
-```Sass
+```scss
 .selector {
   color: $palette-purple;
 }
@@ -114,7 +114,7 @@ Or via multiple built-in `@mixins` and classes:
 ```HTML tabname-CSS
 <div class="palette-purple-background-color"></div>
 ```
-```Sass
+```scss
 .selector {
   @include palette-purple-background-color;
 }
@@ -131,7 +131,7 @@ Linear gradients can be consumed via variables:
   background: var(--my-gradient);
 }
 ```
-```Sass
+```scss
 .selector {
   background: $my-gradient;
 }
@@ -144,7 +144,7 @@ The SDK also provides classes and `@mixins` that define `background` and `backgr
 ```HTML tabname-CSS
 <div class="my-gradient-background"></div>
 ```
-```Sass
+```scss
 .selector {
   @include my-gradient-background;
 }
@@ -165,7 +165,7 @@ For `Image`s, the SDK provides variables for:
   width: var(--my-image-width);
 }
 ```
-```Sass
+```scss
 .selector {
   background: $my-image-url-2x;
   width: $my-image-width;
@@ -179,7 +179,7 @@ The SDK also includes a `background-image` helper, which automatically sets widt
 ```HTML tabname-CSS
 <div class="my-image-background-image"></div>
 ```
-```Sass
+```scss
 .selector {
   @include my-image-background-image;
 }
@@ -194,7 +194,7 @@ Using a `Typograph` is a matter of using the corresponding `@mixin` or class:
 ```HTML tabname-CSS
 <h2 class="typography-heading-two"></h2>
 ```
-```Sass
+```scss
 .selector {
   @include typography-heading-two;
 }
