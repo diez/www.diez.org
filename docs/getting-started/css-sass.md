@@ -24,7 +24,7 @@ yarn start
 
 If you take a look at the code in `example-codebases/web/App.module.scss`, you'll find that the design system is used across the app in sections of the code like this:
 
-```Sass
+```scss
 .caption {
   @include typography-caption();
   margin-top: $layout-values-spacing-small-px;
