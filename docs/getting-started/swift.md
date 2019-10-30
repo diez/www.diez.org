@@ -42,7 +42,7 @@ const colors = {
 }
 ```
 
-In this example, the `Colors` object maps semantic names to `Palette`'s color definitions.
+In this example, the `colors` object maps semantic names to `palette`'s color definitions.
 
 Let's change `lightBackground` to `palette.lightPurple` like so:
 
