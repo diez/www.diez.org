@@ -35,7 +35,7 @@ Let's change the background color of our application by modifying our design sys
 Open `design-system/src/DesignSystem.ts`, in an editor of your choice, and look for the following block of code:
 
 ```typescript
-const Colors = {
+const colors = {
   lightBackground: palette.white,
   darkBackground: palette.black,
   text: palette.black,
