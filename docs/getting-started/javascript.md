@@ -52,7 +52,7 @@ Change the contents of `title` to something of your choice, for example:
 
 ```Diff
 - title: 'Diez';
-+ title: 'I <3 Diez!';
++ title: 'I <3 Diez!',
 ```
 
 Go back to your browser and see the web app hot update! You can update and hot reload **any** value defined in your design system: strings, colors, images, fonts, etc.
