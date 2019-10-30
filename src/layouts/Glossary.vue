@@ -19,7 +19,7 @@
           <p>Design tokens are the basic building blocks that define your design system. They are the base layer that enables you to compose your UI in a uniform and consistent manner using reusable patterns.</p>
           
           <h3 id="prefabs">Prefabs</h3>
-          <p><strong>Prefabs</strong> are prepared to handle common design token usecases — making them usable across platforms.</p>
+          <p><strong>Prefabs</strong> are prepared to handle common design token usecases. When you define your design tokens using <strong>prefabs</strong>, they gain the superpower of being able to be compiled to all of your selected <a href="#targets">targets</a>.</p>
           <p>Diez ships with a useful collection of <strong>prefabs</strong> but you can build your own to suit your needs (and optionally contribute them back to the mainline). </p>
           <p>A guide for building your own <strong>prefabs</strong> will be coming soon. Ping us in <a href="https://spectrum.chat/diez">the community</a> if you need some help.</p>
           
