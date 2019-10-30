@@ -38,7 +38,7 @@ const strings = {
   title: 'Living source of truth'
 }
 
-export const DesignSystem = {
+export const designSystem = {
   layoutValues,
   strings
 }
