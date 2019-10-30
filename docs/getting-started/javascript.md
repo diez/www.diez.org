@@ -39,25 +39,25 @@ For example, you can change the background color of the web app by modifying you
 First, open `design-system/src/DesignSystem.ts` in an editor of your choice. Look for the following block of code:
 
 ```typescript
-class Strings {
-  title = 'Diez';
-  caption = 'Keep your designs in sync with code';
-  helper = 'Modify the contents of “src/DesignSystem.ts” (relative to the root of the Diez project) to see changes to the design system in real time.';
+const strings = {
+  title: 'Diez',
+  caption: 'Keep your designs in sync with code',
+  helper: 'Modify the contents of “src/DesignSystem.ts” (relative to the root of the Diez project) to see changes to the design system in real time.'
 }
 ```
 
-In this example, the `String`component maps semantic names to strings that are directly used in the app.
+In this example, the `strings` object maps semantic names to strings that are directly used in the app.
 
 Change the contents of `title` to something of your choice, for example:
 
 ```Diff
-- title = 'Diez';
-+ title = 'I <3 Diez!';
+- title: 'Diez',
++ title: 'I <3 Diez!',
 ```
 
 Go back to your browser and see the web app hot update! You can update and hot reload **any** value defined in your design system: strings, colors, images, fonts, etc.
 
-Please see [The Basics Guide](/getting-started/the-basics) for more information on how to compose and edit your design token components (DTCs).
+Please see [The Basics Guide](/getting-started/the-basics) for more information on how to compose and edit your design tokens.
 
 
 Now you are ready to start! if you want to integrate Diez with an existing project, check out [Integrating Diez with an existing web project (JavaScript)](/existing-project-integration/javascript/)

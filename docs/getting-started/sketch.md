@@ -2,7 +2,7 @@
 
 ### Getting Started
 
-Diez has built-in ability to extract styles and images from design files and turn them into normalized, strongly-typed [Design Token Components (DTCs)](/glossary/#tokens). In this guide, we'll show you how to link a Sketch file and extract its styles.
+Diez has built-in ability to extract styles and images from design files and turn them into normalized, strongly-typed [Design Tokens](/glossary/#tokens). In this guide, we'll show you how to link a Sketch file and extract its styles.
 
 #### Prerequisites
 
@@ -54,11 +54,11 @@ You'll notice a few new updates to your Diez project.
 
 Inside a folder called `./assets/YourSketchFileName.sketch.contents` you'll find the extracted asset files required by your Diez project — `.png`s for each sliced visual at resolutions @1x-@4x, and any font files associated with your Text Styles.
 
-But Diez didn't _only_ extract assets for you, it crafted them into strongly-typed and composable design token components (DTCs)! Take a look in `./src/designs/YourSketchFileName.sketch.ts` and you'll see your clean set of DTCs. And while this set of generated DTCs is just as pretty as the ones you'll create yourself, you won't need to edit it by hand.
+But Diez didn't _only_ extract assets for you, it crafted them into strongly-typed and composable collections of design tokens! Take a look in `./src/designs/YourSketchFileName.sketch.ts` and you'll see your clean set of design tokens. And while this set of generated design tokens is just as pretty as the ones you'll create yourself, you won't need to edit it by hand.
 
-#### Integrating your Sketch DTCs into your design system
+#### Integrating your Sketch design tokens into your design system
 
-Import your Sketch DTCs into your main design system file: `./src/DesignSystem.ts`
+Import your Sketch design tokens into your main design system file: `./src/DesignSystem.ts`
 
 ```typescript
 import { yourSketchFileNameTokens } from './designs/YourSketchFileName.sketch';
@@ -67,8 +67,8 @@ import { yourSketchFileNameTokens } from './designs/YourSketchFileName.sketch';
 Then use it as you see fit. As shown here, we've used the Document Color from Sketch named `fuss` and set it as the 'lightBackground' color of our design system.
 
 ```typescript
-class Palette {
-  lightBackground = yourSketchFileNameTokens.palette.fuss;
+const palette = {
+  lightBackground: yourSketchFileNameTokens.palette.fuss
 }
 ```
 

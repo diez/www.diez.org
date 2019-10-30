@@ -42,26 +42,26 @@ For example, you can change the background color of the web app by modifying you
 First, open `design-system/src/DesignSystem.ts` in an editor of your choice. Look for the following block of code:
 
 ```typescript
-class Colors {
-  lightBackground = palette.white;
-  darkBackground = palette.black;
-  text = palette.black;
-  caption = palette.purple;
+const colors = {
+  lightBackground: palette.white,
+  darkBackground: palette.black,
+  text: palette.black,
+  caption: palette.purple
 }
 ```
 
-In this example, the `Colors`component maps semantic names to the `Palette` component's color definitions.
+In this example, the `Colors` object maps semantic names to `palette`'s color definitions.
 
 Change `lightBackground` to `palette.lightPurple` like so:
 
 ```Diff
-- lightBackground = palette.white;
-+ lightBackground = palette.lightPurple;
+- lightBackground: palette.white,
++ lightBackground: palette.lightPurple,
 ```
 
 Go back to your browser and see the web app hot update! You can update and hot reload **any** value defined in your design system: strings, colors, images, fonts, etc.
 
-Please see [The Basics Guide](/getting-started/the-basics/) for more information on how to compose and edit your design token components (DTCs).
+Please see [The Basics Guide](/getting-started/the-basics/) for more information on how to compose and edit your design tokens.
 
 
 Now you are ready to start! if you want to integrate Diez with an existing project, check out [Integrating Diez with an existing web project (CSS/Sass)](/existing-project-integration/css-sass/)

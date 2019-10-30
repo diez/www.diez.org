@@ -26,8 +26,8 @@
       <section id="What's in the box" class="section-split">
         <div class="half align-top">
           <h2>Design Language Framework</h2>
-          <p>Use TypeScript to compose <a target="_blank" href="https://www.lightningdesignsystem.com/design-tokens/">design tokens</a> into deeply customizable, reusable, and developer-friendly Design Token Components.</p>
-          <p>Design Token Components enable a "write once, use anywhere" paradigm for your design language, across codebases.</p>
+          <p>Use TypeScript and Diez's prefabs to compose <a target="_blank" href="https://www.lightningdesignsystem.com/design-tokens/">design tokens</a> that are deeply customizable, reusable, and developer-friendly.</p>
+          <p>Diez's unique take on design tokens enables a "write once, use anywhere" paradigm for your design language, across codebases.</p>
         </div>
         <div class="half">
           <Content slot-key="developer-toolkit-example"/>

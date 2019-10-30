@@ -80,7 +80,7 @@ You can always inspect the output by digging into the `build` folder after build
 
 ### Interacting with Prefabs
 
-Diez comes packaged with many prefabs that you can use to define your [Design Token Components (DTCs)](/glossary#tokens). All of the properties defined on these components are available to you along with a number of extensions and helpers to make interacting with these components as seamless as possible.
+Diez comes packaged with many prefabs that you can use to define your [Design Tokens](/glossary#tokens). All of the properties defined on prefabs are available to you along with a number of extensions and helpers to make interacting with them as seamless as possible.
 
 #### [Color](/docs/latest/classes/prefabs.color.html)
 

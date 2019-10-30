@@ -2,7 +2,7 @@
 
 ### Getting Started
 
-Diez has the ability to extract styles from InVision DSM and turn them into normalized, strongly-typed [Design Token Components (DTCs)](/glossary/#tokens). In this guide, we'll show you how to link a DSM project and extract its styles.
+Diez has the ability to extract styles from InVision DSM and turn them into normalized, strongly-typed [Design Tokens](/glossary/#tokens). In this guide, we'll show you how to link a DSM project and extract its styles.
 
 #### Prerequisites
 
@@ -42,11 +42,11 @@ yarn diez extract
 
 Inside a new folder `./assets/YourDSMProjName.invision.contents` you'll find the extracted font files associated with your Text Styles.
 
-But Diez didn't _only_ extract assets for you, it crafted them into strongly-typed and composable design token components (DTCs). Take a look in `./src/designs/YourDSMProjName.invision.ts` and you'll see your clean set of DTCs. And while this set of generated DTCs is just as pretty as the ones you'll create yourself, you won't need to edit it by hand.
+But Diez didn't _only_ extract assets for you, it crafted them into strongly-typed and composable design tokens. Take a look in `./src/designs/YourDSMProjName.invision.ts` and you'll see your clean set of design tokens. And while this set of generated design tokens is just as pretty as the ones you'll create yourself, you won't need to edit it by hand.
 
-#### Integrating your DSM DTCs into your design system
+#### Integrating your DSM design tokens into your design system
 
-Import your DSM DTCs into your main design system file: `./src/DesignSystem.ts`
+Import your DSM design tokens into your main design system file: `./src/DesignSystem.ts`
 
 ```typescript
 import { yourDSMProjNameTokens } from './designs/YourDSMProjName.invision';
@@ -55,8 +55,8 @@ import { yourDSMProjNameTokens } from './designs/YourDSMProjName.invision';
 Then use it as you see fit. As shown here, we've used the Color Style from DSM named `fuss` and set it as the 'lightBackground' color of our design system.
 
 ```typescript
-class Palette {
-  lightBackground = yourDSMProjNameTokens.colors.fuss
+const palette = {
+  lightBackground: yourDSMProjNameTokens.colors.fuss
 }
 ```
 
