@@ -56,7 +56,7 @@ Change `lightBackground` to `palette.lightPurple` like so:
 
 ```Diff
 - lightBackground: palette.white,
-+ lightBackground: palette.lightPurple
++ lightBackground: palette.lightPurple,
 ```
 
 Go back to your browser and see the web app hot update! You can update and hot reload **any** value defined in your design system: strings, colors, images, fonts, etc.
