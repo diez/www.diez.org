@@ -7,6 +7,6 @@ This Diez project includes a static site build with [VuePress](https://vuepress.
 You'd need the following to be installed in order to build this project locally:
 
 - Node v10.16.3
-- npm v6.9.0
+- yarn v1.17.3
 
-After cloning, run `npm install` to install dependencies and set-up the repo as the [setup.sh](./scripts/setup.sh) is run as a preinstall hook.
+After cloning, run `yarn install` to install dependencies and set-up the repo as the [setup.sh](./scripts/setup.sh) is run as a preinstall hook.
