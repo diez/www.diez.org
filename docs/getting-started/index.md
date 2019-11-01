@@ -63,7 +63,7 @@ This demo is running in [hot mode](/glossary/#hot-mode). Try modifying the conte
 
 
 #### Additional guides
-If you'd prefer to first learn a bit more about your Diez project and how to compose your design tokens, we have you covered with the Diez Basics guide. Want to hook your new Diez project up to Design Tools? We've got you there too.
+If you'd prefer to first learn a bit more about your Diez project and how to compose your design tokens, we have you covered with the Diez Basics guide. Want to hook your new Diez project up to design tools? We've got you there too.
 
 <div class="cards-holster">
   <router-link class="card fourth" to="/getting-started/the-basics">
