@@ -12,7 +12,7 @@ Install [yarn](https://yarnpkg.com/). Diez works best with Yarn, and our example
 #### Scaffold out your Diez project
 The best way to get up and running with Diez is by using our official template project which comes with everything set up and ready to party.
 
-Run the following command in your terminal and follow the prompts. 
+Run the following command in your terminal and follow the prompts.
 
 ```bash
 yarn create diez
@@ -45,7 +45,7 @@ This demo is running in [hot mode](/glossary/#hot-mode). Try modifying the conte
 #### Explore the example app codebases
 
  We've written platform specific, getting started guides for walking through this new Diez project you've just created. We recommend picking your flavor(s) and jumping right in.
- 
+
  <div class="cards-holster">
   <router-link class="card fourth" to="/getting-started/swift">
     <img src="@theme/assets/imgs/swift.svg" alt="Swift"><span>Swift</span>
@@ -63,14 +63,17 @@ This demo is running in [hot mode](/glossary/#hot-mode). Try modifying the conte
 
 
 #### Additional guides
-If you'd prefer to first learn a bit more about your Diez project and how to compose your design tokens, we have you covered with the Diez Basics guide. Want to hook your new Diez project up to Figma? We've got you there too.
+If you'd prefer to first learn a bit more about your Diez project and how to compose your design tokens, we have you covered with the Diez Basics guide. Want to hook your new Diez project up to Design Tools? We've got you there too.
 
 <div class="cards-holster">
   <router-link class="card fourth" to="/getting-started/the-basics">
     <img src="@theme/assets/imgs/logo.svg" alt="Swift"><span>Diez Basics</span>
   </router-link>
   <router-link class="card fourth" to="/getting-started/figma">
-    <img src="@theme/assets/imgs/figma.svg" alt="ObjectiveC"><span>Figma</span>
+    <img src="@theme/assets/imgs/figma.svg" alt="Figma"><span>Figma</span>
+  </router-link>
+  <router-link class="card fourth" to="/getting-started/sketch">
+    <img src="@theme/assets/imgs/sketch.svg" alt="Sketch"><span>Sketch</span>
   </router-link>
 </div>
 
