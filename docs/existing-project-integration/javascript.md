@@ -97,7 +97,7 @@ const hue = ds.purple.h;
 const saturation = ds.purple.s;
 ```
 
-Or you can take adventage of built-in getters that return object styles.
+Or you can take advantage of built-in getters that return object styles.
 
 <CodeTabs>
 ```jsx tabname-React
