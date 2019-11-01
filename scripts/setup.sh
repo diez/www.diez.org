@@ -1,4 +1,4 @@
 cd design-system
-npm install
-npm run build
+yarn install
+yarn build
 cd ..
