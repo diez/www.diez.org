@@ -30,6 +30,12 @@ module.exports = {
       },
     },
     {
+      path: '/thankyou/',
+      frontmatter: {
+        layout: 'ThankYou',
+      },
+    },
+    {
       path: '/docs/',
       frontmatter: {
         layout: 'Docs',

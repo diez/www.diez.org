@@ -14,7 +14,7 @@
             <h1>Adopt a unified design language across codebases, platforms, and teams</h1>
             <h3>Diez is an open-source developer toolkit for managing design systems at scale</h3>
               <router-link class="button left" to="/getting-started">Get Started</router-link>
-              <a class="button secondary left" href="https://github.com/diez/diez/">
+              <a class="button secondary left" href="https://github.com/diez/diez/" @click="sendGitHubClickEvent">
                 <img height="22px" width="22px" src="../assets/imgs/github-light.svg" class="icon" alt="github" title="github">
                 GitHub
               </a>
@@ -103,7 +103,7 @@
               <li class="primary">Commercial License</li>
               <li class="primary">Support, Integration, & Training</li>
             </ul>
-            <a class="button" href="mailto:sales@diez.org?subject=Enterprise Edition">
+            <a class="button" href="https://design-code.typeform.com/to/JnOi9o">
               Contact Sales
             </a>
             <div class="background"></div>
@@ -131,10 +131,14 @@
 </template>
 
 <script>
+import {sendGitHubClickEvent} from '../utils/analytics';
 import Footer from '@theme/components/Footer.vue';
 import NavBar from '@theme/components/NavBar.vue';
 
 export default {
+  methods: {
+    sendGitHubClickEvent,
+  },
   components: {
     Footer,
     NavBar,
