@@ -21,8 +21,8 @@ import {sendGitHubClickEvent} from '../utils/analytics';
 
 export default {
   methods: {
-    sendGitHubClickEvent,
-  },
+    sendGitHubClickEvent
+  }
 };
 </script>
 

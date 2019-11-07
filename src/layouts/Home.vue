@@ -103,7 +103,7 @@
               <li class="primary">Commercial License</li>
               <li class="primary">Support, Integration, & Training</li>
             </ul>
-            <a class="button" href="https://design-code.typeform.com/to/JnOi9o">
+            <a class="button" :href="typeformUrl">
               Contact Sales
             </a>
             <div class="background"></div>
@@ -136,8 +136,23 @@ import Footer from '@theme/components/Footer.vue';
 import NavBar from '@theme/components/NavBar.vue';
 
 export default {
+  data () {
+    return {
+      typeformUrl: 'https://design-code.typeform.com/to/JnOi9o'
+    };
+  },
+  mounted () {
+    if (typeof window !== 'undefined') {
+      const interval = setInterval(() => {
+        if (window.currentBranch) {
+          this.$data.typeformUrl = `${this.$data.typeformUrl}?site-variant=${window.currentBranch}`;
+          clearInterval(interval);
+        }
+      });
+    }
+  },
   methods: {
-    sendGitHubClickEvent,
+    sendGitHubClickEvent
   },
   components: {
     Footer,
