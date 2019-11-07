@@ -103,7 +103,7 @@
               <li class="primary">Commercial License</li>
               <li class="primary">Support, Integration, & Training</li>
             </ul>
-            <a class="button" :href="typeformUrl">
+            <a class="button" :href="getTypeformUrl()">
               Contact Sales
             </a>
             <div class="background"></div>
@@ -136,21 +136,17 @@ import Footer from '@theme/components/Footer.vue';
 import NavBar from '@theme/components/NavBar.vue';
 
 export default {
-  data () {
-    return {
-      get typeformUrl () {
-        const baseUrl = 'https://design-code.typeform.com/to/JnOi9o'
-
-        if (typeof window !== 'undefined' && window.currentBranch) {
-          return `${baseUrl}?site-variant=${window.currentBranch}`;
-        }
-
-        return baseUrl;
-      }
-    }
-  },
   methods: {
     sendGitHubClickEvent,
+    getTypeformUrl () {
+      const baseUrl = 'https://design-code.typeform.com/to/JnOi9o'
+
+      if (typeof window !== 'undefined' && window.currentBranch) {
+        return `${baseUrl}?site-variant=${window.currentBranch}`;
+      }
+
+      return baseUrl;
+    }
   },
   components: {
     Footer,
