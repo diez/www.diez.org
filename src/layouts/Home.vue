@@ -138,7 +138,15 @@ import NavBar from '@theme/components/NavBar.vue';
 export default {
   data () {
     return {
-      typeformUrl: `https://design-code.typeform.com/to/JnOi9o?site-variant=${window.currentBranch}`,
+      get typeformUrl () {
+        const baseUrl = 'https://design-code.typeform.com/to/JnOi9o'
+
+        if (typeof window !== 'undefined' && window.currentBranch) {
+          return `${baseUrl}?site-variant=${window.currentBranch}`;
+        }
+
+        return baseUrl;
+      }
     }
   },
   methods: {
