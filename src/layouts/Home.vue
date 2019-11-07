@@ -145,7 +145,7 @@ export default {
     if (typeof window !== 'undefined') {
       const interval = setInterval(() => {
         if (window.currentBranch) {
-          this.$data.typeformUrl = `${this.$data.typeformUrl}?site-variant=${window.currentBranch}`;
+          this.$data.typeformUrl = `${this.$data.typeformUrl}?sitevariant=${window.currentBranch}`;
           clearInterval(interval);
         }
       });
