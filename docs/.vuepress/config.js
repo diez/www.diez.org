@@ -1,3 +1,4 @@
+const {join, resolve} = require('path');
 const DiezWebpackPlugin = require('diez-webpack-plugin');
 const siteTitle = 'Diez - Cross-platform design system framework for native iOS, Android, and Web';
 const siteDesc = 'Diez makes it easy to adopt a unified design language across codebases, platforms, and teams.';
@@ -80,6 +81,6 @@ module.exports = {
     ],
   ],
   configureWebpack: {
-    plugins: [new DiezWebpackPlugin({sdk: 'diez-diez-site'})],
+    plugins: [new DiezWebpackPlugin({sdk: 'diez-diez-site', projectPath: join(resolve(__dirname, '..', '..'), 'design-system')})],
   },
 };
