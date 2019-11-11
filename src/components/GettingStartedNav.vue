@@ -18,6 +18,7 @@
       <div>
         <router-link class="sub-link" to="/getting-started/kotlin">Kotlin <span class="secondary">- Getting Started</span></router-link>
         <router-link class="sub-link" to="/getting-started/java">Java <span class="secondary">- Getting Started</span></router-link>
+        <router-link class="sub-link" to="/existing-project-integration/android">Android <span class="secondary">- Integration</span></router-link>
       </div>
 
       <router-link class="category" to="/getting-started/web">Web</router-link>
