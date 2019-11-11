@@ -13,6 +13,12 @@ module.exports = {
       },
     },
     {
+      path: '/licensing/',
+      frontmatter: {
+        layout: 'Licensing',
+      },
+    },
+    {
       path: '/signed-in/',
       frontmatter: {
         layout: 'SignedIn',
