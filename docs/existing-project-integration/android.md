@@ -36,13 +36,13 @@ $ diez hot -t android
 
 #### Build flow
 
-Once you are ready to build your application, you need to compile your files:
+Once you are ready to build your application, you need to compile your Diez project:
 
 ```bash
 $ diez compile -t android
 ```
 
-You can always inspect the output by digging into the `build` folder after building.
+You can always inspect the output by digging into the `build` folder after compiling.
 
 ### Accessing Components
 
