@@ -1,25 +1,39 @@
 <template>
   <div class="navbar">
     <div @click="toggleMenu" class="menu-icon show-on-mobile">
-      <img v-show="isOpen" width="25px" src="../assets/icons/menu.svg" alt="close">
+      <img v-show="isMobileMenuOpen" width="25px" src="../assets/icons/menu.svg" alt="close">
     </div>
-    <div class="nav" :class="{'hide' : isOpen}">
+    <div class="nav" :class="{'hide' : isMobileMenuOpen}">
       <div class="holster">
         <router-link to="/" class="logo" @click.native="scrollToSelector('body')">
           Diez
           <img width="34" src="../assets/imgs/logo.svg"/>
         </router-link>
+
         <div class="holster-right">
-          <router-link to="/getting-started">Guides</router-link>
-          <router-link to="/docs">Docs</router-link>
-          <router-link to="/glossary">Glossary</router-link>
-          <router-link to="/faq">FAQ</router-link>
-          <router-link to="http://twitter.com/dieznative" class="show-on-mobile">Twitter</router-link>
-          <a href="https://medium.com/dieznative" target="_blank">Blog</a>
+          <span
+            class="dd-link"
+            @mouseover="navItemHover = true"
+            @mouseleave="navItemHover = false"
+          >
+            Learn
+            <span class="dd-container" v-if="navItemHover">
+              <router-link to="/getting-started">Guides</router-link>
+              <router-link to="/docs">Docs</router-link>
+              <router-link to="/glossary">Glossary</router-link>
+              <router-link to="/faq">FAQ</router-link>
+            </span>
+          </span>
+
+          <router-link class="show-on-mobile" to="/getting-started">Guides</router-link>
+          <router-link class="show-on-mobile" to="/docs">Docs</router-link>
+          <router-link class="show-on-mobile" to="/glossary">Glossary</router-link>
+          <router-link class="show-on-mobile" to="/faq">FAQ</router-link>
+          <router-link class="show-on-mobile" to="http://twitter.com/dieznative">Twitter</router-link>
           <a href="https://spectrum.chat/diez" class="show-on-mobile">Spectrum</a>
           <a href="https://github.com/diez/diez" @click="sendGitHubClickEvent">Github</a>
           <div @click="toggleMenu" class="menu-icon show-on-mobile">
-            <img v-show="!isOpen" width="25px" src="../assets/icons/close.svg" alt="close">
+            <img v-show="!isMobileMenuOpen" width="25px" src="../assets/icons/close.svg" alt="close">
           </div>
         </div>
       </div>
@@ -33,7 +47,8 @@ import {sendGitHubClickEvent} from '../utils/analytics';
 export default {
   data () {
     return {
-      isOpen: true
+      isMobileMenuOpen: true,
+      navItemHover: false
     };
   },
 
@@ -50,7 +65,15 @@ export default {
     },
 
     toggleMenu () {
-      this.$data.isOpen = !this.$data.isOpen;
+      this.$data.isMobileMenuOpen = !this.$data.isMobileMenuOpen;
+    },
+
+    showChange(val){
+      this.show = val;
+    },
+
+    open(){
+      if(!this.show) this.$refs.drop.$emit('show', this.$refs.caller);
     }
   }
 };
@@ -110,15 +133,42 @@ export default {
       display: none;
     }
   }
-  a {
+  a, .dd-link {
     @include link();
   }
-  a:not(.button) {
+  a:not(.button), .dd-link {
     padding: 0 $spacing-lg-px;
     color: $palette-black;
     @include tablet {
       color: $palette-white;
       font-size: 26px;
+    }
+  }
+  .dd-link {
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    .dd-container {
+      z-index: 10000;
+      transform: translateZ(1px);
+      position: absolute;
+      box-shadow: 0 7px 20px rgba(0,0,0, .16);
+      width: 145px;
+      top: 25px;
+      right: 0;
+      border-radius: 4px;
+      background-color: $palette-white;
+      padding: 8px 0;
+      
+      a {
+        padding: 8px 20px;
+        display: block;
+        text-align: right;
+      }
     }
   }
   .button {
