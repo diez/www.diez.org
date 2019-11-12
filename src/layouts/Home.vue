@@ -31,13 +31,13 @@
           <p>From colors to typography, drop shadows to border radii, gradients to usage guidelines, logos to icons — if you can imagine it, you can express it in Diez.</p>
         </div>
         <div class="half">
-          <img src="https://via.placeholder.com/550" alt="diez compiler">
+          <img src="https://via.placeholder.com/550x400" alt="diez compiler">
         </div>
       </section>
 
       <section id="compiler" class="section-split">
         <div class="half mobile-reorder">
-          <img src="https://via.placeholder.com/550" alt="diez compiler">
+          <img src="https://via.placeholder.com/550x500" alt="diez compiler">
         </div>
         <div class="half align-top">
           <h2>2. Cross-platform native compiler</h2>
@@ -55,19 +55,19 @@
         </div>
         <div class="half mobile-reorder">
           <div class="cards-holster">
-            <img width="100%" height="100%" src="https://via.placeholder.com/300x200" alt="Design File Extractors: Sketch, Figma, InVision DSM">
+            <img width="100%" height="100%" src="https://via.placeholder.com/300x170" alt="Design File Extractors: Sketch, Figma, InVision DSM">
           </div>
         </div>
       </section>
 
       <section id="enterprise-grade">
-        <div class="section section-narrow">
+        <div class="section section-narrow no-bottom">
           <h1 class="center">Built for Enterprise</h1>
-          <h3 class="center">Your Design System’s Missing Half</h3>
+          <h3 class="center">Your Design System’s missing half</h3>
           <p class="center">Diez naturally integrates with any UI component solution in the world, including the ones your team already uses.</p>
         </div>
-        <div class="section">
-          <img src="https://via.placeholder.com/1200x600" alt="" style="margin-top:-70px;">
+        <div class="section full-img">
+          <img width= "77%" src="@theme/assets/imgs/design-system.png" alt="design-system">
         </div>
       
         <div class="section-split">
@@ -443,6 +443,10 @@ export default {
 
   #what {
     margin-bottom: 0;
+  }
+
+  .full-img {
+    text-align: center;
   }
 
 </style>
