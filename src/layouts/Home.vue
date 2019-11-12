@@ -11,74 +11,95 @@
             <HeroAnimation sizing="cover" loop="true"></HeroAnimation>
           </div>
           <div class="half align-top punch" style="padding-left: 30px">
-            <h1>Adopt a unified design language across codebases, platforms, and teams</h1>
-            <h3>Diez is an open-source developer toolkit for managing design systems at scale</h3>
+            <h1>Connect any codebase to a shared design language</h1>
+            <h3>Create a shared repository for styles, assets, and usage guidelines—then compile to native code for iOS, Android, and Web.</h3>
               <router-link class="button left" to="/getting-started">Get Started</router-link>
-              <a class="button secondary left" href="https://github.com/diez/diez/" @click="sendGitHubClickEvent">
-                <img height="22px" width="22px" src="../assets/imgs/github-light.svg" class="icon" alt="github" title="github">
-                GitHub
-              </a>
+              <a class="button secondary left" :href="typeformUrl">Enterprise Edition</a>
           </div>
         </div>
       </section>
 
-      <h1 class="center heading1">Diez's Developer toolkit</h1>
-      <section id="What's in the box" class="section-split">
-        <div class="half align-top">
-          <h2>Design Language Framework</h2>
-          <p>Use TypeScript and Diez's prefabs to compose <a target="_blank" href="https://www.lightningdesignsystem.com/design-tokens/">design tokens</a> that are deeply customizable, reusable, and developer-friendly.</p>
-          <p>Diez's unique take on design tokens enables a "write once, use anywhere" paradigm for your design language, across codebases.</p>
+      <section id="what" class="section section-narrow">
+        <h1 class="center heading1">What is Diez?</h1>
+        <h3 class="center">Diez is a free & open-source developer toolkit for creating codebase-ready design languages. Diez comprises three pieces:</h3>
+      </section>
+
+      <section id="dlf" class="section-split">
+        <div  class="half align-top">
+          <h2>1. Design language framework</h2>
+          <p>Compose design tokens into any design language using Diez’s TypeScript framework.</p>
+          <p>From colors to typography, drop shadows to border radii, gradients to usage guidelines, logos to icons — if you can imagine it, you can express it in Diez.</p>
         </div>
         <div class="half">
-          <Content slot-key="developer-toolkit-example"/>
+          <img src="https://via.placeholder.com/550" alt="diez compiler">
         </div>
       </section>
 
       <section id="compiler" class="section-split">
         <div class="half mobile-reorder">
-          <img src="@theme/assets/imgs/handle.svg" class="handle-it" alt="handle">
-          <div class="card half">
-            <img src="@theme/assets/imgs/logo.svg" alt="diez compiler">
-            Diez Compiler
-          </div>
-          <img src="@theme/assets/imgs/outputs.svg" class="output-it" alt="output-arms">
-          <div class="cards-holster">
-            <div class="card fourth-alt"><img src="@theme/assets/imgs/swift.svg" alt="Swift"><span>Swift</span></div>
-            <div class="card fourth-alt"><img src="@theme/assets/imgs/kotlin.svg" alt="Kotlin"><span>Kotlin</span></div>
-            <div class="card fourth-alt"><img src="@theme/assets/imgs/javascript.svg" alt="JavaScript"><span>JavaScript</span></div>
-            <div class="card fourth-alt"><img src="@theme/assets/imgs/objc.svg" alt="ObjectiveC"><span>Objective-C</span></div>
-            <div class="card fourth-alt"><img src="@theme/assets/imgs/java.svg" alt="Java"><span>Java</span></div>
-            <div class="card fourth-alt"><img src="@theme/assets/imgs/typescript.svg" alt="TypeScript"><span>TypeScript</span></div>
-            <div class="card fourth-alt"><img src="@theme/assets/imgs/sass.svg" alt="Sass"><span>Sass</span></div>
-            <div class="card fourth-alt"><img src="@theme/assets/imgs/storybook.svg" alt="Storybook"><span>Storybook</span></div>
-            <div class="card fourth-alt"><img src="@theme/assets/imgs/vue.svg" alt="Vue"><span>Vue</span></div>
-            <div class="card fourth-alt"><img src="@theme/assets/imgs/react.svg" alt="React"><span>React</span></div>
-            <div class="card fourth-alt"><img src="@theme/assets/imgs/angular.svg" alt="Angular"><span>Angular</span></div>
-
-            <div class="card fourth-alt extensible"><img src="@theme/assets/icons/plus.svg" alt="Extensible"><span>Extensible</span></div>
-          </div>
+          <img src="https://via.placeholder.com/550" alt="diez compiler">
         </div>
         <div class="half align-top">
-          <h2>Cross-Platform Native Compiler</h2>
-          <p>More precisely a <i>transpiler</i>: Diez builds your TypeScript component definitions into pure native SDKs for iOS, Android, and the Web — complete with type definitions and autocomplete.</p>
-          <p><strong>Diez works with your codebase(s):</strong>  Diez carries zero opinions about rendering, requires no runtime or VMs, and is designed for progressive adoption.</p>
-          <h3>Hot Updates</h3>
-          <p>The Diez compiler ships with a <code class="inline">hot</code> mode, which allows for hot updates at development time — even inside native iOS and Android apps.</p>
+          <h2>2. Cross-platform native compiler</h2>
+          <p>Build any Diez project into pure native libraries for iOS, Android, or Web, ready for any new or existing codebase.</p>
+          <p>Version your design language as code packages with first-class support for CocoaPods, Carthage, Gradle, npm, and yarn.</p>
+          <p>Optimized for native-developer ergonomics — with autocomplete, inline comments, and static typing for iOS, Android, and Web, Diez makes it easy for everyone to rally around a common design language.</p>
         </div>
       </section>
 
       <section id="extractors" class="section-split">
         <div class="half align-top">
-          <h2>Design File Extractors</h2>
-          <p>Diez includes command-line tools for extracting normalized, strongly typed styles and images from many modern design tools.</p>
+          <h2>3. Design file extractors</h2>
+          <p>Diez Extractors compile design files into Diez-ready TypeScript, extracting colors, typography, image assets and more.</p>
+          <p>Automate your design-to-development workflow by treating design files as versionable code artifacts.</p>
         </div>
         <div class="half mobile-reorder">
           <div class="cards-holster">
-            <img width="100%" height="100%" src="@theme/assets/imgs/design-tool-extractors-1x.png" alt="Design File Extractors: Sketch, Figma, InVision DSM">
+            <img width="100%" height="100%" src="https://via.placeholder.com/300x200" alt="Design File Extractors: Sketch, Figma, InVision DSM">
+          </div>
+        </div>
+      </section>
+
+      <section id="enterprise-grade">
+        <div class="section section-narrow">
+          <h1 class="center">Built for Enterprise</h1>
+          <h3 class="center">Your Design System’s Missing Half</h3>
+          <p class="center">Diez naturally integrates with any UI component solution in the world, including the ones your team already uses.</p>
+        </div>
+        <div class="section">
+          <img src="https://via.placeholder.com/1200x600" alt="" style="margin-top:-150px;">
+        </div>
+      
+        <div class="section-split">
+          <div class="half mobile-reorder">
+            <img src="https://via.placeholder.com/550" alt="">
+          </div>
+          <div class="half align-top">
+            <h2>Scales like a dream</h2>
+            <p>Import, reuse & reference — great for composing multiple brands with shared assets & styles.</p>
+            <p>Strongly typed from end-to-end, Diez scales to thousands of files, hundreds of codebases, and dozens of teams without skipping a beat.</p>
+            <h3>Infinitely customizable</h3>
+            <p>Diez is built around plugins — from the platforms it supports to the kinds of data you can express.  No matter the requirements of your design language or design system — whether you’re wrangling one brand or a hundred — you can customize Diez to fit your needs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="docsgen" class="section-split">
+        <div class="one-third align-top">
+          <h2>DocsGen</h2>
+          <h3>(Enterprise Edition only)</h3>
+          <p style="text-align: left;">From code comments and static analysis, Diez can automatically build customizable, ready-to-deploy documentation for your design system.</p>
+        </div>
+        <div class="two-thirds">
+          <div class="video-holster card card-bordered">
+            <video width="103%" style="margin-top:-6px;" autoplay loop muted playsinline preload="auto">
+                <source src="@theme/assets/vids/docs.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
       </section>
     </div>
+
     <div id="enterprise" class="shared">
       <section class="section">
         <h1>Community & Enterprise Editions</h1>
@@ -107,21 +128,6 @@
               Contact Sales
             </a>
             <div class="background"></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="docsgen" class="section-split">
-        <div class="one-third align-top">
-          <h2>DocsGen</h2>
-          <h3>(Enterprise Edition)</h3>
-          <p style="text-align: left;">From code comments and static analysis, Diez can automatically build customizable, ready-to-deploy documentation for your design system.</p>
-        </div>
-        <div class="two-thirds">
-          <div class="video-holster card card-bordered">
-            <video width="103%" style="margin-top:-6px;" autoplay loop muted playsinline preload="auto">
-                <source src="@theme/assets/vids/docs.mp4" type="video/mp4">
-            </video>
           </div>
         </div>
       </section>
@@ -186,6 +192,7 @@ export default {
     h1 {
       font-size: 2.8rem;
       margin-top: 0;
+      margin-bottom: 0;
     }
     .hero-container {
       display: flex;
@@ -195,6 +202,10 @@ export default {
       align-items: center;
       flex-direction: column;
       margin: $spacing-xxxl-px auto 0;
+      
+      h3 {
+        font-size: 28px;
+      }
     }
     .background {
       background-image: url("../assets/imgs/tileable@2x.png");
@@ -210,7 +221,11 @@ export default {
   }
 
   h1 {
-    margin-bottom: 0;
+    margin-bottom: $spacing-xxl-px;
+  }
+
+  h3 {
+    margin-bottom: $spacing-lg-px;
   }
 
   li {
@@ -329,6 +344,15 @@ export default {
     pointer-events: none;
   }
 
+  #docsgen {
+    h2 {
+      margin-bottom: $spacing-lg-px;
+    }
+    h3 {
+      margin-top: 0;
+    }
+  }
+
   #enterprise {
     font-family: "Source Sans Pro",sans-serif;
     font-size: 20px;
@@ -351,12 +375,11 @@ export default {
       margin: 0 auto;
       margin-bottom: $spacing-xxl-px;
     }
-  }
-
-  #docsgen {
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: $sizing-xs-px;
+    section {
+      margin-bottom: 0;
+      margin-top: $sizing-xs-px;
+      padding-bottom: $sizing-xs-px;
+    }
   }
 
   .side-by-side {
@@ -412,6 +435,10 @@ export default {
 
   .code-block {
     width: 100%;
+  }
+
+  #what {
+    margin-bottom: 0;
   }
 
 </style>

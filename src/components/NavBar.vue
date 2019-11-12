@@ -21,10 +21,11 @@
               <router-link to="/getting-started">Guides</router-link>
               <router-link to="/docs">Docs</router-link>
               <router-link to="/glossary">Glossary</router-link>
+              <router-link to="/licensing">Licensing</router-link>
               <router-link to="/faq">FAQ</router-link>
             </span>
           </span>
-
+          
           <router-link class="show-on-mobile" to="/getting-started">Guides</router-link>
           <router-link class="show-on-mobile" to="/docs">Docs</router-link>
           <router-link class="show-on-mobile" to="/glossary">Glossary</router-link>
@@ -32,6 +33,7 @@
           <router-link class="show-on-mobile" to="http://twitter.com/dieznative">Twitter</router-link>
           <a href="https://spectrum.chat/diez" class="show-on-mobile">Spectrum</a>
           <a href="https://github.com/diez/diez" @click="sendGitHubClickEvent">Github</a>
+          <router-link class="button" to="/getting-started">Get started</router-link>
           <div @click="toggleMenu" class="menu-icon show-on-mobile">
             <img v-show="!isMobileMenuOpen" width="25px" src="../assets/icons/close.svg" alt="close">
           </div>
@@ -174,6 +176,7 @@ export default {
   .button {
     @include button();
     margin-left: $spacing-lg-px;
+    padding: 8px 20px 6px !important;
   }
   .show-on-mobile {
     display: none;

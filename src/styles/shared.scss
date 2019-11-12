@@ -95,6 +95,7 @@
   button,
   .button {
     @include button();
+    letter-spacing: .4px;
   }
 
   .muted {
