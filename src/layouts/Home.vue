@@ -53,9 +53,10 @@
           <p>Diez Extractors compile design files into Diez-ready TypeScript, extracting colors, typography, image assets and more.</p>
           <p>Automate your design-to-development workflow by treating design files as versionable code artifacts.</p>
         </div>
-        <div class="half mobile-reorder">
-          <div class="cards-holster">
-            <img width="100%" height="100%" src="https://via.placeholder.com/300x170" alt="Design File Extractors: Sketch, Figma, InVision DSM">
+        <div class="half mobile-reorder align-top">
+          <div class="extracted-holster">
+            <img width="43%" class="extracted-targets" src="@theme/assets/imgs/extractables.png" alt="Design File Extractors: Sketch, Figma, InVision DSM">
+            <Content class="extracted-code" slot-key="extracted-code-example"/>
           </div>
         </div>
       </section>
@@ -67,7 +68,7 @@
           <p class="center">Diez naturally integrates with any UI component solution in the world, including the ones your team already uses.</p>
         </div>
         <div class="section full-img">
-          <img width= "77%" src="@theme/assets/imgs/design-system.png" alt="design-system">
+          <img width= "77%" src="@theme/assets/imgs/design-system.png" alt="design system">
         </div>
       
         <div class="section-split">
@@ -108,19 +109,19 @@
           <div class="card">
             <h3>Community Edition</h3>
             <ul>
-              <li>Design Language Framework</li>
+              <li>Design language framework</li>
               <li>Diez Compiler</li>
-              <li>Design-File Extractors</li>
+              <li>Design file extractors</li>
             </ul>
             <router-link class="button secondary" to="/getting-started">Get Started</router-link>
           </div>
           <div class="card card-w-background card-bordered">
             <h3>Enterprise Edition</h3>
             <ul>
-              <li>Design Language Framework</li>
+              <li>Design language framework</li>
               <li>Diez Compiler</li>
-              <li>Design-File Extractors</li>
-              <li class="primary">Diez DocsGen</li>
+              <li>Design file extractors</li>
+              <li class="primary">DocsGen</li>
               <li class="primary">Commercial License</li>
               <li class="primary">Support, Integration, & Training</li>
             </ul>
@@ -447,6 +448,28 @@ export default {
 
   .full-img {
     text-align: center;
+  }
+
+  .extracted-holster {
+    position: relative;
+    margin-top: $spacing-xxl-px;
+
+    .extracted-targets {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .extracted-code {
+      position: absolute;
+      right: 0;
+      width: 57%;
+      top: 20%;
+    }
+  }
+
+  .section-split {
+    margin-bottom: $spacing-lg-px;
   }
 
 </style>
