@@ -112,6 +112,7 @@
               <li>Design language framework</li>
               <li>Diez Compiler</li>
               <li>Design file extractors</li>
+              <li>Open source license</li>
             </ul>
             <router-link class="button secondary" to="/getting-started">Get Started</router-link>
           </div>
@@ -122,7 +123,7 @@
               <li>Diez Compiler</li>
               <li>Design file extractors</li>
               <li class="primary">DocsGen</li>
-              <li class="primary">Commercial License</li>
+              <li class="primary">Commercial license</li>
               <li class="primary">Support, Integration, & Training</li>
             </ul>
             <a class="button" :href="typeformUrl">
