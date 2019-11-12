@@ -67,7 +67,7 @@
           <p class="center">Diez naturally integrates with any UI component solution in the world, including the ones your team already uses.</p>
         </div>
         <div class="section">
-          <img src="https://via.placeholder.com/1200x600" alt="" style="margin-top:-150px;">
+          <img src="https://via.placeholder.com/1200x600" alt="" style="margin-top:-70px;">
         </div>
       
         <div class="section-split">
@@ -342,6 +342,10 @@ export default {
   .render-solve {
     opacity: 0;
     pointer-events: none;
+  }
+
+  #enterprise-grade {
+    margin-top: $spacing-xxxl-px;
   }
 
   #docsgen {
