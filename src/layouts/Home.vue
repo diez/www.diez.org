@@ -31,7 +31,7 @@
           <p>From colors to typography, drop shadows to border radii, gradients to usage guidelines, logos to icons — if you can imagine it, you can express it in Diez.</p>
         </div>
         <div class="half">
-          <img src="https://via.placeholder.com/550x400" alt="diez compiler">
+          <img width="100%" src="@theme/assets/imgs/dlf.png" alt="diez compiler">
         </div>
       </section>
 
@@ -68,13 +68,10 @@
           <p class="center">Diez naturally integrates with any UI component solution in the world, including the ones your team already uses.</p>
         </div>
         <div class="section full-img">
-          <img width= "77%" src="@theme/assets/imgs/design-system.png" alt="design system">
+          <img width= "67%" src="@theme/assets/imgs/design-system.png" alt="design system">
         </div>
       
         <div class="section-split">
-          <div class="half mobile-reorder">
-            <img src="https://via.placeholder.com/550" alt="">
-          </div>
           <div class="half align-top">
             <h2>Scales like a dream</h2>
             <p>Import, reuse & reference — great for composing multiple brands with shared assets & styles.</p>
@@ -82,21 +79,24 @@
             <h3>Infinitely customizable</h3>
             <p>Diez is built around plugins — from the platforms it supports to the kinds of data you can express.  No matter the requirements of your design language or design system — whether you’re wrangling one brand or a hundred — you can customize Diez to fit your needs.</p>
           </div>
+          <div class="half">
+            <img width="90%" src="@theme/assets/imgs/complexity.png" alt="complexity">
+          </div>
         </div>
       </section>
 
       <section id="docsgen" class="section-split">
+        <div class="two-thirds">
+          <div class="video-holster card card-bordered mobile-reorder">
+            <video width="103%" style="margin-top:-6px;" autoplay loop muted playsinline preload="auto">
+              <source src="@theme/assets/vids/docs.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
         <div class="one-third align-top">
           <h2>DocsGen</h2>
           <h3>(Enterprise Edition only)</h3>
           <p style="text-align: left;">From code comments and static analysis, Diez can automatically build customizable, ready-to-deploy documentation for your design system.</p>
-        </div>
-        <div class="two-thirds">
-          <div class="video-holster card card-bordered">
-            <video width="103%" style="margin-top:-6px;" autoplay loop muted playsinline preload="auto">
-                <source src="@theme/assets/vids/docs.mp4" type="video/mp4">
-            </video>
-          </div>
         </div>
       </section>
     </div>
@@ -448,6 +448,7 @@ export default {
 
   .full-img {
     text-align: center;
+    padding-top: 0;
   }
 
   .extracted-holster {
