@@ -98,7 +98,7 @@ There are several more prefabs available [here](/docs/latest/modules/prefabs.htm
 
 Have something else in mind? You're in luck — Diez was carefully designed with extensibility and customizability as core principles. You're able to use Diez without leveraging _any_ of its prefabs if you so choose — you'll just need to define your own custom prefabs.
 
-An example of a custom prefab is demonstrated in an example project [here](https://github.com/diez/diez/blob/master/examples/lorem-ipsum/src/components/Margin.ts).
+An example of a custom prefab is demonstrated in an example project [here](https://github.com/diez/diez/blob/master/examples/lorem-ipsum/design-system/src/components/Margin.ts).
 
 ### Next steps
 
