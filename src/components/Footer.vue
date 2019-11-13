@@ -38,6 +38,7 @@ export default {
     background-color: $palette-gray400;
     text-align: center;
     @include phone {
+      height: 276px;
       flex-direction: column;
       a.button {
         margin-top: $spacing-lg-px !important;
@@ -49,6 +50,9 @@ export default {
     float: right;
     @include phone {
       float: none;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: $spacing-xxl-px;
     }
   }
 
@@ -93,9 +97,18 @@ export default {
     @include phone {
       float: none;
       display: block;
+      line-height: 1;
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
     }
     svg {
       margin: 0 5px -8px 0;
+      @include phone {
+        margin: 10px;
+        margin-bottom: 18px;
+        height: 50px;
+      }
     }
     a {
       margin: 0;
