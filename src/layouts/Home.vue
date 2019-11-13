@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <div class="page shared">
       <NavBar></NavBar>
       <section class="hero">
@@ -10,11 +9,11 @@
             <div class="render-solve">Animation showing Diez in action</div>
             <HeroAnimation sizing="cover" loop="true"></HeroAnimation>
           </div>
-          <div class="half align-top punch" style="padding-left: 30px">
+          <div class="half align-top punch">
             <h1>Connect any codebase to a shared design language</h1>
             <h3>Create a shared repository for styles, assets, and usage guidelines—then compile to native code for iOS, Android, and Web.</h3>
-              <router-link class="button left" to="/getting-started">Get Started</router-link>
-              <a class="button secondary left" :href="typeformUrl">Enterprise Edition</a>
+            <router-link class="button left" to="/getting-started">Get Started</router-link>
+            <a class="button secondary left" :href="typeformUrl">Enterprise Edition</a>
           </div>
         </div>
       </section>
@@ -27,7 +26,7 @@
       <section id="dlf" class="section-split">
         <div  class="half align-top">
           <h2>1. Design language framework</h2>
-          <p>Compose design tokens into any design language using Diez’s TypeScript framework.</p>
+          <p>Compose <a href="https://twitter.com/designtokens" target="_blank">design tokens</a> into any design language using Diez’s TypeScript framework.</p>
           <p>From colors to typography, drop shadows to border radii, gradients to usage guidelines, logos to icons — if you can imagine it, you can express it in Diez.</p>
         </div>
         <div class="half">
@@ -37,7 +36,7 @@
 
       <section id="compiler" class="section-split">
         <div class="half mobile-reorder">
-          <img src="https://via.placeholder.com/550x500" alt="diez compiler">
+          <!-- <img src="https://via.placeholder.com/550x500" alt="diez compiler"> -->
         </div>
         <div class="half align-top">
           <h2>2. Cross-platform native compiler</h2>
@@ -54,9 +53,8 @@
           <p>Automate your design-to-development workflow by treating design files as versionable code artifacts.</p>
         </div>
         <div class="half mobile-reorder align-top">
-          <div class="extracted-holster">
-            <img width="43%" class="extracted-targets" src="@theme/assets/imgs/extractables.png" alt="Design File Extractors: Sketch, Figma, InVision DSM">
-            <Content class="extracted-code" slot-key="extracted-code-example"/>
+          <div>
+            <img width="100%" class="extractor-img" src="@theme/assets/imgs/extractors.jpg" alt="Design File Extractors: Sketch, Figma, InVision DSM">
           </div>
         </div>
       </section>
@@ -68,7 +66,7 @@
           <p class="center">Diez naturally integrates with any UI component solution in the world, including the ones your team already uses.</p>
         </div>
         <div class="section full-img">
-          <img width= "67%" src="@theme/assets/imgs/design-system.png" alt="design system">
+          <img src="@theme/assets/imgs/design-system.png" alt="design system" class="mobile-img-spacer">
         </div>
       
         <div class="section-split">
@@ -80,14 +78,14 @@
             <p>Diez is built around plugins — from the platforms it supports to the kinds of data you can express.  No matter the requirements of your design language or design system — whether you’re wrangling one brand or a hundred — you can customize Diez to fit your needs.</p>
           </div>
           <div class="half">
-            <img width="90%" src="@theme/assets/imgs/complexity.png" alt="complexity">
+            <img width="90%" src="@theme/assets/imgs/complexity.png" alt="complexity" class="mobile-img-spacer">
           </div>
         </div>
       </section>
 
       <section id="docsgen" class="section-split">
-        <div class="two-thirds">
-          <div class="video-holster card card-bordered mobile-reorder">
+        <div class="two-thirds mobile-reorder">
+          <div class="video-holster card card-bordered">
             <video width="103%" style="margin-top:-6px;" autoplay loop muted playsinline preload="auto">
               <source src="@theme/assets/vids/docs.mp4" type="video/mp4">
             </video>
@@ -121,7 +119,7 @@
             <ul>
               <li>Design language framework</li>
               <li>Diez Compiler</li>
-              <li>Design file extractors</li>
+              <li>Design file extractors <span class="primary">(Including support for InVision DSM)</span></li>
               <li class="primary">DocsGen</li>
               <li class="primary">Commercial license</li>
               <li class="primary">Support, Integration, & Training</li>
@@ -190,6 +188,7 @@ export default {
       height: auto;
       max-height: auto;
       margin-bottom: $spacing-xxxl-px;
+      padding-bottom: $spacing-xxl-px;
     }
     h1 {
       font-size: 2.8rem;
@@ -236,6 +235,9 @@ export default {
 
   .heading1 {
     margin-top: $sizing-xs-px;
+    @include phone {
+      margin-top: $spacing-xl-px;
+    }
   }
 
   .early-access h2 {
@@ -336,8 +338,17 @@ export default {
   }
 
   .punch {
+    padding-left: 30px;
     @include tablet-large {
       width: 100%;
+    }
+    @include phone {
+      text-align: center;
+      padding: $spacing-lg-px;
+
+      .button.left {
+        float: none;
+      }
     }
   }
 
@@ -397,6 +408,10 @@ export default {
       margin: 0 $spacing-lg-px;
       padding: $spacing-lg-px $spacing-xxxl-px $spacing-xl-px;
       text-align: center;
+      max-width: 37%;
+      @include phone {
+        padding: $spacing-lg-px $spacing-lg-px $spacing-xl-px;
+      }
       h3 {
         text-align: center;
         margin: $spacing-lg-px;
@@ -430,6 +445,9 @@ export default {
       opacity: .09;
       pointer-events: none;
       transform: rotateY(9deg) rotateX(20deg) rotateZ(-33deg) scale(.9) translate(12%, -80%);
+      @include phone {
+        transform: rotateY(9deg) rotateX(20deg) rotateZ(-33deg) scale(.9) translate(55%, -80%);
+      }
     }
     .primary {
       color: $palette-primary;
@@ -450,28 +468,41 @@ export default {
   .full-img {
     text-align: center;
     padding-top: 0;
+
+    img {
+      width: 67%;
+      @include tablet {
+        width: 100%;
+      }
+    }
   }
 
-  .extracted-holster {
-    position: relative;
-    margin-top: $spacing-xxl-px;
-
-    .extracted-targets {
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-
-    .extracted-code {
-      position: absolute;
-      right: 0;
-      width: 57%;
-      top: 20%;
+  .mobile-img-spacer {
+    @include tablet {
+      padding-top: $spacing-lg-px;
     }
   }
 
   .section-split {
     margin-bottom: $spacing-lg-px;
+  }
+
+  @include phone {
+    .shared.page {
+      padding-top: $spacing-xl-px;
+    }
+
+    h3 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .extractor-img {
+    margin-top: 25px;
+    @include phone {
+      margin-top: 0;
+    }
   }
 
 </style>
