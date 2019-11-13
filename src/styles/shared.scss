@@ -135,6 +135,9 @@
     &.fourth {
       @extend .third;
       width: calc(25% - 24px);
+      @include phone {
+        width: calc(50% - 24px);
+      }
     }
     &.fourth-alt {
       @extend .third;
