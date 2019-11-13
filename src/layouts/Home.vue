@@ -68,7 +68,8 @@
           <p class="center">Diez naturally integrates with any UI component solution in the world, including the ones your team already uses.</p>
         </div>
         <div class="section full-img">
-          <img src="@theme/assets/imgs/design-system.png" alt="design system" class="mobile-img-spacer">
+          <img src="@theme/assets/imgs/design-system.png" alt="design system" class="hide-on-mobile">
+          <img src="@theme/assets/imgs/design-system-mobile.png" alt="design system" class="show-on-mobile mobile-img-spacer">
         </div>
       
         <div class="section-split">
@@ -413,6 +414,7 @@ export default {
       max-width: 37%;
       @include phone {
         padding: $spacing-lg-px $spacing-lg-px $spacing-xl-px;
+        max-width: 100%;
       }
       h3 {
         text-align: center;
@@ -470,11 +472,17 @@ export default {
   .full-img {
     text-align: center;
     padding-top: 0;
+    @include phone {
+      margin-bottom: $spacing-xxxl-px;
+    }
 
     img {
       width: 67%;
       @include tablet {
         width: 100%;
+      }
+      @include phone {
+        width: 90%;
       }
     }
   }

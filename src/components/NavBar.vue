@@ -182,17 +182,6 @@ export default {
     margin-left: $spacing-lg-px;
     padding: 8px 20px 6px !important;
   }
-  .show-on-mobile {
-    display: none;
-    @include tablet {
-      display: inline-block;
-    }
-  }
-  .hide-on-mobile {
-    @include tablet {
-      display: none !important;
-    }
-  }
   .logo img {
     margin-left: 10px;
     margin-top: 1px;

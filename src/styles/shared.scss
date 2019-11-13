@@ -290,4 +290,17 @@
       text-align: center;
     }
   }
+
+  .show-on-mobile {
+    display: none;
+    @include tablet {
+      display: inline-block;
+    }
+  }
+  
+  .hide-on-mobile {
+    @include tablet {
+      display: none !important;
+    }
+  }
 }
