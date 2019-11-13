@@ -48,6 +48,7 @@ export default {
   @import '@theme/styles/_utils.scss';
 
   .nav-wrap {
+    background-color: $palette-white;
     position: fixed;
     height: 100%;
     top: 0;
