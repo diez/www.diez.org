@@ -176,13 +176,14 @@ export default {
 
   .hero {
     position: relative;
-    width: calc(100vw + 2px);
+    width: 100vw;
     margin: 0 auto;
     max-width: 1480px;
     height: 86vh;
     min-height: 400px;
     max-height: 800px;
     overflow: hidden;
+    overflow-x: hidden !important;
     perspective: 1200px;
     border-bottom: 1px solid $palette-gray400;
     border-right: 1px solid $palette-gray400;
