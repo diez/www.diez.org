@@ -11,13 +11,14 @@
         </router-link>
 
         <div class="holster-right">
+          <!-- Desktop navigation -->
           <span
-            class="dd-link"
+            class="dd-link hide-on-mobile"
             @mouseover="navItemHover = true"
             @mouseleave="navItemHover = false"
           >
             Learn
-            <span class="dd-container" v-if="navItemHover">
+            <span class="dd-container" v-show="navItemHover">
               <router-link to="/getting-started">Guides</router-link>
               <router-link to="/docs">Docs</router-link>
               <router-link to="/glossary">Glossary</router-link>
@@ -25,15 +26,18 @@
               <router-link to="/faq">FAQ</router-link>
             </span>
           </span>
-          
-          <router-link class="show-on-mobile" to="/getting-started">Guides</router-link>
+          <a href="https://github.com/diez/diez" class="hide-on-mobile" @click="sendGitHubClickEvent">Github</a>
+          <router-link class="button hide-on-mobile" to="/getting-started">Get started</router-link>
+
+          <!-- Moble navigation -->
+          <router-link class="show-on-mobile" to="/">Home</router-link>
+          <router-link class="show-on-mobile" to="/getting-started">Get Started</router-link>
           <router-link class="show-on-mobile" to="/docs">Docs</router-link>
           <router-link class="show-on-mobile" to="/glossary">Glossary</router-link>
           <router-link class="show-on-mobile" to="/faq">FAQ</router-link>
           <router-link class="show-on-mobile" to="http://twitter.com/dieznative">Twitter</router-link>
           <a href="https://spectrum.chat/diez" class="show-on-mobile">Spectrum</a>
-          <a href="https://github.com/diez/diez" @click="sendGitHubClickEvent">Github</a>
-          <router-link class="button" to="/getting-started">Get started</router-link>
+          <a href="https://github.com/diez/diez" class="show-on-mobile" @click="sendGitHubClickEvent">Github</a>
           <div @click="toggleMenu" class="menu-icon show-on-mobile">
             <img v-show="!isMobileMenuOpen" width="25px" src="../assets/icons/close.svg" alt="close">
           </div>
@@ -186,7 +190,7 @@ export default {
   }
   .hide-on-mobile {
     @include tablet {
-      display: none;
+      display: none !important;
     }
   }
   .logo img {
