@@ -36,7 +36,9 @@
 
       <section id="compiler" class="section-split">
         <div class="half mobile-reorder">
-          <!-- <img src="https://via.placeholder.com/550x500" alt="diez compiler"> -->
+          <video width="100%" autoplay loop muted playsinline>
+            <source src="@theme/assets/vids/auto-complete.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="half align-top">
           <h2>2. Cross-platform native compiler</h2>
