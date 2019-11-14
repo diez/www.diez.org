@@ -34,6 +34,7 @@
         <router-link class="sub-link" to="/getting-started/figma">Figma</router-link>
         <router-link class="sub-link" to="/getting-started/sketch">Sketch</router-link>
         <router-link class="sub-link" to="/getting-started/dsm">InVision DSM</router-link>
+        <router-link class="sub-link" to="/getting-started/xd">Adobe XD</router-link>
       </div>
 
   </div>
