@@ -80,4 +80,7 @@ If you'd prefer to first learn a bit more about your Diez project and how to com
 </div>
 
 
-Still need help? We're working hard to generate a complete set of guides (check back soon). In the meantime, please don't hesitate to [reach out for help](https://spectrum.chat/diez) on a particular topic.
+#### Wanting more?
+Try out **Diez Enterprise Edition** — with exclusive access to DocsGen, customizable commercial licensing, and other enterprise value-adds.
+
+<router-link class='button left' to='/#enterprise-grade'>Learn about Enterprise Edition</router-link>
