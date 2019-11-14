@@ -30,7 +30,7 @@ The dependency will be generated in a location relative to the current working d
 
 ### Accessing Components
 
-We can access our Diez project's `Component`s in our application by importing the generated Diez SDK and instantiating the component. For example, assuming a project named `my-project` with an exported component named `DesignSystem`, you could do the following:
+We can access our Diez project's `Component`s in our application by importing the generated Diez SDK and instantiating the component. For example, assuming a project named `my-project` with an exported component named `DesignLanguage`, you could do the following:
 
 ```swift
 import DiezMyProject
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     func viewDidLoad() {
         super.viewDidLoad()
 
-        let designSystem = DesignSystem()
+        let designSystem = DesignLanguage()
         // Apply our design tokens to our view here.
     }
 }

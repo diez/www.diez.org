@@ -6,7 +6,7 @@ Diez has built-in ability to extract styles and images from design files and tur
 
 #### Prerequisites
 
-If you'd like to follow along, please first [create your own Diez project using the official template project](/getting-started/#set-up) which comes with everything set up for you and includes example codebases consuming the design system.
+If you'd like to follow along, please first [create your own Diez project using the official template project](/getting-started/#set-up) which comes with everything set up for you and includes example codebases consuming the design language.
 
 ### Linking a Sketch file to your Diez project
 From your Diez project root, open the empty `./designs/` folder and drop in your Sketch file.
@@ -56,15 +56,15 @@ Inside a folder called `./assets/YourSketchFileName.sketch.contents` you'll find
 
 But Diez didn't _only_ extract assets for you, it crafted them into strongly-typed and composable collections of design tokens! Take a look in `./src/designs/YourSketchFileName.sketch.ts` and you'll see your clean set of design tokens. And while this set of generated design tokens is just as pretty as the ones you'll create yourself, you won't need to edit it by hand.
 
-#### Integrating your Sketch design tokens into your design system
+#### Integrating your Sketch design tokens into your Diez design language
 
-Import your Sketch design tokens into your main design system file: `./src/DesignSystem.ts`
+Import your Sketch design tokens into your main design language file: `./src/DesignLanguage.ts`
 
 ```typescript
 import { yourSketchFileNameTokens } from './designs/YourSketchFileName.sketch';
 ```
 
-Then use it as you see fit. As shown here, we've used the Document Color from Sketch named `fuss` and set it as the 'lightBackground' color of our design system.
+Then use it as you see fit. As shown here, we've used the Document Color from Sketch named `fuss` and set it as the 'lightBackground' color of our design language.
 
 ```typescript
 const palette = {

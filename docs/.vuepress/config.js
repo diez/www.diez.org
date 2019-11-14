@@ -87,6 +87,6 @@ module.exports = {
     ],
   ],
   configureWebpack: {
-    plugins: [new DiezWebpackPlugin({sdk: 'diez-diez-site', projectPath: join(resolve(__dirname, '..', '..'), 'design-system')})],
+    plugins: [new DiezWebpackPlugin({sdk: 'diez-diez-site', projectPath: join(resolve(__dirname, '..', '..'), 'design-language')})],
   },
 };
