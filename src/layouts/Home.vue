@@ -36,9 +36,11 @@
 
       <section id="compiler" class="section-split">
         <div class="half mobile-reorder">
-          <video width="100%" autoplay loop muted playsinline>
-            <source src="@theme/assets/vids/auto-complete.mp4" type="video/mp4">
-          </video>
+          <div class="video-holster alt card card-bordered">
+            <video width="100%" autoplay loop muted playsinline>
+              <source src="@theme/assets/vids/auto-complete.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
         <div class="half align-top">
           <h2>2. Cross-platform native compiler</h2>
@@ -314,6 +316,9 @@ export default {
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
+    &.alt {
+      padding-bottom: 62.25%;
+    }
   }
 
   .video {
