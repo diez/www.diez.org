@@ -8,7 +8,7 @@ Diez has the ability to extract styles from InVision DSM and turn them into norm
 
 #### Prerequisites
 
-If you'd like to follow along, please first [create your own Diez project using the official template project](/getting-started/#set-up) which comes with everything set up for you and includes example codebases consuming the design system.
+If you'd like to follow along, please first [create your own Diez project using the official template project](/getting-started/#set-up) which comes with everything set up for you and includes example codebases consuming your design language.
 
 
 ### Linking a DSM project to your Diez project
@@ -46,15 +46,15 @@ Inside a new folder `./assets/YourDSMProjName.invision.contents` you'll find the
 
 But Diez didn't _only_ extract assets for you, it crafted them into strongly-typed and composable design tokens. Take a look in `./src/designs/YourDSMProjName.invision.ts` and you'll see your clean set of design tokens. And while this set of generated design tokens is just as pretty as the ones you'll create yourself, you won't need to edit it by hand.
 
-#### Integrating your DSM design tokens into your design system
+#### Integrating your DSM design tokens into your Diez design language
 
-Import your DSM design tokens into your main design system file: `./src/DesignSystem.ts`
+Import your DSM design tokens into your main design language file: `./src/DesignLanguage.ts`
 
 ```typescript
 import { yourDSMProjNameTokens } from './designs/YourDSMProjName.invision';
 ```
 
-Then use it as you see fit. As shown here, we've used the Color Style from DSM named `fuss` and set it as the 'lightBackground' color of our design system.
+Then use it as you see fit. As shown here, we've used the Color Style from DSM named `fuss` and set it as the 'lightBackground' color of our design language.
 
 ```typescript
 const palette = {
@@ -70,6 +70,6 @@ Need to update your designs? Perhaps the best part is that once you hook it up, 
 
 We think this has massive implications for product teams working together. As a designer, you just need to provide your developer with your DSM project URL and ensure she has permissions. As a developer, you just need to perform the trivial setup outlined in this guide.
 
-After that ongoing updates to your production design system are as simple as running `yarn diez extract`!
+After that ongoing updates to your production design language are as simple as running `yarn diez extract`!
 
 Want to learn more about how to use Diez? Head over to the [Basics Guide](/getting-started/the-basics).

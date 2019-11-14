@@ -1,4 +1,4 @@
-cd design-system
+cd design-language
 yarn install
 yarn build
 cd ..

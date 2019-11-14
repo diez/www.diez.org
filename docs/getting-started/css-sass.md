@@ -6,7 +6,7 @@ The best way to try out Diez is by using our official template project which com
 
 #### Generate your Diez project's web SDK and serve it in hot mode
 
-In the template project, you'll find a sample Diez project defined for you in `src/DesignSystem.ts` and a sample web project consuming it in `example-codebases/web`.
+In the template project, you'll find a sample Diez project defined for you in `src/DesignLanguage.ts` and a sample web project consuming it in `example-codebases/web`.
 
 From your Diez project root, run the following command to compile your Diez project's JavaScript SDK and serve it in hot mode.
 
@@ -22,7 +22,7 @@ cd ../example-codebases/web
 yarn start
 ```
 
-If you take a look at the code in `example-codebases/web/App.module.scss`, you'll find that the design system is used across the app in sections of the code like this:
+If you take a look at the code in `example-codebases/web/App.module.scss`, you'll find that the design language is used across the app in sections of the code like this:
 
 ```scss
 .caption {
@@ -31,15 +31,15 @@ If you take a look at the code in `example-codebases/web/App.module.scss`, you'l
 }
 ```
 
-As you can see, the app is **directly** consuming your design system!
+As you can see, the app is **directly** consuming your design language!
 
 ### Making Changes
 
 Due to your Diez project being served in hot mode, any time you make changes to it, it will recompile on the fly.
 
-For example, you can change the background color of the web app by modifying your design system's source of truth.
+For example, you can change the background color of the web app by modifying your design language's source of truth.
 
-First, open `design-system/src/DesignSystem.ts` in an editor of your choice. Look for the following block of code:
+First, open `design-language/src/DesignLanguage.ts` in an editor of your choice. Look for the following block of code:
 
 ```typescript
 const colors = {
@@ -59,7 +59,7 @@ Change `lightBackground` to `palette.lightPurple` like so:
 + lightBackground: palette.lightPurple,
 ```
 
-Go back to your browser and see the web app hot update! You can update and hot reload **any** value defined in your design system: strings, colors, images, fonts, etc.
+Go back to your browser and see the web app hot update! You can update and hot reload **any** value defined in your design language: strings, colors, images, fonts, etc.
 
 Please see [The Basics Guide](/getting-started/the-basics/) for more information on how to compose and edit your design tokens.
 

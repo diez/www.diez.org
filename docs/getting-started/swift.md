@@ -8,7 +8,7 @@ The project generated in this guide requires Xcode 9+, Cocoapods 1.7.0+, and iOS
 
 #### Generate your Diez project's iOS SDK and serve it in hot mode
 
-In the template project, you'll find a sample Diez project defined for you in `design-system/src/DesignSystem.ts` and a sample iOS app consuming it in `example-codebases/ios`.
+In the template project, you'll find a sample Diez project defined for you in `design-language/src/DesignLanguage.ts` and a sample iOS app consuming it in `example-codebases/ios`.
 
 From your Diez project root, run the following command to compile your Diez project's iOS SDK and serve it in hot mode.
 
@@ -29,9 +29,9 @@ Once you have the application open in Xcode, run it (click ► or hit `⌘ + r`)
 
 #### Making Changes
 
-Let's change the background color of our application by modifying our design system's source of truth.
+Let's change the background color of our application by modifying our design language's source of truth.
 
-Open `design-system/src/DesignSystem.ts`, in an editor of your choice, and look for the following block of code:
+Open `design-language/src/DesignLanguage.ts`, in an editor of your choice, and look for the following block of code:
 
 ```typescript
 const colors = {

@@ -4,7 +4,9 @@
 
 <h4 id="intro">Introduction</h4>
 
-Diez aims to make it easy for you to adopt a unified design language across codebases, platforms, and teams. It is intended to be used as _the_ source of truth for your design system.
+Diez makes it easy to adopt a unified design language across codebases, platforms, and teams.
+
+This guide will get you up an running with a sample Diez project so you can see how easy it is to build a design language that supports every app &amp; website in your company.
 
 #### Prerequisites
 Install [yarn](https://yarnpkg.com/). Diez works best with Yarn, and our example projects use Yarn to run some scripts.
@@ -20,7 +22,7 @@ yarn create diez
 <div class="note">The above command will prompt you to choose a name for your Diez project. Please note that for the duration of the guides, your project will be referred to as <code class="inline">your-ds-name</code>.</div>
 
 ```bash
-cd your-ds-name/design-system
+cd your-ds-name/design-language
 ```
 That's it! You now have a Diez project set up and ready to power your apps. Let's take a look at what you just made.
 
@@ -37,7 +39,7 @@ Run the following command to experience the demo.
 yarn demo
 ```
 
-This demo is running in [hot mode](/glossary/#hot-mode). Try modifying the contents of `src/DesignSystem.ts` (relative to the root of the Diez project) to see changes to the design system take effect in real time.
+This demo is running in [hot mode](/glossary/#hot-mode). Try modifying the contents of `src/DesignLanguage.ts` (relative to the root of the Diez project) to see changes to the design language take effect in real time.
 
 
 ### Next Steps

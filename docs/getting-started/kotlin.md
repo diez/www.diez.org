@@ -8,7 +8,7 @@ The generated Android project has been tested with Android Studio 3.4 on Android
 
 #### Generate your Diez project's Android SDK and serve it in hot mode
 
-In the template project, you'll find a sample Diez project defined for you in `design-system/src/DesignSystem.ts` and a sample Android app consuming it in `example-codebases/android`.
+In the template project, you'll find a sample Diez project defined for you in `design-language/src/DesignLanguage.ts` and a sample Android app consuming it in `example-codebases/android`.
 
 From your Diez project root, run the following command to compile your Diez project's Android SDK and serve it in hot mode.
 
@@ -30,9 +30,9 @@ After Gradle dependencies sync, run the `app` target with `Ctrl + R`.
 
 #### Making Changes
 
-Let's change the background color of our application by modifying our design system's source of truth.
+Let's change the background color of our application by modifying our design language's source of truth.
 
-Open `design-system/src/DesignSystem.ts`, in an editor of your choice, and look for the following block of code:
+Open `design-language/src/DesignLanguage.ts`, in an editor of your choice, and look for the following block of code:
 
 ```typescript
 const colors = {
