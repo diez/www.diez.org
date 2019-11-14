@@ -16,9 +16,9 @@
           <h2 id="glossary">Glossary</h2>
 
           <h3 id="tokens">Design Tokens</h3>
-          <p>Think of design tokens as "design data": concepts like colors, typography definitions, spacings, sizings, and drop shadows—agnostic of any particular design tool or programming language.  Design tokens are the basic building blocks that compose into a design language.    
+          <p>Think of design tokens as "design data": concepts like colors, typography definitions, spacings, sizings, and drop shadows — agnostic of any particular design tool or programming language.  Design tokens are the basic building blocks that compose into a design language.    
           <br><br>
-          The magic of design tokens is they sit right at the gap between design and code—they're design concepts, but since they have no opinions about rendering or technologies, they're adaptable into any codebase with the right tooling (like Diez's cross-platform native compiler.)
+          The magic of design tokens is they sit right at the gap between design and code — they're design concepts, but since they have no opinions about rendering or technologies, they're adaptable into any codebase with the right tooling (like Diez's cross-platform native compiler).
           <br><br>
           Design tokens are a <a href="https://twitter.com/designtokens">community movement</a>.
           </p>
@@ -30,7 +30,7 @@
           </p>
 
           <h3 id="prefabs">Prefabs</h3>
-          <p><strong>Prefabs</strong> are Diez's design token "building blocks" that handle common design token use-cases. In addition to offering a useful and documented container for concepts like colors, typography, and shadows, Diez <strong>prefabs</strong> also do the heavy lifting of translating each concept to native platforms (e.g. "here's what `Color` means to iOS.")</p>
+          <p><strong>Prefabs</strong> are Diez's design token "building blocks" that handle common design token use-cases. In addition to offering a useful and documented container for concepts like colors, typography, and shadows, Diez <strong>prefabs</strong> also do the heavy lifting of translating each concept to native platforms (e.g. "here's what <code class="inline">Color</code> means to iOS.")</p>
           <p>Though Diez ships with a useful collection of <strong>prefabs</strong>, you can build your own to suit your needs (and optionally contribute them back to the mainline). </p>
           <p>A guide for building your own <strong>prefabs</strong> will be coming soon. Ping us in our <a href="https://spectrum.chat/diez">Spectrum community</a> or <a href="https://join.slack.com/t/dieznative/shared_invite/enQtNzEzNzM2OTg4NDA1LTA4NWZiMTNlZTgzNTY3Yzg2ODdjY2Y1MzBjMjdlY2FlNjljMmI3ZTgzMmQ4ODk1MDdlMTcyMTUzMjNmZWI4YjU">Slack community</a> if you need some help.</p>
 
