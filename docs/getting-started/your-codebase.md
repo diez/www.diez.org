@@ -22,4 +22,4 @@ yarn link <your-package>
 
 After following these steps, you'll be able to develop locally on both your Diez project and your application codebase while still maintaining a production version of your Diez project on GitHub (your token definitions) and NPM (the a compiled SDK/package).
 
-For more info on how to use your Diez project SDKs within your applications please reference the following guides: ([iOS](/existing-project-integration/ios), [JavaScript](/existing-project-integration/javascript), [CSS/Sass](/existing-project-integration/css-sass))
+For more info on how to use your Diez project SDKs within your applications please reference the following guides: ([iOS](/existing-project-integration/ios), [JavaScript](/existing-project-integration/javascript), [CSS/Sass](/existing-project-integration/css-sass)).
