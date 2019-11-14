@@ -13,7 +13,7 @@
             <h1>The Design Language Framework</h1>
             <h3>Diez radically reduces the cost of delivering a consistent visual identity across your company’s apps &amp; websites.</h3>
             <router-link class="button left" to="/getting-started">Get Started</router-link>
-            <a class="button secondary left" :href="typeformUrl">Enterprise Edition</a>
+            <a class="button secondary left" href="#enterprise-grade">Enterprise Edition</a>
           </div>
         </div>
       </section>
@@ -102,6 +102,15 @@
           <h2>DocsGen Add-on</h2>
           <h3>(Enterprise Edition only)</h3>
           <p style="text-align: left;">From any Diez project, Diez DocsGen builds up-to-the-moment, customizable, and self-hostable design language docs as static HTML pages. <br><br> It's never been easier to get everyone in your organization speaking the same design language.</p>
+        </div>
+      </section>
+
+      <section id="enterprise-cta" class="section-split">
+        <div class="center">
+          <h2>Learn more about Enterprise Edition</h2>
+          <a class="button" :href="typeformUrl">
+            Get in Touch
+          </a>
         </div>
       </section>
     </div>
