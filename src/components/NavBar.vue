@@ -181,6 +181,7 @@ export default {
     @include button();
     margin-left: $spacing-lg-px;
     padding: 8px 20px 6px !important;
+    letter-spacing: .4px !important;
   }
   .logo img {
     margin-left: 10px;
