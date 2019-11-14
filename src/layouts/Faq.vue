@@ -7,10 +7,10 @@
           <h3>What's the difference between design tokens and a design language?</h3>
         </div>
         <div class="two-thirds answer">
-          <p>A design language is made out of design tokens—but it's more than "just a list" of design tokens.
-          Think of your body—it's a collection of cells, but more than "just a bunch" of cells.  The whole is greater than the sum of the parts.
+          <p>A design language is made out of design tokens — but it's more than "just a list" of design tokens.
+          Think of your body — it's a collection of cells, but more than "just a bunch" of cells.  The whole is greater than the sum of the parts.
           <br><br>
-          When your design tokens are connected with structure, hierarchy, reusability, and modularity—built on the skeleton of a full programming language—
+          When your design tokens are connected with structure, hierarchy, reusability, and modularity — built on the skeleton of a full programming language —
           you can express more than just data.  You can express any visual identity, any look &amp; feel: any design language.</p>
         </div>
         <div id="cross-platform-explained" class="one-third question">
@@ -41,7 +41,7 @@
           <h3>Where does the Diez source of truth live?</h3>
         </div>
         <div class="two-thirds answer">
-          <p>This is up to you. We've found success with this pattern: The Diez project lives in a stand-alone GitHub repo and compiles SDKs into its consumer codebases.  We recommend GitHub's new [package manager](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages) as an excellent way to distribute &amp; version your native packages between projects.</p>
+          <p>This is up to you. We've found success with this pattern: The Diez project lives in a stand-alone GitHub repo and compiles SDKs into its consumer codebases. We recommend GitHub's new <a href="https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages" target="_blank">package manager</a> as an excellent way to distribute &amp; version your native packages between projects.</p>
         </div>
         <div class="one-third question" id="typescript">
           <h3>What is TypeScript and what does it have to do with Diez?</h3>
