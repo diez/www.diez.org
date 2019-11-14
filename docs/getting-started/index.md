@@ -39,7 +39,7 @@ Run the following command to experience the demo.
 yarn demo
 ```
 
-This demo is running in [hot mode](/glossary/#hot-mode). Try modifying the contents of `src/DesignLanguage.ts` (relative to the root of the Diez project) to see changes to the design language take effect in real time.
+This demo is running in [hot mode](/faq/#hot-mode-explained). Try modifying the contents of `src/DesignLanguage.ts` (relative to the root of the Diez project) to see changes to the design language take effect in real time.
 
 
 ### Next Steps
