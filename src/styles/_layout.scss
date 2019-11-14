@@ -18,6 +18,19 @@
   max-width: $sizing-xxl-px;
 }
 
+.show-on-mobile {
+    display: none;
+    @include tablet {
+      display: inline-block;
+    }
+  }
+  
+.hide-on-mobile {
+  @include tablet {
+    display: none !important;
+  }
+}
+
 .github-container{
   margin: 0 auto;
   width: 100%;
@@ -38,7 +51,7 @@
 }
 
 .center {
-  text-align: center;
+  text-align: center !important;
   margin: 0 auto;
 }
 
@@ -49,8 +62,12 @@
   }
 }
 
+.no-bottom {
+  margin-bottom: 0;
+}
+
 .content-holster {
-  padding: 0 $spacing-lg-px;
+  padding: 0 $spacing-xl-px;
 }
 
 .one-quarter {

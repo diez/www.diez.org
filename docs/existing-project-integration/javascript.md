@@ -13,20 +13,26 @@ $ cd my-project
 
 ### Diez as a library
 
-In a typical setup, you'll have a folder that contains your design system definitions and a separate folder with your web project.
+For a simple setup, you can have a folder that contains your Diez project (design language definition) and a separate folder with your web project.
 
-After you [compile](#compiling), a Node package with your design system will be generated in a location relative to the current working directory at `build/diez-<name>-web`, where `<name>` is the name of your Diez project in kebab case. You can use this package like any Node dependency: you can link it, publish it to NPM, or deploy it to Git.
+### Diez as a stand-alone repository
 
-After that, you can consume your Design System by `import`ing it.
+In a more robust setup, you should create a stand-alone repository for your Diez project and a separate repository for your Android project.  This is the recommended pattern when you have multiple codebases consuming a single Diez design language.
+
+### Compiling & consuming your design language
+
+After you [compile](#compiling) your Diez project, a Node package containing your design language will be generated inside your Diez project.  You can use this package like any Node dependency: you can link it, publish it to NPM, or deploy it to Git.  We recommend using GitHub's recently launched [package registry](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages) for versioning and distributing your built modules to consuming codebases, though you can also use solutions like symlinking or `../../relative-paths`.
+
+After that, you can consume your design language by `import`ing it.
 
 ```js
-// Import your DesignSystem and Diez
-import {DesignSystem, Diez} from 'diez-my-project-web';
+// Import your DesignLanguage and Diez
+import {DesignLanguage, Diez} from 'diez-my-project-web';
 
-// Create a new Diez instance providing your DesignSystem as a source
-const diezDs = new Diez(DesignSystem);
+// Create a new Diez instance providing your DesignLanguage as a source
+const diezDs = new Diez(DesignLanguage);
 
-// Listen to changes in the design system
+// Listen to changes in the design language
 diezDs.attach((ds) => {
   // The ds has been updated!
 });
@@ -54,7 +60,7 @@ You can find what prefabs have extensions in [Interacting with Prefabs](#interac
 
 ### Compiling
 
-The Diez compiler can compile your design system in two modes: _normal_ and _hot_.
+The Diez compiler can compile your design language in two modes: _normal_ and _hot_.
 
 #### Development flow
 

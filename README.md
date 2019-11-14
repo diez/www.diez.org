@@ -1,6 +1,6 @@
 # diez [![Netlify Status](https://api.netlify.com/api/v1/badges/0ebf7674-c75d-4aec-94bb-42bd44b6fbea/deploy-status)](https://app.netlify.com/sites/clever-tereshkova-8d5354/deploys)
 
-This Diez project includes a static site build with [VuePress](https://vuepress.vuejs.org) and a design system used to build it.
+This Diez project includes a static site build with [VuePress](https://vuepress.vuejs.org) and a Diez design language used to power it.
 
 ### Getting started
 

@@ -6,7 +6,7 @@ Diez has built-in ability to extract styles and images from design files and tur
 
 #### Prerequisites
 
-If you'd like to follow along, please first [create your own Diez project using the official template project](/getting-started/#set-up) which comes with everything set up for you and includes example codebases consuming the design system.
+If you'd like to follow along, please first [create your own Diez project using the official template project](/getting-started/#set-up) which comes with everything set up for you and includes example codebases consuming the design language.
 
 ### Linking a Figma file to your Diez project
 From your Diez project root, open a file called `.diezrc`.
@@ -69,15 +69,15 @@ Inside a folder called `./assets/YourFigmaProjName.figma.contents` you'll find t
 
 But Diez didn't _only_ extract assets for you, it crafted them into strongly-typed and composable design tokens! Take a look in `./src/designs/YourFigmaProjName.figma.ts` and you'll see your clean set of design tokens. And while this set of generated design tokens is just as pretty as the ones you'll create yourself, you won't need to edit it by hand.
 
-#### Integrating your Figma design tokens into your design system
+#### Integrating your Figma design tokens into your Diez design language
 
-Import your Figma design tokens into your main design system file: `./src/DesignSystem.ts`
+Import your Figma design tokens into your main design language file: `./src/DesignLanguage.ts`
 
 ```typescript
 import { yourFigmaProjNameTokens } from './designs/YourFigmaProjName.figma';
 ```
 
-Then use it as you see fit. As shown here, we've used the Color Style from Figma named `fuss` and set it as the 'lightBackground' color of our design system.
+Then use it as you see fit. As shown here, we've used the Color Style from Figma named `fuss` and set it as the 'lightBackground' color in our design language.
 
 ```typescript
 const palette = {
@@ -98,6 +98,6 @@ Need to update your designs? Perhaps the best part, is that once you hook it up,
 
 We think this has massive implications for product teams working together. As a designer, you just need to provide your developer with your Figma file URL and ensure she has permissions. As a developer, you just to create a free Figma account and perform the trivial setup outlined in this guide.
 
-After that ongoing updates to your design system are as simple as running `yarn diez extract`!
+After that ongoing updates to your design language are as simple as running `yarn diez extract`!
 
 Want to learn more about how to use Diez? Head over to the [Basics Guide](/getting-started/the-basics).

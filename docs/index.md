@@ -2,26 +2,13 @@
 layout: Home
 ---
 
-::: slot developer-toolkit-example
+::: slot extracted-code-example
 ```ts
-import {Color, Image, Typograph, Font} from '@diez/prefabs'
-
-const palette = {
-  primary: Color.rgb(86, 35, 238)
+const mySketchColors = {
+  violet: Color.hex('#5623EE'),
+  mauve: Color.hex('#A494D3'),
+  gray500: Color.hex('#8E86AA'),
+  gray600: Color.hex('#79738F')
 }
-
-const images = {
-  logo: Image.responsive('assets/logo.png')
-}
-
-const typography = {
-  heading1: new Typograph({
-    font: Font.fromFile('assets/my-font.ttf'),
-    fontSize: 24,
-    color: palette.primary
-  })
-}
-
-export const ds = {palette, images, typography}
 ```
 :::

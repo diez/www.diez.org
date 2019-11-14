@@ -95,6 +95,7 @@
   button,
   .button {
     @include button();
+    letter-spacing: .4px !important;
   }
 
   .muted {
@@ -134,6 +135,9 @@
     &.fourth {
       @extend .third;
       width: calc(25% - 24px);
+      @include phone {
+        width: calc(50% - 24px);
+      }
     }
     &.fourth-alt {
       @extend .third;
@@ -266,16 +270,24 @@
   .aside {
     margin-top: $spacing-xxl-px;
     font-size: 17px;
-    padding: $spacing-xs-px $spacing-xl-px;
+    padding: $spacing-sm-px $spacing-xl-px;
     background-color: $palette-gray400;
     color: $palette-purple;
     border: 4px solid $palette-purple;
     border-radius: $border-radius-card-px;
+    line-height: 1.5;
+    a {
+      font-size: 17px !important;
+    }
     li, p {
       line-height: 30px;
     }
     h4 {
       color: inherit;
+    }
+    &.extra-pop {
+      padding: $spacing-lg-px $spacing-xl-px;
+      text-align: center;
     }
   }
 }

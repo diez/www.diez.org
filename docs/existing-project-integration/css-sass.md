@@ -11,15 +11,23 @@ $ yarn create diez my-project
 $ cd my-project
 ```
 
+
 ### Diez as a library
+
+For a simple setup, you can have a folder that contains your Diez project (design language definition) and a separate folder with your web project.
+
+### Diez as a stand-alone repository
+
+In a more robust setup, you should create a stand-alone repository for your Diez project and a separate repository for your Android project.  This is the recommended pattern when you have multiple codebases consuming a single Diez design language.
+
+
+### Compiling & consuming your design language
+
+After you [compile](#compiling) your Diez project, a Node package containing your design language will be generated inside your Diez project.  You can use this package like any Node dependency: you can link it, publish it to NPM, or deploy it to Git.  We recommend using GitHub's recently launched [package registry](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages) for versioning and distributing your built modules to consuming codebases, though you can also use solutions like symlinking or `../../relative-paths`.
 
 The output of the Diez compiler for a specific target is a library that is ready to use. For Web with CSS/Sass, this is `.css` and `.scss` files ready to import.
 
-Generally, you'll have a folder that contains your design system definitions and a separate folder with your web project.
-
-After you [compile](#compiling) your project, a Node package with your design system will be generated in a location relative to the current working directory at `build/diez-<name>-web`, `where <name>` is the name of your Diez project in kebab case. You can use this package like any Node dependency: you can link it, publish it to NPM, or deploy it to Git.
-
-Then, install our Webpack plugin: `diez-webpack-plugin`:
+Install our Webpack plugin: `diez-webpack-plugin`:
 
 <CodeTabs>
 ```bash tabname-yarn
@@ -63,7 +71,7 @@ With this, you are ready to `import` a file containing all your [Design Tokens](
 
 ### Compiling
 
-The Diez compiler can compile your design system in two modes: _normal_ and _hot_.
+The Diez compiler can compile your design language in two modes: _normal_ and _hot_.
 
 #### Development flow
 
