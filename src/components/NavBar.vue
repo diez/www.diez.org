@@ -14,11 +14,11 @@
           <!-- Desktop navigation -->
           <span
             class="dd-link hide-on-mobile"
-            @mouseover="navItemHover = true"
-            @mouseleave="navItemHover = false"
+            @mouseover="isLearnHovered = true"
+            @mouseleave="isLearnHovered = false"
           >
             Learn
-            <span class="dd-container" v-show="navItemHover">
+            <span class="dd-container" v-show="isLearnHovered">
               <router-link to="/getting-started">Guides</router-link>
               <router-link to="/docs">Docs</router-link>
               <router-link to="/glossary">Glossary</router-link>
@@ -26,7 +26,21 @@
               <router-link to="/faq">FAQ</router-link>
             </span>
           </span>
-          <a href="https://github.com/diez/diez" class="hide-on-mobile" @click="sendGitHubClickEvent">Github</a>
+          <span
+            class="dd-link hide-on-mobile"
+            @mouseover="isSocialHovered = true"
+            @mouseleave="isSocialHovered = false"
+          >
+            Social
+            <span class="dd-container" v-show="isSocialHovered">
+              <a href="https://join.slack.com/t/dieznative/shared_invite/enQtNzEzNzM2OTg4NDA1LTA4NWZiMTNlZTgzNTY3Yzg2ODdjY2Y1MzBjMjdlY2FlNjljMmI3ZTgzMmQ4ODk1MDdlMTcyMTUzMjNmZWI4YjU" target="_blank"><img height="22px" width="22px" src="../assets/imgs/slack.svg" alt="slack" title="slack">Slack</a>
+              <a href="https://spectrum.chat/diez" target="_blank"><img height="20px" width="20px" src="../assets/imgs/spectrum.svg" alt="spectrum" title="spectrum">Spectrum</a>
+              <a href="https://twitter.com/dieznative" target="_blank"><img height="20px" width="24px" src="../assets/imgs/twitter.svg" alt="twitter" title="twitter">Twitter</a>
+              <a href="https://medium.com/dieznative" target="_blank"><img height="22px" width="22px" src="../assets/imgs/medium.svg" alt="medium" title="medium">Medium</a>
+              <a href="https://github.com/diez/diez" @click="sendGitHubClickEvent" target="_blank"><img height="24px" width="24px" src="../assets/imgs/github.svg" alt="github" title="github">GitHub</a>
+            </span> 
+          </span>
+          <a href="https://github.com/diez/diez" target="_blank" class="hide-on-mobile" @click="sendGitHubClickEvent">Github</a>
           <router-link class="button hide-on-mobile" to="/getting-started">Get started</router-link>
 
           <!-- Moble navigation -->
@@ -54,7 +68,8 @@ export default {
   data () {
     return {
       isMobileMenuOpen: true,
-      navItemHover: false
+      isLearnHovered: false,
+      isSocialHovered: false
     };
   },
 
@@ -163,12 +178,16 @@ export default {
       transform: translateZ(1px);
       position: absolute;
       box-shadow: 0 7px 20px rgba(0,0,0, .16);
-      width: 145px;
+      width: 170px;
       top: 25px;
       right: 0;
       border-radius: 4px;
       background-color: $palette-white;
-      padding: 8px 0;
+      padding: 12px 0;
+
+      img {
+        margin-right: $spacing-sm-px;
+      }
       
       a {
         padding: 8px 20px;
