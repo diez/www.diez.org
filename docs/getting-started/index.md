@@ -1,4 +1,5 @@
 ## Getting Started
+<div class="aside">This guide helps you get started with Diez Community Edition. Check out <router-link to="/#enterprise-grade">Diez Enterprise Edition</router-link> for more features like DocsGen & customizable commercial licensing.</div>
 
 <h3 id="set-up">Setting up your Diez project</h3>
 
