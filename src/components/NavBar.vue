@@ -38,7 +38,11 @@
               <a href="https://twitter.com/dieznative" target="_blank"><img height="20px" width="24px" src="../assets/imgs/twitter.svg" alt="twitter" title="twitter">Twitter</a>
               <a href="https://medium.com/dieznative" target="_blank"><img height="22px" width="22px" src="../assets/imgs/medium.svg" alt="medium" title="medium">Medium</a>
               <a href="https://github.com/diez/diez" @click="sendGitHubClickEvent" target="_blank"><img height="24px" width="24px" src="../assets/imgs/github.svg" alt="github" title="github">GitHub</a>
+<<<<<<< HEAD
             </span>
+=======
+            </span> 
+>>>>>>> 7c7b2dd05daa4790d7f109825537dce738902275
           </span>
           <a href="https://github.com/diez/diez" target="_blank" class="hide-on-mobile" @click="sendGitHubClickEvent">Github</a>
           <router-link class="button hide-on-mobile" to="/getting-started">Get started</router-link>
