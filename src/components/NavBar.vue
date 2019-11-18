@@ -41,7 +41,8 @@
             </span> 
           </span>
           <a href="https://github.com/diez/diez" target="_blank" class="hide-on-mobile" @click="sendGitHubClickEvent">Github</a>
-          <a href="https://www.producthunt.com/posts/haiku-animator?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-haiku-animator" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=147781&theme=dark" alt="Haiku Animator - Create powerful animations for any app or website | Product Hunt Embed" class="ph hide-on-mobile" width="192px" height="42px" /></a>
+          
+          <a href="https://www.producthunt.com/posts/diez?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-diez" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=174759&theme=dark" alt="Diez - The Design Language Framework | Product Hunt Embed" style="width: 192px; height: 42px;" class="ph hide-on-mobile" width="192px" height="42px" /></a>
           <router-link class="button hide-on-mobile" to="/getting-started">Get started</router-link>
 
           <!-- Moble navigation -->
