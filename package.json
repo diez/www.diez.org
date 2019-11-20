@@ -22,7 +22,8 @@
     "build": "vuepress build docs",
     "fix": "yarn lint --fix",
     "lint": "eslint docs/.vuepress/theme --ext .js,.vue",
-    "health": "yarn lint -f checkstyle -o checkstyle-result.xml"
+    "health": "yarn lint -f checkstyle -o checkstyle-result.xml",
+    "deploy": "./scripts/deploy.sh"
   },
   "dependencies": {
     "@haiku/tina-diezheroinstancesyntax": "^0.0.6",
