@@ -38,10 +38,10 @@
               <a href="https://twitter.com/dieznative" target="_blank"><img height="20px" width="24px" src="../assets/imgs/twitter.svg" alt="twitter" title="twitter">Twitter</a>
               <a href="https://medium.com/dieznative" target="_blank"><img height="22px" width="22px" src="../assets/imgs/medium.svg" alt="medium" title="medium">Medium</a>
               <a href="https://github.com/diez/diez" @click="sendGitHubClickEvent" target="_blank"><img height="24px" width="24px" src="../assets/imgs/github.svg" alt="github" title="github">GitHub</a>
-            </span> 
+            </span>
           </span>
           <a href="https://github.com/diez/diez" target="_blank" class="hide-on-mobile" @click="sendGitHubClickEvent">Github</a>
-          
+
           <a href="https://www.producthunt.com/posts/diez?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-diez" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=174759&theme=dark" alt="Diez - The Design Language Framework | Product Hunt Embed" style="width: 192px; height: 42px;" class="ph hide-on-mobile" width="192px" height="42px" /></a>
           <router-link class="button hide-on-mobile" to="/getting-started">Get started</router-link>
 
@@ -91,12 +91,12 @@ export default {
       this.$data.isMobileMenuOpen = !this.$data.isMobileMenuOpen;
     },
 
-    showChange(val){
+    showChange (val) {
       this.show = val;
     },
 
-    open(){
-      if(!this.show) this.$refs.drop.$emit('show', this.$refs.caller);
+    open () {
+      if (!this.show) this.$refs.drop.$emit('show', this.$refs.caller);
     }
   }
 };
@@ -190,7 +190,7 @@ export default {
       img {
         margin-right: $spacing-sm-px;
       }
-      
+
       a {
         padding: 8px 20px;
         display: block;
@@ -226,7 +226,7 @@ export default {
     right: $mobile-toggle-margin;
     cursor: pointer;
   }
-  
+
   .ph {
     width: 192px;
     height: 42px;

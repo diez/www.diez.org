@@ -75,7 +75,7 @@
           <img src="@theme/assets/imgs/design-system.png" alt="design system" class="hide-on-mobile">
           <img src="@theme/assets/imgs/design-system-mobile.png" alt="design system" class="show-on-mobile mobile-img-spacer">
         </div>
-      
+
         <div class="section-split">
           <div class="half align-top">
             <h2>Scales like a dream</h2>

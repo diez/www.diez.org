@@ -17,17 +17,17 @@
         <li>The Qt Project — a cross-platform GUI-creation tool, GPL and LGPL licensed</li>
         <li>Neo4j — the world’s most popular graph database server, GPL licensed</li>
       </ul>
-      
+
       <h4>AGPL modules: Compiler, Extractors, and CLI</h4>
       <p>In the same way that GCC and Git are widely used without restriction in commercial settings, Diez CE’s compiler, extractors, and CLI (licensed under the AGPL license) are all generally usable in the same way.  These pieces of Diez are all “compiler-like” or “command line interface-like” and are freely usable by individual developers at development time</p>
       <p>That said, if you modify any of the source code for these tools, dynamically or statically link them in any codebase (including via “shelling” or calling these tools via command-line from a codebase,) or otherwise distribute these tools as part of other codebases/systems, <strong>including via network access</strong> (for example in continuous integration (CI) servers, application (HTTP) servers, or automated build scripts) — <strong>be aware that you are obligated to open-source all related code & make publicly available under the AGPL license in turn.</strong></p>
       <p>If you are not willing or able to meet these requirements of the AGPL license, you will want Diez Enterprise Edition instead, which offers flexible commercial licensing. <a :href="typeformUrl" target="_blank">Contact us</a> for more info or if you have any questions about the obligations of the AGPL license.</p>
-      
+
       <h4>LGPL module: Framework</h4>
       <p>Diez CE’s Framework module contains code intended to be dynamically linked inside your own proprietary codebases—i.e. it contains the code you import in order to create a Diez design language—so it’s licensed under the LGPL to ensure that it’s freely usable under most commercial use-cases.</p>
       <p>That said, <strong>“derivative works,” i.e. codebases using any modifications to the Diez Framework module itself, or any codebase that statically links Diez Framework code, must be open-sourced under LGPL and freely distributed in turn.</strong></p>
       <p>If you are not willing or able to meet these requirements of the LGPL license, you will want Diez Enterprise Edition instead, which offers flexible commercial licensing. <a :href="typeformUrl" target="_blank">Contact us</a> for more info or if you have any questions about the obligations of the LGPL license.</p>
-    
+
       <h3>Diez Enterprise Edition</h3>
       <p><strong>Diez EE</strong> features three key advantages over Diez Community Edition:</p>
       <ul>
@@ -64,7 +64,7 @@ export default {
   h2 {
     margin-top: $sizing-xxs-px;
   }
-  
+
   h3 {
     margin-top: $sizing-xxs-px;
   }
