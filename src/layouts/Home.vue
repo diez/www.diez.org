@@ -201,7 +201,7 @@ export default {
     position: relative;
     width: 100vw;
     margin: 0 auto;
-    max-width: 1480px;
+    max-width: 2080px;
     height: 86vh;
     min-height: 400px;
     max-height: 800px;
@@ -244,7 +244,10 @@ export default {
       right: 0;
       opacity: .09;
       pointer-events: none;
-      transform: rotateY(9deg) rotateX(20deg) rotateZ(-33deg) scale(.9) translateY(-59%)
+      transform: rotateY(9deg) rotateX(20deg) rotateZ(-33deg) scale(.9) translateY(-67%) translateX(-30%);
+      @include phone {
+        transform: rotateY(9deg) rotateX(20deg) rotateZ(-33deg) scale(.9) translateY(-30%) translateX(0);
+      }
     }
   }
 
