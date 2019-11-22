@@ -1,13 +1,13 @@
 {
   "name": "diez-site-web",
-  "version": "10.0.0-beta.5",
+  "version": "10.0.2",
   "private": true,
   "description": "The Diez website - https://diez.org",
   "author": "The Haiku Team <contact@haiku.ai>",
   "license": "SEE LICENSE.md",
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
-    "diez-webpack-plugin": "^10.0.0-beta.5",
+    "diez-webpack-plugin": "^10.0.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue-libs": "^3.0.0",
     "node-sass": "^4.12.0",

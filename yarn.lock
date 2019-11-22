@@ -754,26 +754,17 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@diez/engine@^10.0.0-beta.5":
-  version "10.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/@diez/engine/-/engine-10.0.0-beta.5.tgz#013d9079054f12026cb526cb94f7264fad32e407"
-  integrity sha512-WQ+XEkHJsvo23y0G5yVaAxp/qK4ed64rO+Omhi0vRUbK7vzLf32MYioersxs4pjOKCC/PSurUVP8fJeKYWNvDg==
+"@diez/framework-core@^10.0.2":
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/@diez/framework-core/-/framework-core-10.0.2.tgz#08f52db23e7d6df00e53c50096ba9c3c43796f68"
+  integrity sha512-ckRWVTe9TW6xn/BaItwJnrv1pXoUp+NodhsOuynmz/DCg31bFYgYP8Ql/dlu1fDsQI1IPCMM/b7KcijCioxaSA==
 
-"@diez/prefabs@^10.0.0-beta.5":
-  version "10.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/@diez/prefabs/-/prefabs-10.0.0-beta.5.tgz#256b14180a7f2aaa585e8253de5470a610821a27"
-  integrity sha512-0qgsvRLflOZxzoBQccKItqitJZ49aHpcR6GWkJe6UZHbnTz0pjoeTiXG08s2WwKK7z9h5n2VNv9hKuaAcVGIow==
+"@diez/web-sdk-common@^10.0.2":
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/@diez/web-sdk-common/-/web-sdk-common-10.0.2.tgz#b2a0372913ad45fa22c4a226332101a9f7da6a85"
+  integrity sha512-euHroBLLlDs9ZuJw4gkGCtH6/xWQDRX3rrAsJZiXuUjoE6veSOvfpjRrXAScHbIsVHaWB6zjEpOT3sniWau8JA==
   dependencies:
-    "@diez/engine" "^10.0.0-beta.5"
-    fs-extra "^7.0.1"
-
-"@diez/web-sdk-common@^10.0.0-beta.5":
-  version "10.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/@diez/web-sdk-common/-/web-sdk-common-10.0.0-beta.5.tgz#ade7c0c98df71a9c7dcd3d924f093a6bee058581"
-  integrity sha512-g2OgRFIlQD0t/yo7XQoIEfAoZio0ibK2jDtpsFvgfE6vpDcM2FM/St3BZ/uY9LsupidZ7lnl7j6tedHVVNyJOQ==
-  dependencies:
-    "@diez/engine" "^10.0.0-beta.5"
-    "@diez/prefabs" "^10.0.0-beta.5"
+    "@diez/framework-core" "^10.0.2"
 
 "@haiku/core@^4.5.1":
   version "4.5.2"
@@ -2834,12 +2825,12 @@ diacritics@^1.3.0:
 "diez-diez-site@file:./design-language/build/diez-diez-site-web":
   version "0.1.0"
   dependencies:
-    "@diez/web-sdk-common" "^10.0.0-beta.5"
+    "@diez/web-sdk-common" "^10.0.2"
 
-diez-webpack-plugin@^10.0.0-beta.5:
-  version "10.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/diez-webpack-plugin/-/diez-webpack-plugin-10.0.0-beta.5.tgz#269084ef198336f71c40e9488b498ca818d0a6a0"
-  integrity sha512-kw1TNrzL2ZD+nkIVrDWq90X1p+os9PbONhQqi1lE0nSjENTYtTX2sq7qCse33pIaYWzatfNMPSAsTYUTPhxBMw==
+diez-webpack-plugin@^10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/diez-webpack-plugin/-/diez-webpack-plugin-10.0.2.tgz#751413961f39809235b6ef009173e3bfd6de0701"
+  integrity sha512-h1ghiz2RMr205xHjebMUy6+1/A8+NVRqbt0RCh/dIyyuTqzhUKO9bxxB1/B7z3UbOPZCn4QjE3zEfJ/hsAw+mg==
   dependencies:
     change-case "^3.1.0"
 
