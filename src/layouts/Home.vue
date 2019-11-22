@@ -84,15 +84,15 @@
             <h3>Infinitely customizable</h3>
             <p>Diez is built around plugins: from the platforms it supports to the kinds of data you can express.  No matter the requirements of your design system — whether you’re wrangling one brand or a hundred — you can customize Diez to fit your needs.</p>
           </div>
-          <div class="half">
-            <carousel :per-page="1" :loop="true" :autoplay="true" :speed="1000" :autoplayTimeout="3900" :paginationEnabled="false">
-              <slide class="flex-centerer">
+          <div class="half" v-if="carouselComponent && slideComponent">
+            <component :is="carouselComponent" :per-page="1" :loop="true" :autoplay="true" :speed="1000" :autoplayTimeout="3900" :paginationEnabled="false">
+              <component :is="slideComponent" class="flex-centerer">
                 <img width="55%" src="@theme/assets/imgs/simple.png" alt="simple" class="mobile-img-spacer center">
-              </slide>
-              <slide>
+              </component>
+              <component :is="slideComponent">
                 <img width="90%" src="@theme/assets/imgs/complexity.png" alt="complexity" class="mobile-img-spacer">
-              </slide>
-            </carousel>
+              </component>
+            </component>
           </div>
         </div>
       </section>
@@ -161,18 +161,23 @@
 
 <script>
 import {sendGitHubClickEvent} from '../utils/analytics';
-import { Carousel, Slide } from 'vue-carousel';
 import Footer from '@theme/components/Footer.vue';
 import NavBar from '@theme/components/NavBar.vue';
 
 export default {
   data () {
     return {
-      typeformUrl: 'https://design-code.typeform.com/to/JnOi9o'
+      typeformUrl: 'https://design-code.typeform.com/to/JnOi9o',
+      carouselComponent: null,
+      slideComponent: null
     };
   },
-  mounted () {
+  async mounted () {
     if (typeof window !== 'undefined') {
+      const {Carousel, Slide} = await import('vue-carousel');
+      this.carouselComponent = Carousel;
+      this.slideComponent = Slide;
+
       const interval = setInterval(() => {
         if (window.currentBranch) {
           this.$data.typeformUrl = `${this.$data.typeformUrl}?sitevariant=${window.currentBranch}`;
@@ -185,8 +190,6 @@ export default {
     sendGitHubClickEvent
   },
   components: {
-    Carousel,
-    Slide,
     Footer,
     NavBar,
     HeroAnimation: () => import('@haiku/tina-diezheroinstancesyntax/vue')
@@ -230,7 +233,7 @@ export default {
       align-items: center;
       flex-direction: column;
       margin: $spacing-xxxl-px auto 0;
-      
+
       h3 {
         font-size: 28px;
       }
