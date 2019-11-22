@@ -16,7 +16,7 @@
           <h2 id="glossary">Glossary</h2>
 
           <h3 id="tokens">Design Tokens</h3>
-          <p>Think of design tokens as "design data": concepts like colors, typography definitions, spacings, sizings, and drop shadows — agnostic of any particular design tool or programming language.  Design tokens are the basic building blocks that compose into a design language.    
+          <p>Think of design tokens as "design data": concepts like colors, typography definitions, spacings, sizings, and drop shadows — agnostic of any particular design tool or programming language.  Design tokens are the basic building blocks that compose into a design language.
           <br><br>
           The magic of design tokens is they sit right at the gap between design and code — they're design concepts, but since they have no opinions about rendering or technologies, they're adaptable into any codebase with the right tooling (like Diez's cross-platform native compiler).
           <br><br>

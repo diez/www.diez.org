@@ -75,7 +75,7 @@
           <img src="@theme/assets/imgs/design-system.png" alt="design system" class="hide-on-mobile">
           <img src="@theme/assets/imgs/design-system-mobile.png" alt="design system" class="show-on-mobile mobile-img-spacer">
         </div>
-      
+
         <div class="section-split">
           <div class="half align-top">
             <h2>Scales like a dream</h2>
@@ -84,8 +84,15 @@
             <h3>Infinitely customizable</h3>
             <p>Diez is built around plugins: from the platforms it supports to the kinds of data you can express.  No matter the requirements of your design system — whether you’re wrangling one brand or a hundred — you can customize Diez to fit your needs.</p>
           </div>
-          <div class="half">
-            <img width="90%" src="@theme/assets/imgs/complexity.png" alt="complexity" class="mobile-img-spacer">
+          <div class="half" v-if="carouselComponent && slideComponent">
+            <component :is="carouselComponent" :per-page="1" :loop="true" :autoplay="true" :speed="1000" :autoplayTimeout="3900" :paginationEnabled="false">
+              <component :is="slideComponent" class="flex-centerer">
+                <img width="55%" src="@theme/assets/imgs/simple.png" alt="simple" class="mobile-img-spacer center">
+              </component>
+              <component :is="slideComponent">
+                <img width="90%" src="@theme/assets/imgs/complexity.png" alt="complexity" class="mobile-img-spacer">
+              </component>
+            </component>
           </div>
         </div>
       </section>
@@ -160,11 +167,17 @@ import NavBar from '@theme/components/NavBar.vue';
 export default {
   data () {
     return {
-      typeformUrl: 'https://design-code.typeform.com/to/JnOi9o'
+      typeformUrl: 'https://design-code.typeform.com/to/JnOi9o',
+      carouselComponent: null,
+      slideComponent: null
     };
   },
-  mounted () {
+  async mounted () {
     if (typeof window !== 'undefined') {
+      const {Carousel, Slide} = await import('vue-carousel');
+      this.carouselComponent = Carousel;
+      this.slideComponent = Slide;
+
       const interval = setInterval(() => {
         if (window.currentBranch) {
           this.$data.typeformUrl = `${this.$data.typeformUrl}?sitevariant=${window.currentBranch}`;
@@ -191,7 +204,7 @@ export default {
     position: relative;
     width: 100vw;
     margin: 0 auto;
-    max-width: 1480px;
+    max-width: 2080px;
     height: 86vh;
     min-height: 400px;
     max-height: 800px;
@@ -220,7 +233,7 @@ export default {
       align-items: center;
       flex-direction: column;
       margin: $spacing-xxxl-px auto 0;
-      
+
       h3 {
         font-size: 28px;
       }
@@ -234,7 +247,10 @@ export default {
       right: 0;
       opacity: .09;
       pointer-events: none;
-      transform: rotateY(9deg) rotateX(20deg) rotateZ(-33deg) scale(.9) translateY(-59%)
+      transform: rotateY(9deg) rotateX(20deg) rotateZ(-33deg) scale(.9) translateY(-67%) translateX(-30%);
+      @include phone {
+        transform: rotateY(9deg) rotateX(20deg) rotateZ(-33deg) scale(.9) translateY(-30%) translateX(0);
+      }
     }
   }
 
@@ -537,6 +553,12 @@ export default {
     @include phone {
       margin-top: 0;
     }
+  }
+
+  .flex-centerer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 </style>
