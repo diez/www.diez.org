@@ -85,7 +85,14 @@
             <p>Diez is built around plugins: from the platforms it supports to the kinds of data you can express.  No matter the requirements of your design system — whether you’re wrangling one brand or a hundred — you can customize Diez to fit your needs.</p>
           </div>
           <div class="half">
-            <img width="90%" src="@theme/assets/imgs/complexity.png" alt="complexity" class="mobile-img-spacer">
+            <carousel :per-page="1" :loop="true" :autoplay="true" :speed="1000" :autoplayTimeout="3900" :paginationEnabled="false">
+              <slide class="flex-centerer">
+                <img width="55%" src="@theme/assets/imgs/simple.png" alt="simple" class="mobile-img-spacer center">
+              </slide>
+              <slide>
+                <img width="90%" src="@theme/assets/imgs/complexity.png" alt="complexity" class="mobile-img-spacer">
+              </slide>
+            </carousel>
           </div>
         </div>
       </section>
@@ -154,6 +161,7 @@
 
 <script>
 import {sendGitHubClickEvent} from '../utils/analytics';
+import { Carousel, Slide } from 'vue-carousel';
 import Footer from '@theme/components/Footer.vue';
 import NavBar from '@theme/components/NavBar.vue';
 
@@ -177,6 +185,8 @@ export default {
     sendGitHubClickEvent
   },
   components: {
+    Carousel,
+    Slide,
     Footer,
     NavBar,
     HeroAnimation: () => import('@haiku/tina-diezheroinstancesyntax/vue')
@@ -537,6 +547,12 @@ export default {
     @include phone {
       margin-top: 0;
     }
+  }
+
+  .flex-centerer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 </style>
