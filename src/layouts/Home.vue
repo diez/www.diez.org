@@ -109,16 +109,75 @@
           <h2>DocsGen Add-on</h2>
           <h3>(Enterprise Edition only)</h3>
           <p style="text-align: left;">From any Diez project, Diez DocsGen builds up-to-the-moment, customizable, and self-hostable design language docs as static HTML pages. <br><br> It's never been easier to get everyone in your organization speaking the same design language.</p>
+          <div class="hide-on-mobile">
+            <h4 style="margin-bottom: 12px;">Learn more about Enterprise Edition</h4>
+            <a class="button" :href="typeformUrl">Get in Touch</a>
+          </div>   
         </div>
       </section>
 
-      <section id="enterprise-cta" class="section-split">
-        <div class="center">
-          <h2>Learn more about Enterprise Edition</h2>
-          <a class="button" :href="typeformUrl">
-            Get in Touch
-          </a>
-        </div>
+      <section v-if="carouselComponent && slideComponent">
+        <component
+          :is="carouselComponent"
+          :per-page="1"
+          :loop="true"
+          :autoplay="true"
+          :speed="770"
+          :autoplayTimeout="5600"
+          paginationActiveColor="#5623ee"
+          >
+          <component :is="slideComponent">
+            <div class="quote-container">
+              <div class="quote">“Some great code under the hood and from the interactions I've had: a great team dedicated to open source”</div>
+              <div class="flex-centerer">
+                <img src="@theme/assets/imgs/companies/hilton.jpg" alt="Hilton Logo">
+                <span>
+                  <div class="name"><a href="https://twitter.com/crutchcorn" target="_blank">Corbin Crutchley</a>, Hilton Hotels</div>
+                  <div class="title">Render Tier Software Engineer</div>
+                </span>
+              </div>
+            </div>
+          </component>
+
+          <component :is="slideComponent">
+            <div class="quote-container">
+              <div class="quote">“Had the absolute pleasure of being able to beta-test @dieznative. So happy to see it’s public launch – Hot take, this is what the future of design tooling looks like.”</div>
+              <div class="flex-centerer">
+                <img src="@theme/assets/imgs/companies/mckinsey.jpg" alt="McKinsey Logo">
+                <span>
+                  <div class="name"><a href="https://twitter.com/breakingpixels" target="_blank">Tim Walker</a>, McKinsey & Company</div>
+                  <div class="title">Associate Design Director</div>
+                </span>
+              </div>
+            </div>
+          </component>
+
+          <component :is="slideComponent">
+            <div class="quote-container">
+              <div class="quote">“This team is incredibly strong. I had the chance of hanging with them for an afternoon at their office and was blown away by their humility and knowledge.”</div>
+              <div class="flex-centerer">
+                <img src="@theme/assets/imgs/companies/hover.jpg" alt="Hover 3D Logo">
+                <span>
+                  <div class="name"><a href="https://twitter.com/IggyIgner" target="_blank">Jonathan "Iggy" Igner</a>, Hover 3D</div>
+                  <div class="title">Senior Product Designer</div>
+                </span>
+              </div>
+            </div>
+          </component>
+
+          <component :is="slideComponent">
+            <div class="quote-container">
+              <div class="quote">“Probably the coolest development in the design tokens space since Salesforce's Theo”</div>
+              <div class="flex-centerer">
+                <img src="@theme/assets/imgs/companies/grow.jpg" alt="Grow Super Logo">
+                <span>
+                  <div class="name"><a href="https://twitter.com/lol_russo" target="_blank">Jack Lo Russo</a>, Grow Super</div>
+                  <div class="title">Front End Engineer / Designer</div>
+                </span>
+              </div>
+            </div>
+          </component>
+        </component>
       </section>
     </div>
 
@@ -559,6 +618,33 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .quote-container {
+    max-width: 700px;
+    width: 100%;
+    margin: $spacing-xxxl-px auto 0;
+
+    img {
+      height: 77px;
+      margin-right: $spacing-lg-px;
+      @include phone {
+        display: block;
+      }
+    }
+
+    .quote {
+      text-align: center;
+      font-size: 34px;
+      font-style: italic;
+      margin-bottom: $spacing-xxl-px;
+      line-height: 1.47;
+    }
+
+    .name {
+      font-weight: 600;
+      margin-bottom: $spacing-xs-px;
+    }
   }
 
 </style>
