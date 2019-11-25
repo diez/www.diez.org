@@ -17,7 +17,7 @@ For a simple setup, you can have a folder that contains your Diez project (desig
 
 ### Diez as a stand-alone repository
 
-In a more robust setup, you should create a stand-alone repository for your Diez project and a separate repository for your Android project.  This is the recommended pattern when you have multiple codebases consuming a single Diez design language.
+In a more robust setup, you should create a stand-alone repository for your Diez project and a separate repository for your JavaScript project.  This is the recommended pattern when you have multiple codebases consuming a single Diez design language.
 
 ### Compiling & consuming your design language
 
