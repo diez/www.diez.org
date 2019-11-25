@@ -78,6 +78,7 @@ export default {
           padding: 0;
           display: inline;
           float: none;
+          text-align: center;
         }
       }
       img {
