@@ -1,6 +1,6 @@
 ## How to adopt Diez into multiple codebases
 
-While we have guides for integrating your Diez project into existing projects ([iOS](/existing-project-integration/ios), [JavaScript](/existing-project-integration/JavasScript), [CSS/Sass](/existing-project-integration/css-sass)), we'll use this guide as an overview on how to use your Diez project across multiple codebases both in development and production .
+While we have guides for integrating your Diez project into existing projects ([iOS](/existing-project-integration/ios), [JavaScript](/existing-project-integration/JavaScript), [CSS/Sass](/existing-project-integration/css-sass)), we'll use this guide as an overview on how to use your Diez project across multiple codebases both in development and production .
 
 If you're going to use your Diez project's compiled libraries (SDKs) across multiple codebases, **we recommend placing you Diez project in its own stand-alone GitHub repo.** Doing so will make it easier to develop, maintain, and version as its own entity.
 
