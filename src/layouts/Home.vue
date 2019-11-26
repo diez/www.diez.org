@@ -124,6 +124,7 @@
           :autoplay="true"
           :speed="770"
           :autoplayTimeout="5600"
+          :autoplayHoverPause="false"
           paginationActiveColor="#5623ee"
           >
           <component :is="slideComponent">
@@ -141,7 +142,7 @@
 
           <component :is="slideComponent">
             <div class="quote-container">
-              <div class="quote">“Had the absolute pleasure of being able to beta-test @dieznative. So happy to see it’s public launch – Hot take, this is what the future of design tooling looks like.”</div>
+              <div class="quote">“Had the absolute pleasure of being able to beta-test @dieznative. So happy to see its public launch – Hot take, this is what the future of design tooling looks like.”</div>
               <div class="flex-centerer">
                 <img src="@theme/assets/imgs/companies/mckinsey.jpg" alt="McKinsey Logo">
                 <span>
