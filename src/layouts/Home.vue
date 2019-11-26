@@ -112,7 +112,7 @@
           <div class="hide-on-mobile">
             <h4 style="margin-bottom: 12px;">Learn more about Enterprise Edition</h4>
             <a class="button" :href="typeformUrl">Get in Touch</a>
-          </div>   
+          </div>
         </div>
       </section>
 
