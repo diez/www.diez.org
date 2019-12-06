@@ -29,6 +29,7 @@
     "@haiku/tina-diezheroinstancesyntax": "^0.0.6",
     "@haiku/tina-whatyouscaffoldedoutlooping": "^0.0.4",
     "diez-diez-site": "file:./design-language/build/diez-diez-site-web",
-    "vue-carousel": "^0.18.0"
+    "vue-carousel": "^0.18.0",
+    "vue-github-button": "^1.1.2"
   }
 }
