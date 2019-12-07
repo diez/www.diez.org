@@ -22,7 +22,7 @@
         <a href="https://github.com/diez/diez"
           target="_blank"
           class="button">
-          <img class="icon" height="22px" width="22px" src="../assets/imgs/Github-alt.svg" alt="Github" title="Github">
+          <img class="icon" height="22px" width="22px" src="../assets/imgs/github-alt.svg" alt="Github" title="Github">
           GitHub
         </a>
       </section>
