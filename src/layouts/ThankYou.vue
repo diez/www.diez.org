@@ -6,6 +6,8 @@
       <section class="section-narrow">
         <h3>Thank You!</h3>
         <p>We'll be in touch with you shortly.</p>
+        <h4>Talk to our CEO</h4>
+        <p>If your company has aggressive spam filters or if you just want to start the conversation right away: please reach out directly to our CEO at <a href="mailto:zack@haikuforteams.com?subject=Diez Enterprise Edition">zack@haikuforteams.com</a></p>
         <h4 style="margin-bottom: 30px">Join the Diez Community</h4>
         <a href="https://join.slack.com/t/dieznative/shared_invite/enQtNzEzNzM2OTg4NDA1LTA4NWZiMTNlZTgzNTY3Yzg2ODdjY2Y1MzBjMjdlY2FlNjljMmI3ZTgzMmQ4ODk1MDdlMTcyMTUzMjNmZWI4YjU"
           target="_blank"
