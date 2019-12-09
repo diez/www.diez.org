@@ -24,7 +24,7 @@
       display: inline-block;
     }
   }
-  
+
 .hide-on-mobile {
   @include tablet {
     display: none !important;
