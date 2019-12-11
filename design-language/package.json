@@ -9,6 +9,7 @@
     "build": "diez compile -t web"
   },
   "dependencies": {
+    "@diez/docs": "https://inkstone.haiku.ai/v0/diez/package/9qYwKqnYa/@diez+docs/10.1.0",
     "@diez/engine": "^10.0.2",
     "@diez/prefabs": "^10.0.2"
   },
