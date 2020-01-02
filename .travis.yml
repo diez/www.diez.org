@@ -1,0 +1,27 @@
+env:
+  - DIEZ_DO_NOT_TRACK=1
+cache: yarn
+before_install:
+- curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+- nvm install 10.16.3
+- nvm alias default 10.16.3
+- curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.17.3
+- nvm use 10.16.3
+- export PATH="$HOME/.yarn/bin:$PATH"
+- sudo pip install awscli
+script:
+- yarn
+branches:
+  only:
+  - master
+notifications:
+  slack:
+    rooms:
+      secure: xnoMp7cJETZWOqvcgZKggpzew2bBpkb0BCPgiz2ywiHfI9q4Xztm3GugOlkeRyLPZ9kpT0HjGCALvQcdMT+N73crLDDKC36fEmDTZfDFy8/1ov2alsbMg8KVKuz/PrGHBxKL8L6fRZJVBWkO7sAU7MjcgDRjuK6ytrbPqDrAaJaDrJcqdksQxqVdjqgEvZcBRj7GGvNE/wx8sl1wZSWKIoYW/8+5Rf8pO0cE6xFbB/MZDKSWDmiqlVEmM9vqBlOoGw7RvVjMaMBIjrAuzt6TH1gcRh6loX19VIn8FGBmJur4/L+9Kn5hqljuXiabuidelRaeaH2HSxNAXH8EJfDebt/9NI6NnTISZRHVZnccjIhmjYwL6XOv/huJd325yYsEXxBSNWwGg4VgqG0Dc4pTwD2ARJLkW8DIcW5xcSobq0VzDWoVEud4kq6OX8kKj1pXYeMSiwpOM+t4vc1z5rlyv7KBCRPpA+kCN+bswPt8GaoQMmKOtNHCs3wLAQiiB27vE9zifxyuvzaEy2VvE00X90D4VXSTnwH0oDRcy2zJdhgKSj2aoxlGKJTu8k0jkCawj0VmnhW3KHLDwCpAqHxe4Dwn5pfHFRrbMiJkTqrD7r9srKU7DdZEBm37jM9a1jwM/cmjFWl26HiiDfdgZqcktgEzw2hclnNJje63o4He9PQ=
+    on_success: always
+    on_failure: always
+deploy:
+  provider: script
+  script: bash ./scripts/deploy.sh
+  on:
+    branch: master
