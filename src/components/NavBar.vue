@@ -41,6 +41,7 @@
             data-show-count="true"
             aria-label="Star diez/diez on GitHub">
             Star
+            <span class="coverage"></span>
           </github-button>
           <router-link class="button hide-on-mobile" to="/getting-started">Get started</router-link>
 
@@ -236,6 +237,16 @@ export default {
   .gh-btn {
     margin: 5px $spacing-lg-px 0;
     width: 101px;
+    position: relative;
+  }
+
+  .coverage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $palette-white;
   }
 
   .social:hover, .learn:hover {
