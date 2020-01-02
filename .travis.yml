@@ -22,6 +22,6 @@ notifications:
     on_failure: always
 deploy:
   provider: script
-  script: bash ./deploy.sh
+  script: bash ./scripts/deploy.sh
   on:
     branch: master
