@@ -15,11 +15,11 @@
           <span class="dd-link hide-on-mobile learn">
             Learn
             <span class="dd-container">
-              <router-link to="/getting-started">Guides</router-link>
-              <router-link to="/docs">Docs</router-link>
-              <router-link to="/glossary">Glossary</router-link>
-              <router-link to="/licensing">Licensing</router-link>
-              <router-link to="/faq">FAQ</router-link>
+              <router-link to="/getting-started"><img height="20px" width="20px" src="../assets/imgs/guides-icon.svg" alt="guides" title="guides">Guides</router-link>
+              <router-link to="/docs"><img height="20px" width="20px" src="../assets/imgs/docs-icon.svg" alt="docs" title="docs">Docs</router-link>
+              <router-link to="/glossary"><img height="20px" width="20px" src="../assets/imgs/glossary-icon.svg" alt="glossary" title="glossary">Glossary</router-link>
+              <router-link to="/licensing"><img height="20px" width="20px" src="../assets/imgs/licensing-icon.svg" alt="licensing" title="licensing">Licensing</router-link>
+              <router-link to="/faq"><img height="20px" width="20px" src="../assets/imgs/faq-icon.svg" alt="FAQ" title="FAQ">FAQ</router-link>
             </span>
           </span>
           <span
