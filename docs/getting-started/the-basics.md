@@ -98,6 +98,6 @@ An example of a custom prefab is demonstrated in an example project [here](https
 
 ### Next steps
 
-After composing your Diez project you'll need to hook it up to your codebase(s). Platform specific guides are available in the side menu.
+After composing your Diez project you'll need to hook it up to your codebase(s). Platform specific guides are available in the side menu. Technical documentation is available [here](/docs/).
 
-Where should your Diez project itself live? Check out the [Diez + Your Codebase](/getting-started/your-codebase) guide.
+Want to learn more about how to set a Diez workflow for your team? Check out the [Diez + Your Codebase](/getting-started/your-codebase) guide.
