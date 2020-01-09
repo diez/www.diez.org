@@ -35,21 +35,21 @@ Let's change the background color of our application by modifying our design lan
 Open `design-language/src/DesignLanguage.ts`, in an editor of your choice, and look for the following block of code:
 
 ```typescript
-const colors = {
-  lightBackground: palette.white,
-  darkBackground: palette.black,
-  text: palette.black,
-  caption: palette.purple
+const palette = {
+  contentBackground: colors.white,
+  text: colors.black,
+  caption: colors.purple,
+  headerBackground: LinearGradient.make(Toward.Bottom, colors.darkPurple, colors.black),
 }
 ```
 
-In this example, the `colors` object maps semantic names to `palette`'s color definitions.
+In this example, the `palette` object maps semantic names to `color`'s color definitions.
 
-Let's change `lightBackground` to `palette.lightPurple` like so:
+Change `contentBackground` to `colors.black` like so:
 
 ```Diff
-- lightBackground: palette.white,
-+ lightBackground: palette.lightPurple,
+- contentBackground: colors.white,
++ contentBackground: colors.black,
 ```
 
 Save your changes to see the background color update in real time! Feel free to experiment with changing other values to see Diez in action.

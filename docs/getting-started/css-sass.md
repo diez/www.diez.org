@@ -42,21 +42,21 @@ For example, you can change the background color of the web app by modifying you
 First, open `design-language/src/DesignLanguage.ts` in an editor of your choice. Look for the following block of code:
 
 ```typescript
-const colors = {
-  lightBackground: palette.white,
-  darkBackground: palette.black,
-  text: palette.black,
-  caption: palette.purple
+const palette = {
+  contentBackground: colors.white,
+  text: colors.black,
+  caption: colors.purple,
+  headerBackground: LinearGradient.make(Toward.Bottom, colors.darkPurple, colors.black),
 }
 ```
 
-In this example, the `Colors` object maps semantic names to `palette`'s color definitions.
+In this example, the `palette` object maps semantic names to `color`'s color definitions.
 
-Change `lightBackground` to `palette.lightPurple` like so:
+Change `contentBackground` to `colors.black` like so:
 
 ```Diff
-- lightBackground: palette.white,
-+ lightBackground: palette.lightPurple,
+- contentBackground: colors.white,
++ contentBackground: colors.black,
 ```
 
 Go back to your browser and see the web app hot update! You can update and hot reload **any** value defined in your design language: strings, colors, images, fonts, etc.
