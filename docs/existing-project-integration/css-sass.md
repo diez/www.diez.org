@@ -42,9 +42,21 @@ And include it in your Webpack config:
 
 ```js
 const DiezWebpackPlugin = require('diez-webpack-plugin');
+// Only necessary if you are hosting your Diez project in the same repo:
+const { join, resolve } = require('path');
 
 module.exports = {
-  plugins: [new DiezWebpackPlugin({sdk: 'my-project'})],
+  configureWebpack: {
+    plugins: [
+      new DiezWebpackPlugin({
+        sdk: 'diez-my-project',
+        // Only necessary if you are hosting your Diez project in the same repo:
+        // Denote the relative path to your Diez project. Shown below as a
+        // sibling to your application.
+        projectPath: join(resolve(__dirname, '..'), 'my-project'),
+      }),
+    ],
+  },
 };
 ```
 
@@ -53,6 +65,8 @@ With this, you are ready to `import` a file containing all your [Design Tokens](
 <CodeTabs>
 ```CSS
 @import('diez-my-project');
+/* Or @import '@diez/styles.css' if you are hosting your Diez project in the same
+repo as your application */
 
 .selector {
   background: var(--colors-purple);
@@ -60,6 +74,8 @@ With this, you are ready to `import` a file containing all your [Design Tokens](
 ```
 ```scss
 @import 'diez-my-project';
+// Or @import '@diez/styles.scss' if you are hosting your Diez project in the same
+// repo as your application
 
 .selector {
   background: $colors-purple;
