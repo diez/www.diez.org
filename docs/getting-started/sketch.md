@@ -80,6 +80,11 @@ Need to update your designs? Perhaps the best part, is that once you hook it up,
 
 We think this has massive implications for product teams working together. As a designer, you just need to provide your developer with your Sketch file and this guide.
 
-Keeping your Sketch file in sync with your production Diez project will be even easier after Sketch has fully released their [Sketch Teams](https://www.sketch.com/teams/) functionality. Until then the best way to collaborate at scale is by using InVision DSM and Sketch in conjunction. Check out the [InVision DSM Guide](/getting-started/dsm) for more details.
+#### Wishing for Sketch Cloud support?
+We are too. When the Sketch Cloud API becomes available, we will implement a workflow much like we have for [Figma](/getting-started/figma). Until then you have a couple options:
+
+1. Each time you want to update your design tokens, download your latest cloud document from your team's page at www.sketch.cloud/your-team/. Save it to your Diez project's `designs/` folder; extract it from there.  
+
+2. Use InVision DSM and Sketch in conjunction. Check out the [InVision DSM Guide](/getting-started/dsm) for more details.
 
 Want to learn more about how to use Diez? Head over to the [Basics Guide](/getting-started/the-basics).
