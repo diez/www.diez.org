@@ -59,9 +59,14 @@ Turn any visuals you want to use in your Diez project into Figma "Components."
 ### Syncing your Figma file with your Diez project
 Now you're all set up to sync your Figma file with your Diez project. Head back over to your Diez project folder within your terminal and run:
 
-```bash
-yarn diez extract
+<CodeTabs>
+```bash tabname-yarn
+$ yarn diez extract
 ```
+```bash tabname-npm
+$ npx diez extract
+```
+</CodeTabs>
 
 After authenticating Diez with your Figma account, you'll notice a few new updates to your Diez project.
 
@@ -87,7 +92,7 @@ const palette = {
 
 ### Re-syncing a design file
 
-Need to update your designs? Perhaps the best part, is that once you hook it up, all you need to do to resync a design is to re-run `yarn diez extract`!
+Need to update your designs? Perhaps the best part, is that once you hook it up, all you need to do to resync a design is to re-run `yarn/npx diez extract`!
 
 <video width="100%" autoplay loop muted playsinline>
     <source src="@theme/assets/vids/figma-short.mp4" type="video/mp4">
@@ -98,6 +103,6 @@ Need to update your designs? Perhaps the best part, is that once you hook it up,
 
 We think this has massive implications for product teams working together. As a designer, you just need to provide your developer with your Figma file URL and ensure she has permissions. As a developer, you just to create a free Figma account and perform the trivial setup outlined in this guide.
 
-After that ongoing updates to your design language are as simple as running `yarn diez extract`!
+After that ongoing updates to your design language are as simple as running `yarn/npx diez extract`!
 
 Want to learn more about how to use Diez? Head over to the [Basics Guide](/getting-started/the-basics).

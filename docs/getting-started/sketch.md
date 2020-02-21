@@ -46,9 +46,14 @@ Mark any visuals you want to use in your Diez project for export (or create slic
 ### Syncing your Sketch file with your Diez project
 Make sure to save your changes. Now you're all set up to sync your Sketch file with your Diez project. Head back over to your terminal and within your Diez project folder run:
 
-```bash
-yarn diez extract
+<CodeTabs>
+```bash tabname-yarn
+$ yarn diez extract
 ```
+```bash tabname-npm
+$ npx diez extract
+```
+</CodeTabs>
 
 You'll notice a few new updates to your Diez project.
 
@@ -83,7 +88,7 @@ We think this has massive implications for product teams working together. As a 
 #### Wishing for Sketch Cloud support?
 We are too. When the Sketch Cloud API becomes available, we will implement a workflow much like we have for [Figma](/getting-started/figma). Until then you have a couple options:
 
-1. Each time you want to update your design tokens, download your latest cloud document from your team's page at www.sketch.cloud/your-team/. Save it to your Diez project's `designs/` folder; extract it from there.  
+1. Each time you want to update your design tokens, download your latest cloud document from your team's page at www.sketch.cloud/your-team/. Save it to your Diez project's `designs/` folder; extract it from there.
 
 2. Use InVision DSM and Sketch in conjunction. Check out the [InVision DSM Guide](/getting-started/dsm) for more details.
 

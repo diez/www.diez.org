@@ -12,7 +12,7 @@ If you'd like to follow along, please first [create your own Diez project using 
 
 
 ### Linking a DSM project to your Diez project
-Open your InVision DSM project on the web and navigate to the code icon in the top bar (*it looks like this*: `</>`) and choose **Design tokens** from its dropdown menu. From there, choose **JSON** from the side menu on the left. In the page's first section (**Styles**), copy the unique API endpoint associated with your DSM project. 
+Open your InVision DSM project on the web and navigate to the code icon in the top bar (*it looks like this*: `</>`) and choose **Design tokens** from its dropdown menu. From there, choose **JSON** from the side menu on the left. In the page's first section (**Styles**), copy the unique API endpoint associated with your DSM project.
 
 Now navigate back to your Diez project root; open a file called `.diezrc`.
 
@@ -29,7 +29,7 @@ Put your DSM project url in the `"services"` array. It should now look something
 <div class="note">(Be sure to put the URL in double-quotes as shown.)</div>
 
 ### Preparing your DSM project for extraction
-First make sure your DSM project is fully fleshed out. [Learn how to use DSM with your Sketch files here](https://support.invisionapp.com/hc/en-us/articles/115005685166). 
+First make sure your DSM project is fully fleshed out. [Learn how to use DSM with your Sketch files here](https://support.invisionapp.com/hc/en-us/articles/115005685166).
 
 Diez has the power to extract **Color Styles**, **Text Styles**, and **Fonts** from DSM. Support for **Images** will be coming soon. In the future we will be able to pull in additional pieces (e.g. **Shadows**) should the InVision DSM API response add support for **Layer Styles**.
 
@@ -38,9 +38,15 @@ Diez has the power to extract **Color Styles**, **Text Styles**, and **Fonts** f
 ### Syncing your DSM project with your Diez project
 Now you're all set up to sync your DSM project with your Diez project. Head back over to your terminal and within your Diez project folder run:
 
-```bash
-yarn diez extract
+<CodeTabs>
+```bash tabname-yarn
+$ yarn diez extract
 ```
+```bash tabname-npm
+$ npx diez extract
+```
+</CodeTabs>
+
 
 Inside a new folder `./assets/YourDSMProjName.invision.contents` you'll find the extracted font files associated with your Text Styles.
 
