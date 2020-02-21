@@ -25,13 +25,13 @@ The effect of running this command is the same as running:
 
 <CodeTabs>
 ```bash tabname-yarn
-$ yarn diez compile -t ios
+$ yarn diez compile -t ios --cocoapods
 $ yarn diez hot -t ios
 $ cd ../example-codebases/ios
 $ yarn start
 ```
 ```bash tabname-npm
-$ npx diez compile -t ios
+$ npx diez compile -t ios --cocoapods
 $ npx diez hot -t ios
 $ cd ../example-codebases/ios
 $ npm run start
