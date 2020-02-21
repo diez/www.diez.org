@@ -6,10 +6,17 @@ Diez works in macOS, Windows, and Linux and only requires Node.js >= 7.10.1. For
 
 This guide assumes that you already have a Diez project. If you don't have one, you can generate a starter project by running:
 
-```bash
+<CodeTabs>
+```bash tabname-yarn
 $ yarn create diez my-project
 $ cd my-project
 ```
+```bash tabname-npm
+$ npx diez create my-project
+$ cd my-project
+```
+</CodeTabs>
+
 
 ### Diez as a library
 

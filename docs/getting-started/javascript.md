@@ -10,17 +10,31 @@ In the template project, you'll find a sample Diez project defined for you in `d
 
 From your Diez project root, run the following command to compile your Diez project's JavaScript SDK and serve it in hot mode.
 
-```bash
-yarn start web
+<CodeTabs>
+```bash tabname-yarn
+$ yarn start web
 ```
+```bash tabname-npm
+$ npm run start web
+```
+</CodeTabs>
 
 The effect of running this command is the same as running:
-```bash
-yarn diez compile -t web
-yarn diez hot -t web
-cd ../example-codebases/web
-yarn start
+
+<CodeTabs>
+```bash tabname-yarn
+$ yarn diez compile -t web
+$ yarn diez hot -t web
+$ cd ../example-codebases/web
+$ yarn start
 ```
+```bash tabname-npm
+$ npx diez compile -t web
+$ npx diez hot -t web
+$ cd ../example-codebases/web
+$ npm run start
+```
+</CodeTabs>
 
 If you take a look at the code in `example-codebases/web/src/App.jsx`, you'll find that the design language is used across the app in sections of the code like this:
 

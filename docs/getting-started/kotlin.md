@@ -12,19 +12,35 @@ In the template project, you'll find a sample Diez project defined for you in `d
 
 From your Diez project root, run the following command to compile your Diez project's Android SDK and serve it in hot mode.
 
-```bash
-yarn start android
+<CodeTabs>
+```bash tabname-yarn
+$ yarn start android
 ```
+```bash tabname-npm
+$ npm run start android
+```
+</CodeTabs>
 
 The effect of running this command is the same as running:
-```bash
-yarn diez compile -t android
-yarn diez hot -t android
+
+<CodeTabs>
+```bash tabname-yarn
+$ yarn diez compile -t android
+$ yarn diez hot -t android
+$ cd ../example-codebases/android
+$ yarn start
 ```
+```bash tabname-npm
+$ npx diez compile -t android
+$ npx diez hot -t android
+$ cd ../example-codebases/android
+$ npm run start
+```
+</CodeTabs>
 
 #### Open the project in Android Studio
 
-`yarn start android` attempts to open the example project in Android Studio. If this does not work for any reason, in Android Studio, select the option to "Open an exiting Android Studio project" from the welcome screen. (If you already have a project open in Android Studio, you can use the `Open...` option from the File menu.) Then open the project in `example-codebases/android`.
+`start android` attempts to open the example project in Android Studio. If this does not work for any reason, in Android Studio, select the option to "Open an exiting Android Studio project" from the welcome screen. (If you already have a project open in Android Studio, you can use the `Open...` option from the File menu.) Then open the project in `example-codebases/android`.
 
 After Gradle dependencies sync, run the `app` target with `Ctrl + R`.
 
@@ -54,6 +70,6 @@ Change `contentBackground` to `colors.black` like so:
 
 Save your changes to see the background color update in real time! Feel free to experiment with changing other values to see Diez in action.
 
-Note that if you make any changes to the structure of your design tokens (e.g. you add/remove a property to any component) you will need to regenerate the SDK with `yarn diez compile -t android`. Due to the use of a dynamically linked Android module in the example project, you may also need to close and reopen your Android project after regenerating the SDK.
+Note that if you make any changes to the structure of your design tokens (e.g. you add/remove a property to any component) you will need to regenerate the SDK with `yarn/npx diez compile -t android`. Due to the use of a dynamically linked Android module in the example project, you may also need to close and reopen your Android project after regenerating the SDK.
 
 Please see [The Basics Guide](/getting-started/the-basics) for more information on how to compose and edit your design tokens.
