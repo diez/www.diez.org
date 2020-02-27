@@ -99,6 +99,13 @@ Need to update your designs? Perhaps the best part, is that once you hook it up,
 </video>
 <div class="note">Shown above in the demo web app. Keep in mind that this works for iOS and Android codebases as well.</div>
 
+### Best practices
+When using Figma and Diez together there is an important best practice worth noting: **Create a separate Figma file for your design tokens**.
+
+Don't use a single Figma file to represent your design team's entire UI kit. Diez extracts all Figma “components” — effectively turning them into reusable images. There can be quite a lot of "components" in a design file you don’t intend to use as design tokens — the UI elements such as buttons, input fields, badges, etc. **Design tool UI components ≠ coded UI components**, and it's not something Diez is designed to solve (so far).
+
+That said, some Figma "components" _are_ useful as tokens (think icons, logos). And so the best practice here is to separate your design tokens into its own Figma file and publish it as a Figma Library (making it consumable by your other design files).
+
 ### Working with teams (designers & developers)
 
 We think this has massive implications for product teams working together. As a designer, you just need to provide your developer with your Figma file URL and ensure she has permissions. As a developer, you just to create a free Figma account and perform the trivial setup outlined in this guide.
