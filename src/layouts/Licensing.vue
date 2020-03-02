@@ -24,7 +24,7 @@
       <p>If you are not willing or able to meet these requirements of the AGPL license, you will want Diez Enterprise Edition instead, which offers flexible commercial licensing. <a :href="typeformUrl" target="_blank">Contact us</a> for more info or if you have any questions about the obligations of the AGPL license.</p>
 
       <h4>LGPL module: Framework</h4>
-      <p>Diez CE’s Framework module contains code intended to be dynamically linked inside your own proprietary codebases—i.e. it contains the code you import in order to create a Diez design language—so it’s licensed under the LGPL to ensure that it’s freely usable under most commercial use-cases.</p>
+      <p>Diez CE’s Framework module contains code intended to be dynamically linked inside your own proprietary codebases—i.e. it contains the code you import in order to create a Diez design language and compose design tokens—so it’s licensed under the LGPL to ensure that it’s freely usable under most commercial use-cases.</p>
       <p>That said, <strong>“derivative works,” i.e. codebases using any modifications to the Diez Framework module itself, or any codebase that statically links Diez Framework code, must be open-sourced under LGPL and freely distributed in turn.</strong></p>
       <p>If you are not willing or able to meet these requirements of the LGPL license, you will want Diez Enterprise Edition instead, which offers flexible commercial licensing. <a :href="typeformUrl" target="_blank">Contact us</a> for more info or if you have any questions about the obligations of the LGPL license.</p>
 

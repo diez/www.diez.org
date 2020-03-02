@@ -14,7 +14,7 @@ Your Diez project represents a design language: a collection of design token def
 
 #### Diez Complier
 
-The Diez Complier transpiles your project's design language into versioned SDKs for each target you specify.
+The Diez Complier transpiles your project's design tokens into versioned SDKs for each target you specify.
 
 #### Your Diez SDKs
 
@@ -42,7 +42,7 @@ export const designLanguage = {
 
 For convenience, Diez comes packaged with many prefabs that you can use as building blocks to put together your design tokens. The prefabs cover common use cases for design tokens like colors, typography, shadows, images, primitive values, etc.
 
-After compilation the properties defined in your design language are available to you along with a number of extensions and helpers to make interacting with them in your host codebase(s) a seamless experience.
+After compilation the tokens defined in your design language are available to you along with a number of extensions and helpers to make interacting with them in your host codebase(s) a seamless experience.
 
 Below we'll show how to use prefabs to define your design tokens and compose your Diez design language.
 

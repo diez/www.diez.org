@@ -76,6 +76,6 @@ Need to update your designs? Perhaps the best part is that once you hook it up, 
 
 We think this has massive implications for product teams working together. As a designer, you just need to provide your developer with your DSM project URL and ensure she has permissions. As a developer, you just need to perform the trivial setup outlined in this guide.
 
-After that ongoing updates to your production design language are as simple as running `yarn diez extract`!
+After that ongoing updates to your production design tokens are as simple as running `yarn diez extract`!
 
 Want to learn more about how to use Diez? Head over to the [Basics Guide](/getting-started/the-basics).

@@ -106,7 +106,7 @@
         <div class="one-third align-top">
           <h2>DocsGen Add-on</h2>
           <h3>(Enterprise Edition only)</h3>
-          <p style="text-align: left;">From any Diez project, Diez DocsGen builds up-to-the-moment, customizable, and self-hostable design language docs as static HTML pages. <br><br> It's never been easier to get everyone in your organization speaking the same design language.</p>
+          <p style="text-align: left;">From any Diez project, Diez DocsGen builds up-to-the-moment, customizable, and self-hostable design token docs as static HTML pages. <br><br> It's never been easier to get everyone in your organization speaking the same design language.</p>
           <div class="hide-on-mobile">
             <h4 style="margin-bottom: 12px;">Learn more about Enterprise Edition</h4>
             <a class="button" :href="typeformUrl">Get in Touch</a>
@@ -183,12 +183,12 @@
     <div id="enterprise" class="shared">
       <section class="section">
         <h1>Community & Enterprise Editions</h1>
-        <p>Diez is available in two editions:  the free and open source <strong>Diez Community Edition</strong> with everything you need to create your design language source of truth — and <strong>Diez Enterprise Edition</strong> with exclusive access to DocsGen, availability of support and training, and other enterprise value-adds.</p>
+        <p>Diez is available in two editions:  the free and open source <strong>Diez Community Edition</strong> with everything you need to create your design token source of truth — and <strong>Diez Enterprise Edition</strong> with exclusive access to DocsGen, availability of support and training, and other enterprise value-adds.</p>
         <div class="side-by-side">
           <div class="card">
             <h3>Community Edition</h3>
             <ul>
-              <li>Design language framework</li>
+              <li>Design token framework</li>
               <li>Diez Compiler</li>
               <li>Design file extractors</li>
               <li>Open source license</li>
@@ -198,7 +198,7 @@
           <div class="card card-w-background card-bordered">
             <h3>Enterprise Edition</h3>
             <ul>
-              <li>Design language framework</li>
+              <li>Design token framework</li>
               <li>Diez Compiler</li>
               <li>Design file extractors <span class="primary">(Including support for InVision DSM)</span></li>
               <li class="primary">DocsGen Add-on</li>

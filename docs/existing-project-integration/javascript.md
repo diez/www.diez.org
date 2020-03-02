@@ -20,15 +20,15 @@ $ cd my-project
 
 ### Diez as a library
 
-For a simple setup, you can have a folder that contains your Diez project (design language definition) and a separate folder with your web project.
+For a simple setup, you can have a folder that contains your Diez project (design token definitions) and a separate folder with your web project.
 
 ### Diez as a stand-alone repository
 
 In a more robust setup, you should create a stand-alone repository for your Diez project and a separate repository for your JavaScript project.  This is the recommended pattern when you have multiple codebases consuming a single Diez design language.
 
-### Compiling & consuming your design language
+### Compiling & consuming your design tokens
 
-After you [compile](#compiling) your Diez project, a Node package containing your design language will be generated inside your Diez project.  You can use this package like any Node dependency: you can link it, publish it to NPM, or deploy it to Git.  We recommend using GitHub's recently launched [package registry](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages) for versioning and distributing your built modules to consuming codebases, though you can also use solutions like symlinking or `../../relative-paths`.
+After you [compile](#compiling) your Diez project, a Node package containing your design tokens will be generated inside your Diez project.  You can use this package like any Node dependency: you can link it, publish it to NPM, or deploy it to Git.  We recommend using GitHub's recently launched [package registry](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages) for versioning and distributing your built modules to consuming codebases, though you can also use solutions like symlinking or `../../relative-paths`.
 
 After that, you can consume your design language by `import`ing it.
 
@@ -67,7 +67,7 @@ You can find what prefabs have extensions in [Interacting with Prefabs](#interac
 
 ### Compiling
 
-The Diez compiler can compile your design language in two modes: _normal_ and _hot_.
+The Diez compiler can compile your design tokens in two modes: _normal_ and _hot_.
 
 #### Development flow
 

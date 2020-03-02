@@ -36,7 +36,7 @@ $ npm run start
 ```
 </CodeTabs>
 
-If you take a look at the code in `example-codebases/web/src/App.jsx`, you'll find that the design language is used across the app in sections of the code like this:
+If you take a look at the code in `example-codebases/web/src/App.jsx`, you'll find that the design tokens are used across the app in sections of the code like this:
 
 ```jsx
 <h2 className={styles.title}>{ds.strings.title}</h2>

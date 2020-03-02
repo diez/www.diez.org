@@ -8,9 +8,9 @@ This guide assumes that you already have a Diez project.
 
 ### Diez as a library
 
-For a simple setup, you can have a folder that contains your Diez project (design language definition) and a separate folder with your Android project.
+For a simple setup, you can have a folder that contains your Diez project (design token definitions) and a separate folder with your Android project.
 
-After you [compile](#compiling), a library module with your design language will be generated in a location relative to the current working directory at `build/diez-<name>-android`, where `<name>` is the name of your Diez project in kebab case.
+After you [compile](#compiling), a library module with your design tokens will be generated in a location relative to the current working directory at `build/diez-<name>-android`, where `<name>` is the name of your Diez project in kebab case.
 
 After that, you can consume your design language by adding it as a dependency in your `build.gradle`:
 
@@ -22,7 +22,7 @@ implementation project(':diez_project_name')
 
 In a more robust setup, you should create a stand-alone repository for your Diez project and a separate repository for your Android project.  This is the recommended pattern when you have multiple codebases consuming a single Diez design language.
 
-After you [compile](#compiling) your Diez project, a library module with your design language will be generated inside your Diez project.  We recommend using GitHub's recently launched [package registry](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages) for versioning and distributing your built modules to consuming codebases, though you can also use solutions like symlinking or `../../relative-paths`.
+After you [compile](#compiling) your Diez project, a library module with your design tokens will be generated inside your Diez project.  We recommend using GitHub's recently launched [package registry](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages) for versioning and distributing your built modules to consuming codebases, though you can also use solutions like symlinking or `../../relative-paths`.
 
 After that, you can consume your design language by adding it as a dependency in your `build.gradle`:
 
@@ -32,7 +32,7 @@ implementation project(':diez_project_name')
 
 ### Compiling
 
-The Diez compiler can compile your design language in two modes: _normal_ and _hot_.
+The Diez compiler can compile your design tokens in two modes: _normal_ and _hot_.
 
 #### Development flow
 
