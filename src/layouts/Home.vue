@@ -6,14 +6,13 @@
         <div class="background"></div>
         <div class="section-split hero-container">
           <div class="half animation-holster">
-            <div class="render-solve">Animation showing Diez in action</div>
+            <div class="render-solve">Animation illustrating how changes to Diez source code trigger visual updates to web, iOS, and Android apps.</div>
             <HeroAnimation sizing="cover" loop="true"></HeroAnimation>
           </div>
           <div class="half align-top punch">
-            <h1>The Design Language Framework</h1>
+            <h1>The Design Token Framework</h1>
             <h3>Diez radically reduces the cost of delivering a consistent visual identity across your company’s apps &amp; websites.</h3>
             <router-link class="button left" to="/getting-started">Get Started</router-link>
-            <a class="button secondary left" href="#enterprise-grade">Enterprise Edition</a>
           </div>
         </div>
       </section>
@@ -22,13 +21,13 @@
         <h1 class="center heading1">What is Diez?</h1>
         <h3 class="center">Diez is a free &amp; open-source developer toolkit for expressing visual styles that can be shared across codebases, native platforms, and teams.
           <br><br>
-          <strong>Diez comes in three parts:</strong>
+          <strong>Diez's toolkit comes in three parts:</strong>
         </h3>
       </section>
 
       <section id="dlf" class="section-split">
         <div  class="half align-top">
-          <h2>1. Design language framework</h2>
+          <h2>1. Design token framework</h2>
           <p>Use TypeScript to compose <a href="/glossary/#tokens">design tokens</a> into <strong>scalable</strong> and <strong>extensible</strong> collections of styles, themes, and visual guidelines.  Your brand identity fits right here — as code.</p>
           <p>From colors to typography, drop shadows to border radii, gradients to usage guidelines, logos to icons: if you can imagine it, you can express it in Diez.</p>
         </div>
@@ -67,9 +66,8 @@
 
       <section id="enterprise-grade">
         <div class="section section-narrow no-bottom">
-          <h1 class="center">Built for Enterprise</h1>
-          <h3 class="center">Your design system’s missing half</h3>
-          <p class="center">Diez naturally integrates with any UI component solution in the world to help you create a <strong>complete design system.</strong></p>
+          <h1 class="center">Built for Design Systems</h1>
+          <p class="center">Diez is the perfect base-layer for your design system, supporting any UI component library or native codebase with a centralized set of visual styles.  Update once, update everywhere.</p>
         </div>
         <div class="section full-img">
           <img src="@theme/assets/imgs/design-system.png" alt="design system" class="hide-on-mobile">
@@ -185,7 +183,7 @@
     <div id="enterprise" class="shared">
       <section class="section">
         <h1>Community & Enterprise Editions</h1>
-        <p>Diez is available in two editions:  the free and open source <strong>Diez Community Edition</strong> with everything you need to create your design language source of truth — and <strong>Diez Enterprise Edition</strong> with exclusive access to DocsGen, customizable commercial licensing, and other enterprise value-adds.</p>
+        <p>Diez is available in two editions:  the free and open source <strong>Diez Community Edition</strong> with everything you need to create your design language source of truth — and <strong>Diez Enterprise Edition</strong> with exclusive access to DocsGen, availability of support and training, and other enterprise value-adds.</p>
         <div class="side-by-side">
           <div class="card">
             <h3>Community Edition</h3>
@@ -204,7 +202,6 @@
               <li>Diez Compiler</li>
               <li>Design file extractors <span class="primary">(Including support for InVision DSM)</span></li>
               <li class="primary">DocsGen Add-on</li>
-              <li class="primary">Commercial license</li>
               <li class="primary">Support, Integration, & Training</li>
             </ul>
             <a class="button" :href="typeformUrl">
@@ -279,11 +276,6 @@ export default {
       max-height: auto;
       margin-bottom: $spacing-xxxl-px;
       padding-bottom: $spacing-xxl-px;
-    }
-    h1 {
-      font-size: 2.8rem;
-      margin-top: 0;
-      margin-bottom: 0;
     }
     .hero-container {
       display: flex;
