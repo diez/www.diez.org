@@ -6,7 +6,7 @@ Diez has built-in ability to extract styles and images from design files and tur
 
 #### Prerequisites
 
-If you'd like to follow along, please first [create your own Diez project using the official template project](/getting-started/#set-up) which comes with everything set up for you and includes example codebases consuming the design language.
+If you'd like to follow along, please first [create your own Diez project using the official template project](/getting-started/#set-up) which comes with everything set up for you and includes example codebases consuming the design tokens.
 
 ### Linking a Figma file to your Diez project
 From your Diez project root, open a file called `.diezrc`.
@@ -76,13 +76,13 @@ But Diez didn't _only_ extract assets for you, it crafted them into strongly-typ
 
 #### Integrating your Figma design tokens into your Diez design language
 
-Import your Figma design tokens into your main design language file: `./src/DesignLanguage.ts`
+Import your Figma design tokens into your main design token file: `./src/DesignLanguage.ts`
 
 ```typescript
 import { yourFigmaProjNameTokens } from './designs/YourFigmaProjName.figma';
 ```
 
-Then use it as you see fit. As shown here, we've used the Color Style from Figma named `fuss` and set it as the 'lightBackground' color in our design language.
+Then use it as you see fit. As shown here, we've used the Color Style from Figma named `fuss` and set it as the 'lightBackground' color in our design tokens.
 
 ```typescript
 const palette = {

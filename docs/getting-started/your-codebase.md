@@ -7,7 +7,7 @@ If you're going to use your Diez project's compiled libraries (SDKs) across mult
 ### Publishing your Diez project's SDKs to package managers
 After you've created and compiled your [Diez project](/getting-started/#set-up) and placed it in its own repo, you'll want navigate into its build folder (`cd build/your-package-web|ios|android`) and publish the compiled SDKs to your team's private package manager solution for each of your application targets.  We recommend GitHub's new [package manager](https://help.github.com/en/github/managing-packages-with-github-packages/about-github-packages) as an excellent way to distribute & version your native packages between projects. After your packages are published, you'll need to reference them from your application codebases (E.g. for web, list it in your `package.json`).
 
-### Developing your design language and applications simultaneously
+### Developing your design tokens and applications simultaneously
 As you may have noticed, you've already solved your team's cross-platform, versioned design token needs! But what if you want to develop and experiment with your Diez project *while* you also develop on your applications that consume it?
 
 Let's use JavaScript (web) as an example. From your Diez project, cd into the build folder and run:

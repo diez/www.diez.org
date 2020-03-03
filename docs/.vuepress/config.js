@@ -1,6 +1,6 @@
 const {join, resolve} = require('path');
 const DiezWebpackPlugin = require('diez-webpack-plugin');
-const siteTitle = 'Diez — The Design Language Framework';
+const siteTitle = 'Diez — The Design Token Framework';
 const siteDesc = 'Diez radically reduces the cost of delivering a consistent visual identity across your company’s apps & websites.';
 
 module.exports = {

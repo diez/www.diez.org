@@ -6,7 +6,7 @@ Diez has built-in ability to extract styles and images from design files and tur
 
 #### Prerequisites
 
-If you'd like to follow along, please first [create your own Diez project using the official template project](/getting-started/#set-up) which comes with everything set up for you and includes example codebases consuming the design language.
+If you'd like to follow along, please first [create your own Diez project using the official template project](/getting-started/#set-up) which comes with everything set up for you and includes example codebases consuming the design tokens.
 
 ### Linking a Sketch file to your Diez project
 From your Diez project root, open the empty `./designs/` folder and drop in your Sketch file.
@@ -69,7 +69,7 @@ Import your Sketch design tokens into your main design language file: `./src/Des
 import { yourSketchFileNameTokens } from './designs/YourSketchFileName.sketch';
 ```
 
-Then use it as you see fit. As shown here, we've used the Document Color from Sketch named `fuss` and set it as the 'lightBackground' color of our design language.
+Then use it as you see fit. As shown here, we've used the Document Color from Sketch named `fuss` and set it as the 'lightBackground' color in our design tokens.
 
 ```typescript
 const palette = {
