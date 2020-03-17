@@ -105,12 +105,7 @@
         </div>
         <div class="one-third align-top">
           <h2>DocsGen Add-on</h2>
-          <h3>(Enterprise Edition only)</h3>
           <p style="text-align: left;">From any Diez project, Diez DocsGen builds up-to-the-moment, customizable, and self-hostable design token docs as static HTML pages. <br><br> It's never been easier to get everyone in your organization speaking the same design language.</p>
-          <div class="hide-on-mobile">
-            <h4 style="margin-bottom: 12px;">Learn more about Enterprise Edition</h4>
-            <a class="button" :href="typeformUrl">Get in Touch</a>
-          </div>
         </div>
       </section>
 
