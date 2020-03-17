@@ -31,6 +31,7 @@
               <a href="https://twitter.com/dieznative" target="_blank"><img height="20px" width="24px" src="../assets/imgs/twitter.svg" alt="twitter" title="twitter">Twitter</a>
               <a href="https://medium.com/dieznative" target="_blank"><img height="22px" width="22px" src="../assets/imgs/medium.svg" alt="medium" title="medium">Medium</a>
               <a href="https://github.com/diez/diez" @click="sendGitHubClickEvent" target="_blank"><img height="24px" width="24px" src="../assets/imgs/github.svg" alt="github" title="github">GitHub</a>
+              <a href="http://eepurl.com/gJ-ZhX" target="_blank"><img height="24px" width="24px" src="../assets/imgs/newsletter-icon.svg" alt="Newsletter" title="Newsletter">Newsletter</a>
             </span>
           </span>
           <github-button
@@ -184,7 +185,7 @@ export default {
       transform: translateZ(1px);
       position: absolute;
       box-shadow: 0 7px 20px rgba(0,0,0, .16);
-      width: 170px;
+      width: 175px;
       top: 25px;
       right: 0;
       border-radius: 4px;
