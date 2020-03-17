@@ -1,8 +1,8 @@
-## Update Guide
+## Updating your Diez version
 
 ### Versions equal to or greater than v10.4
 
-From version 10.4, Diez can be updated via the built-in `update` command:
+For version 10.4 and up, Diez can be updated via the built-in `update` command:
 
 <CodeTabs>
 ```bash tabname-yarn
@@ -17,7 +17,7 @@ $ npx diez update
 
 ### Versions lower than v10.4
 
-For older versions of Diez, the recommended approach is to update core packages manually by doing:
+For older versions of Diez, the recommended approach is to update core packages manually by running:
 
 <CodeTabs>
 ```bash tabname-yarn
