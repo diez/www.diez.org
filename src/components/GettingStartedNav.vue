@@ -6,6 +6,7 @@
         <router-link class="sub-link" to="/getting-started/the-basics">The Basics</router-link>
         <router-link class="sub-link" to="/getting-started/your-codebase">Diez + Your Codebases</router-link>
         <router-link class="sub-link" to="/docs">Docs</router-link>
+        <router-link class="sub-link" to="/getting-started/updating">Update Guide</router-link>
       </div>
 
       <router-link class="category" to="/getting-started/ios">iOS</router-link>
