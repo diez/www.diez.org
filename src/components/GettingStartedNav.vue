@@ -5,6 +5,7 @@
         <router-link class="sub-link" to="/getting-started/#set-up">Set Up</router-link>
         <router-link class="sub-link" to="/getting-started/the-basics">The Basics</router-link>
         <router-link class="sub-link" to="/getting-started/your-codebase">Diez + Your Codebases</router-link>
+        <router-link class="sub-link" to="/getting-started/updating">Updating Diez</router-link>
         <router-link class="sub-link" to="/docs">Docs</router-link>
       </div>
 
