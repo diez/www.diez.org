@@ -175,36 +175,11 @@
       </section>
     </div>
 
-    <div id="enterprise" class="shared">
+    <div class="shared cta-section">
       <section class="section">
-        <h1>Community & Enterprise Editions</h1>
-        <p>Diez is available in two editions:  the free and open source <strong>Diez Community Edition</strong> with everything you need to create your design token source of truth — and <strong>Diez Enterprise Edition</strong> with exclusive access to DocsGen, availability of support and training, and other enterprise value-adds.</p>
-        <div class="side-by-side">
-          <div class="card">
-            <h3>Community Edition</h3>
-            <ul>
-              <li>Design token framework</li>
-              <li>Diez Compiler</li>
-              <li>Design file extractors</li>
-              <li>Open source license</li>
-            </ul>
-            <router-link class="button secondary" to="/getting-started">Get Started</router-link>
-          </div>
-          <div class="card card-w-background card-bordered">
-            <h3>Enterprise Edition</h3>
-            <ul>
-              <li>Design token framework</li>
-              <li>Diez Compiler</li>
-              <li>Design file extractors <span class="primary">(Including support for InVision DSM)</span></li>
-              <li class="primary">DocsGen Add-on</li>
-              <li class="primary">Support, Integration, & Training</li>
-            </ul>
-            <a class="button" :href="typeformUrl">
-              Get in Touch
-            </a>
-            <div class="background"></div>
-          </div>
-        </div>
+        <h1>Diez is free and open source</h1>
+        <p>Take it for a spin with our demo project, docs, and step-by-step guides.</p>
+        <router-link class="button" to="/getting-started">Get Started</router-link>
       </section>
     </div>
     <Footer></Footer>
@@ -460,14 +435,15 @@ export default {
     }
   }
 
-  #enterprise {
+  .cta-section {
     font-family: "Source Sans Pro",sans-serif;
     font-size: 20px;
     background-color: $palette-mauve;
+    text-align: center;
     h1 {
       text-align: center;
       color: $palette-white;
-      margin-bottom: $spacing-lg-px;
+      margin-bottom: $sizing-xxs-px;
     }
     h2 {
       color: $palette-white;
@@ -477,10 +453,10 @@ export default {
       margin-top: $spacing-xs-px;
     }
     p {
-      text-align: center;
+      color: $palette-white;
       max-width: $sizing-xxl-px;
       margin: 0 auto;
-      margin-bottom: $spacing-xxl-px;
+      margin-bottom: $sizing-xxs-px;
     }
     section {
       margin-bottom: 0;
