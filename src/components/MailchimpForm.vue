@@ -21,9 +21,9 @@ export default {};
 
 .email {
   height: 50px;
-  width: 300px;
-  padding: 0 15px;
-  border-radius: 8px;
+  width: $sizing-md-px;
+  padding: 0 $spacing-md-px;
+  border-radius: $border-radius-button-px;
   border: 1px solid $palette-gray700;
   outline: none;
 }
