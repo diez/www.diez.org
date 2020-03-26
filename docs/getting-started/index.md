@@ -1,6 +1,4 @@
 ## Getting Started
-<div class="aside">This guide helps you get started with Diez Community Edition. Check out <router-link to="/#enterprise-grade">Diez Enterprise Edition</router-link> for more features like DocsGen & customizable commercial licensing.</div>
-
 <h3 id="set-up">Setting up your Diez project</h3>
 
 <h4 id="intro">Introduction</h4>
@@ -88,9 +86,3 @@ If you'd prefer to first learn a bit more about your Diez project and how to com
     <img src="@theme/assets/imgs/sketch.svg" alt="Sketch"><span>Sketch</span>
   </router-link>
 </div>
-
-
-#### Wanting more?
-Try out **Diez Enterprise Edition** — with exclusive access to DocsGen, customizable commercial licensing, and other enterprise value-adds.
-
-<router-link class='button left' to='/#enterprise-grade'>Learn about Enterprise Edition</router-link>
