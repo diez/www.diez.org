@@ -1,7 +1,5 @@
 ## InVision DSM Guide
 
-<div class="aside extra-pop">Please note that InVision DSM support is only available as part of <router-link to="/#enterprise-grade">Enterprise Edition</router-link>.</div>
-
 ### Getting Started
 
 Diez has the ability to extract styles from InVision DSM and turn them into normalized, strongly-typed [Design Tokens](/glossary/#tokens). In this guide, we'll show you how to link a DSM project and extract its styles.
