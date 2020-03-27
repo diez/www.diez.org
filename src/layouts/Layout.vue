@@ -8,6 +8,9 @@
         </div>
         <div class="three-quarters">
           <Content />
+          <div class="contribute-cta">
+            <p>Is there anything missing or worth improving? <a class="inline-link" href="https://github.com/diez/www.diez.org">Contribute to this documentation on GitHub</a></p>
+          </div>
         </div>
       </section>
     </div>
@@ -59,6 +62,11 @@ export default {
       @include tablet {
         display: none;
       }
+    }
+    .contribute-cta {
+      padding: $spacing-xxl-px 0 ;
+      margin-top: $sizing-xs-px;
+      border-top: 1px solid $palette-gray700;
     }
   }
 </style>
