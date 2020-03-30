@@ -37,12 +37,25 @@ $ npm run start
 First, open `design-language/src/DesignLanguage.ts` in an editor of your choice. Look for the following block of code:
 
 ```typescript
-const strings = {
-  title: 'Diez',
-  caption: 'Keep your designs in sync with code',
-  helper: 'Modify the contents of “src/DesignLanguage.ts” (relative to the root of the Diez project) to see changes to the design language in real time.'
+const palette = {
+  contentBackground: colors.white,
+  text: colors.black,
+  caption: colors.purple,
 }
 ```
+
+In this example, the `palette` object maps semantic names to `Color`s.
+
+Change the value of `contentBackground` to something of your choice, for example:
+
+```Diff
+- contentBackground: colors.white,
++ contentBackground: colors.purple,
+```
+
+Go back to your terminal, and stop the server (`cmd + c` or `ctrl + c`) and start the docs app again. You can update **any** value defined in your design language: strings, colors, images, fonts, etc.
+
+<div class="aside"><i><strong>Gotcha Warning</strong></i>: You need to restart your DocsGen server after every change for the app to update, we plan to change this and introduce a <code>hot</code> mode soon. Stay tuned!</div>
 
 Please see [The Basics Guide](/getting-started/the-basics) for more information on how to compose and edit your design tokens.
 
