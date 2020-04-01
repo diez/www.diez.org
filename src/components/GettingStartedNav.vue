@@ -31,6 +31,13 @@
         <router-link class="sub-link" to="/existing-project-integration/css-sass">CSS/Sass <span class="secondary">- Integration</span></router-link>
       </div>
 
+      <router-link class="category" to="/getting-started/docsgen">DocsGen</router-link>
+      <div>
+        <router-link class="sub-link" to="/getting-started/docsgen"><span class="secondary">Getting Started</span></router-link>
+        <router-link class="sub-link" to="/existing-project-integration/docsgen"><span class="secondary">Integration</span></router-link>
+        <router-link class="sub-link" to="/releasing/docsgen"><span class="secondary">Releasing</span></router-link>
+      </div>
+
       <router-link class="category" to="/getting-started/design-tools">Design Tools</router-link>
       <div>
         <router-link class="sub-link" to="/getting-started/figma">Figma</router-link>
