@@ -20,12 +20,11 @@ export default {};
 
 
 .email {
-  height: 50px;
+  height: 48px;
   width: $sizing-md-px;
   padding: 0 $spacing-md-px;
   border-radius: $border-radius-button-px;
   border: 1px solid $palette-gray700;
-  outline: none;
 }
 
 .button {
