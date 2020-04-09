@@ -52,6 +52,7 @@ $smallText: 17px;
   background-color: $palette-primary;
   position: relative;
   border-radius: $border-radius-button-px;
+  border: none;
   border-bottom: 4px solid darken($palette-primary, 40%);
   padding: 11px 30px 9px;
   letter-spacing: 1.4px;
