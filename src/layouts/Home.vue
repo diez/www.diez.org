@@ -194,7 +194,6 @@ import NavBar from '@theme/components/NavBar.vue';
 export default {
   data () {
     return {
-      typeformUrl: 'https://design-code.typeform.com/to/JnOi9o',
       carouselComponent: null,
       slideComponent: null
     };
@@ -204,13 +203,6 @@ export default {
       const {Carousel, Slide} = await import('vue-carousel');
       this.carouselComponent = Carousel;
       this.slideComponent = Slide;
-
-      const interval = setInterval(() => {
-        if (window.currentBranch) {
-          this.$data.typeformUrl = `${this.$data.typeformUrl}?sitevariant=${window.currentBranch}`;
-          clearInterval(interval);
-        }
-      });
     }
   },
   methods: {
