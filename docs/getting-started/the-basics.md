@@ -96,6 +96,25 @@ Have something else in mind? You're in luck — Diez was carefully designed with
 
 An example of a custom prefab is demonstrated in an example project [here](https://github.com/diez/diez/blob/master/examples/lorem-ipsum/design-language/src/components/Margin.ts).
 
+### Specifying values per target
+
+If needed, you can specify values to be used only for specific [targets](/glossary#targets):
+
+```ts
+import {Target} from '@diez/engine';
+
+const layoutValues = {
+  spacingSmallAndroid: 5,
+
+  // tell Diez to only output `spacingSmallAndroid` for the `Android` target
+  options: {
+    spacingSmallAndroid: {
+      targets: [Target.Android],
+    },
+  },
+};
+```
+
 ### Next steps
 
 After composing your Diez project you'll need to hook it up to your codebase(s). Platform specific guides are available in the side menu. Technical documentation is available [here](/docs/).
